@@ -9,6 +9,9 @@ template, with every number traced back to the line in the source it came from.
 Making a slick slide is no longer the hard part. The hard part comes when someone asks, "Where does that number come
 from?" Convey is built around that question.
 
+**[Read the wiki](https://github.com/WorthingtonCloud/convey/wiki)** for screenshots, diagrams of each step, a
+command reference and an FAQ.
+
 ---
 
 ## What you get
