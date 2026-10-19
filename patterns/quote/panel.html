@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>What the quote shows</title>
+<!-- Variant quote / panel (title-only). The headline says what the quote shows; the quote itself (content.quote) sits on
+     one raised panel under it, its mark in the signal color, then who said it and one line of context. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.panel { position: absolute; left: var(--brand-margin-left); top: var(--top); width: var(--brand-content-width);
+  height: calc(var(--bottom) - var(--top)); background: var(--brand-raised); padding: 40px 56px 36px 148px;
+  display: flex; flex-direction: column; justify-content: center; }
+.mark { position: absolute; left: 28px; top: 20px; width: 112px; font-size: 160px; line-height: 160px; color: var(--brand-signal); }
+.say { font-size: 40px; line-height: 44px; }
+.who { margin-top: 28px; color: var(--brand-signal-text); }
+.ctx { margin-top: 8px; font-size: 20px; line-height: 28px; color: var(--brand-body); }
+.src { margin-top: 12px; }
+</style>
+</head>
+<body><section class="slide" data-pattern="quote" data-variant="panel" data-role="title-only">
+<h1 class="headline" data-id="headline" data-bind="headline" data-claims="">What the quote shows, said as the point</h1>
+<div class="panel" data-id="panel">
+ <p class="mark heavy" data-id="mark">&ldquo;</p>
+ <p class="say heavy" data-id="quote" data-bind="content.quote" data-claims="">The quote, in the speaker's own words.</p>
+ <p class="eyebrow who" data-id="who" data-bind="content.who">Who said it</p>
+ <p class="ctx" data-id="context" data-bind="content.context" data-claims="">One line of context.</p>
+ <p class="small src" data-id="source" data-bind="content.source">Where and when it was said</p>
+</div>
+</section>
+</body></html>

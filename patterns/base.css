@@ -1,0 +1,37 @@
+/* The variants' shared base: brand variables only (tokens.css from the Brand Profile), so every variant restyles
+   onto any template. Compose copies this file beside tokens.css. --top and --bottom are the body zone under a
+   two-line headline and above the template's footer, less the row compose sets aside (--caveat-row) for a
+   caveat the variant has no slot for: a fixed offset drew it on six variants' panels (Oct 18, 2026 stress test). */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.slide { position: relative; width: 1280px; height: 720px; overflow: hidden; background: var(--brand-ground);
+  color: var(--brand-body); font-family: var(--brand-font-body); font-weight: var(--brand-weight-body);
+  font-size: var(--brand-text-size); line-height: var(--brand-text-line); font-kerning: none; isolation: isolate;
+  --top: calc(var(--brand-margin-top) + 2 * var(--brand-headline-line) + 40px);
+  --bottom: calc(var(--brand-margin-footer-top) - 24px - var(--caveat-row, 0px));
+  /* A full-bleed slide covers the template, so it keeps the template's margin only up to 96 px: a template with a
+     side band (Madison's 274 px) would push its text off its own color blocks. */
+  --bleed-left: min(var(--brand-margin-left), 96px); --bleed-width: calc(1280px - 2 * var(--bleed-left)); }
+.abs { position: absolute; }
+.headline { position: absolute; left: var(--brand-title-left, var(--brand-margin-left)); top: var(--brand-margin-top);
+  width: var(--brand-title-width, var(--brand-content-width));
+  font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink);
+  font-size: var(--brand-headline-size); line-height: var(--brand-headline-line); letter-spacing: var(--brand-title-tracking); }
+.heavy { font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink);
+  letter-spacing: var(--brand-title-tracking); }
+.small { font-size: var(--brand-small-size); line-height: var(--brand-small-line); color: var(--brand-body); }
+/* Quiet text on the template's own background takes the template's body color, solid: the one color the template
+   promises reads on whatever it draws (a derived muted gray vanished on a template whose background is a fade),
+   and PowerPoint's PDF turns any see-through text into a picture. Size carries the hierarchy; muted is for fills
+   the variant painted itself. */
+.quiet { color: var(--brand-body); }
+.eyebrow { font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); font-size: 16px; line-height: 20px;
+  letter-spacing: 0.14em; text-transform: uppercase; }
+/* A variant that owns the whole slide paints its own ground: color type then sits on a fill it chose,
+   never on a template background it can't see. */
+/* --brand-field is the ground, or the raised color where the template draws a fade or a picture: a flat swatch of
+   Berlin's fade looked unlike the template and its signal type failed on it. */
+.field { position: absolute; left: 0; top: 0; width: 1280px; height: 720px; background: var(--brand-field, var(--brand-ground)); }
+/* The storyboard's emphasis words. Plain by default: a variant colors them only where it painted the fill. */
+.hit { color: inherit; }
+/* The content plate: compose adds it (box written on the element) when the Brand Profile measured a background too
+   busy for small text. Nothing to style here. */

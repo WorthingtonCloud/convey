@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Section</title>
+<!-- Pattern skeleton: section. Answers: Where are we in the story?
+     Brand variables only (tokens.css from the Brand Profile); never a color, font or size of its own.
+     data-bind ties each text to its storyboard field; replace the placeholder words, keep the structure. -->
+<link rel="stylesheet" href="tokens.css">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.slide { position: relative; width: 1280px; height: 720px; overflow: hidden; background: var(--brand-ground);
+  color: var(--brand-body); font-family: var(--brand-font-body); font-weight: var(--brand-weight-body);
+  font-size: var(--brand-text-size); line-height: var(--brand-text-line); font-kerning: none; }
+.abs { position: absolute; }
+.headline { position: absolute; left: var(--brand-title-left, var(--brand-margin-left)); top: var(--brand-margin-top); width: var(--brand-title-width, var(--brand-content-width));
+  font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink);
+  font-size: var(--brand-headline-size); line-height: var(--brand-headline-line); letter-spacing: var(--brand-title-tracking); }
+.body { position: absolute; left: var(--brand-margin-left); width: var(--brand-content-width);
+  top: calc(var(--brand-margin-top) + 2 * var(--brand-headline-line) + 40px);
+  bottom: calc(720px - var(--brand-margin-footer-top) + 24px); }
+.small { font-size: var(--brand-small-size); line-height: var(--brand-small-line); color: var(--brand-body); }
+.strong { font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink); }
+.rule { height: 2px; background: var(--brand-signal); }
+.sec-num { position: absolute; left: var(--brand-margin-left); top: 150px; font-family: var(--brand-font-heading);
+  font-weight: var(--brand-weight-heading); font-size: var(--brand-display-size); line-height: var(--brand-display-line); color: var(--brand-muted); }
+.sec-title { position: absolute; left: var(--brand-margin-left); top: 300px; width: calc(var(--brand-content-width) - 120px);
+  font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink);
+  font-size: var(--brand-statement-size); line-height: var(--brand-statement-line); letter-spacing: var(--brand-title-tracking); }
+.sec-rule { position: absolute; left: var(--brand-margin-left); top: 280px; width: 96px; }
+.sec-sub { position: absolute; left: var(--brand-margin-left); top: 470px; width: 760px; }
+</style></head>
+<body><section class="slide" data-pattern="section">
+<p class="sec-num" data-id="number" data-bind="content.number">02</p>
+<div class="rule sec-rule" data-id="signal" data-deco></div>
+<h1 class="sec-title" data-id="title" data-bind="headline">What this part of the story answers</h1>
+<p class="sec-sub" data-id="standfirst" data-bind="content.standfirst">One sentence on why this part matters to the decision.</p>
+</section>
+</body></html>

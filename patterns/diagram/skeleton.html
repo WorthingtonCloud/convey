@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Diagram</title>
+<!-- Pattern skeleton: diagram. Answers: How does it work, step by step?
+     Brand variables only (tokens.css from the Brand Profile); never a color, font or size of its own.
+     data-bind ties each text to its storyboard field; replace the placeholder words, keep the structure. -->
+<link rel="stylesheet" href="tokens.css">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.slide { position: relative; width: 1280px; height: 720px; overflow: hidden; background: var(--brand-ground);
+  color: var(--brand-body); font-family: var(--brand-font-body); font-weight: var(--brand-weight-body);
+  font-size: var(--brand-text-size); line-height: var(--brand-text-line); font-kerning: none; }
+.abs { position: absolute; }
+.headline { position: absolute; left: var(--brand-title-left, var(--brand-margin-left)); top: var(--brand-margin-top); width: var(--brand-title-width, var(--brand-content-width));
+  font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink);
+  font-size: var(--brand-headline-size); line-height: var(--brand-headline-line); letter-spacing: var(--brand-title-tracking); }
+.body { position: absolute; left: var(--brand-margin-left); width: var(--brand-content-width);
+  top: calc(var(--brand-margin-top) + 2 * var(--brand-headline-line) + 40px);
+  bottom: calc(720px - var(--brand-margin-footer-top) + 24px); }
+.small { font-size: var(--brand-small-size); line-height: var(--brand-small-line); color: var(--brand-body); }
+.strong { font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink); }
+.rule { height: 2px; background: var(--brand-signal); }
+.flow { display: flex; gap: 48px; align-items: stretch; }
+.step { flex: 1; }
+.box { border: 2px solid var(--brand-rule); background: var(--brand-raised); height: 88px; display: flex; align-items: center;
+  justify-content: center; text-align: center; padding: 0 12px; font-family: var(--brand-font-heading);
+  font-weight: var(--brand-weight-heading); color: var(--brand-ink); }
+.box.lead { border-color: var(--brand-signal); }
+.step p.small { margin-top: 16px; }
+.wires { position: absolute; left: 0; top: 0; }
+.note { font-size: 18px; line-height: 24px; color: var(--brand-body); }  /* read by the room: 18 px (design/type-scale.md) */
+.wire { stroke: var(--brand-muted); stroke-width: 2; }
+.head { fill: var(--brand-muted); }
+</style></head>
+<body><section class="slide" data-pattern="diagram">
+<h1 class="headline" data-id="headline" data-bind="headline">How it works, in four steps a newcomer can follow</h1>
+<div class="body flow" data-id="steps">
+  <div class="step"><div class="box lead" data-id="s1" data-bind="content.steps.0.label">Step one</div>
+    <p class="note" data-id="s1-note" data-bind="content.steps.0.note">What happens here, in a line</p></div>
+  <div class="step"><div class="box" data-id="s2" data-bind="content.steps.1.label">Step two</div>
+    <p class="note" data-id="s2-note" data-bind="content.steps.1.note">What happens here, in a line</p></div>
+  <div class="step"><div class="box" data-id="s3" data-bind="content.steps.2.label">Step three</div>
+    <p class="note" data-id="s3-note" data-bind="content.steps.2.note">What happens here, in a line</p></div>
+  <div class="step"><div class="box" data-id="s4" data-bind="content.steps.3.label">Step four</div>
+    <p class="note" data-id="s4-note" data-bind="content.steps.3.note">What happens here, in a line</p></div>
+</div>
+<svg class="wires" width="1280" height="720" data-id="arrows"><defs>
+<marker id="head" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" viewBox="0 0 8 8" refX="8" refY="4" orient="auto">
+<path class="head" d="M0 0 L8 4 L0 8 z"/></marker></defs>
+<line class="wire" data-id="a1" data-from="s1" data-to="s2" marker-end="url(#head)"/>
+<line class="wire" data-id="a2" data-from="s2" data-to="s3" marker-end="url(#head)"/>
+<line class="wire" data-id="a3" data-from="s3" data-to="s4" marker-end="url(#head)"/>
+</svg>
+<script>
+// Place each arrow between the boxes it joins (they move with the brand's margins and fonts).
+for (const l of document.querySelectorAll('line[data-from]')) {
+  const a = document.querySelector(`[data-id="${l.dataset.from}"]`).getBoundingClientRect();
+  const b = document.querySelector(`[data-id="${l.dataset.to}"]`).getBoundingClientRect();
+  const y = a.top + a.height / 2;
+  l.setAttribute('x1', a.right); l.setAttribute('y1', y); l.setAttribute('x2', b.left); l.setAttribute('y2', y);
+}
+</script>
+</section>
+</body></html>

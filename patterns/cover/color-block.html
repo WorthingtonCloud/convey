@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>The deck's one message, short enough for two lines</title>
+<!-- Variant cover / color-block (full-bleed). A block of the signal color holds the title in the ground color; the
+     subtitle sits on the open ground beside it. A title of up to about eight words. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.block { left: 0; top: 0; width: 600px; height: 720px; background: var(--brand-signal); }
+.meta { left: var(--bleed-left); top: 128px; width: 470px; color: var(--brand-on-signal); }
+.title { left: var(--bleed-left); top: 168px; width: 470px; font-size: 64px; line-height: 68px; color: var(--brand-on-signal); }
+.side { position: absolute; left: 680px; top: 168px; width: 500px; height: 424px; display: flex; flex-direction: column; justify-content: flex-end; }
+.rule { width: 56px; height: 4px; background: var(--brand-signal); }
+.sub { margin-top: 24px; font-size: 28px; line-height: 36px; color: var(--brand-body); }
+</style>
+</head>
+<body><section class="slide" data-pattern="cover" data-variant="color-block" data-role="full-bleed">
+<div class="field" data-id="field"></div>
+<div class="abs block" data-id="block"></div>
+<p class="abs eyebrow meta" data-id="meta" data-bind="content.meta">Presenter · Date</p>
+<h1 class="abs heavy title" data-id="title" data-bind="headline" data-claims="">The deck's one message, short enough for two lines</h1>
+<div class="side" data-id="side"><div class="rule" data-id="rule"></div>
+ <p class="sub" data-id="subtitle" data-bind="content.subtitle" data-claims="">The ask or the purpose, in one sentence.</p></div>
+</section>
+</body></html>

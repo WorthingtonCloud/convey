@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Timeline</title>
+<!-- Pattern skeleton: timeline. Answers: How did we get here, and what comes next?
+     On a template's own timeline layout each milestone's date, name and note take their numbered placeholders (when
+     the count matches its slots), and the layout draws the axis. Elsewhere, points on one line, title-only layout.
+     Brand variables only (tokens.css from the Brand Profile); never a color or font of its own.
+     data-bind ties each text to its storyboard field; replace the placeholder words, keep the structure. -->
+<link rel="stylesheet" href="tokens.css">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.slide { position: relative; width: 1280px; height: 720px; overflow: hidden; background: var(--brand-ground);
+  color: var(--brand-body); font-family: var(--brand-font-body); font-weight: var(--brand-weight-body);
+  font-size: var(--brand-text-size); line-height: var(--brand-text-line); font-kerning: none; }
+.abs { position: absolute; }
+.headline { position: absolute; left: var(--brand-title-left, var(--brand-margin-left)); top: var(--brand-margin-top); width: var(--brand-title-width, var(--brand-content-width));
+  font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink);
+  font-size: var(--brand-headline-size); line-height: var(--brand-headline-line); letter-spacing: var(--brand-title-tracking); }
+.body { position: absolute; left: var(--brand-margin-left); width: var(--brand-content-width);
+  top: calc(var(--brand-margin-top) + 2 * var(--brand-headline-line) + 40px);
+  bottom: calc(720px - var(--brand-margin-footer-top) + 24px); }
+.small { font-size: var(--brand-small-size); line-height: var(--brand-small-line); color: var(--brand-body); }
+.strong { font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink); }
+.rule { height: 2px; background: var(--brand-signal); }
+.src { position: absolute; left: var(--brand-margin-left); top: calc(var(--brand-margin-footer-top) - 36px); width: var(--brand-content-width); }
+.line { display: flex; gap: 24px; border-top: 1px solid var(--brand-rule); margin-top: 24px; }
+.m { flex: 1; position: relative; padding-top: 24px; }
+.tick { position: absolute; left: 0; top: -9px; width: 2px; height: 17px; background: var(--brand-muted); }
+.m .d { font-size: var(--brand-small-size); line-height: var(--brand-small-line); color: var(--brand-body);
+  text-transform: uppercase; letter-spacing: 0.06em; }
+.m .l { margin-top: 8px; font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading);
+  color: var(--brand-ink); font-size: 22px; line-height: 28px; }
+.m .n { margin-top: 8px; font-size: 18px; line-height: 24px; }  /* read by the room: 18 px */
+</style></head>
+<body><section class="slide" data-pattern="timeline">
+<h1 class="headline" data-id="headline" data-bind="headline">How we got here, said as the turn the dates show</h1>
+<div class="body line" data-id="timeline">
+  <div class="m" data-id="milestone-1"><div class="tick" data-id="tick-1" data-deco></div>
+    <p class="d" data-id="m1-when" data-bind="content.milestones.0.when">When</p>
+    <p class="l" data-id="m1-label" data-bind="content.milestones.0.label" data-claims="">What happened</p>
+    <p class="n" data-id="m1-note" data-bind="content.milestones.0.note" data-claims="">Why it matters, in one line.</p></div>
+  <div class="m" data-id="milestone-2"><div class="tick" data-id="tick-2" data-deco></div>
+    <p class="d" data-id="m2-when" data-bind="content.milestones.1.when">When</p>
+    <p class="l" data-id="m2-label" data-bind="content.milestones.1.label" data-claims="">What happened</p>
+    <p class="n" data-id="m2-note" data-bind="content.milestones.1.note" data-claims="">Why it matters, in one line.</p></div>
+  <div class="m" data-id="milestone-3"><div class="tick" data-id="tick-3" data-deco></div>
+    <p class="d" data-id="m3-when" data-bind="content.milestones.2.when">When</p>
+    <p class="l" data-id="m3-label" data-bind="content.milestones.2.label" data-claims="">What happened</p>
+    <p class="n" data-id="m3-note" data-bind="content.milestones.2.note" data-claims="">Why it matters, in one line.</p></div>
+  <div class="m" data-id="milestone-4"><div class="tick" data-id="tick-4" data-deco></div>
+    <p class="d" data-id="m4-when" data-bind="content.milestones.3.when">When</p>
+    <p class="l" data-id="m4-label" data-bind="content.milestones.3.label" data-claims="">What happened</p>
+    <p class="n" data-id="m4-note" data-bind="content.milestones.3.note" data-claims="">Why it matters, in one line.</p></div>
+  <div class="m" data-id="milestone-5"><div class="tick" data-id="tick-5" data-deco></div>
+    <p class="d" data-id="m5-when" data-bind="content.milestones.4.when">When</p>
+    <p class="l" data-id="m5-label" data-bind="content.milestones.4.label" data-claims="">What happened</p>
+    <p class="n" data-id="m5-note" data-bind="content.milestones.4.note" data-claims="">Why it matters, in one line.</p></div>
+</div>
+<p class="src small" data-id="source" data-bind="content.source" data-claims="">Source: where the dates come from.</p>
+</section>
+</body></html>

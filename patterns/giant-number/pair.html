@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Two numbers, side by side</title>
+<!-- Variant giant-number / pair (title-only). Two numbers at display size on either side of a hairline, each with what it
+     counts; a signal disc on the seam marks them as the pair to compare. The first is content.value and content.label,
+     the second content.second.value and .label. Five characters or fewer each. content.turn, when the story has one, goes
+     under the context line (the stress test's tie-breaker was dropped without it, Oct 18, 2026). -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.wrap { position: absolute; left: var(--brand-margin-left); top: var(--top); width: var(--brand-content-width);
+  height: calc(var(--bottom) - var(--top) - 40px); display: flex; flex-direction: column; justify-content: center; }
+.pair { position: relative; display: flex; align-items: center; }
+.half { flex: 1; padding: 0 48px; }
+.half + .half { border-left: 1px solid var(--brand-rule); }
+.num { font-size: 168px; line-height: 176px; letter-spacing: -0.03em; }
+.what { margin-top: 8px; font-size: 26px; line-height: 32px; }
+.vs { position: absolute; left: calc(50% - 28px); top: calc(50% - 28px); width: 56px; height: 56px; border-radius: 50%;
+  background: var(--brand-signal); color: var(--brand-on-signal); display: flex; align-items: center; justify-content: center;
+  font-size: 20px; line-height: 24px; }
+.more { margin-top: 36px; font-size: 20px; line-height: 28px; color: var(--brand-body); text-align: center; }
+</style>
+</head>
+<body><section class="slide" data-pattern="giant-number" data-variant="pair" data-role="title-only">
+<h1 class="headline" data-id="headline" data-bind="headline" data-claims="">Two numbers that only mean something together</h1>
+<div class="wrap" data-id="body">
+ <div class="pair" data-id="pair">
+  <div class="half" data-id="first"><p class="num heavy" data-id="number" data-bind="content.value" data-claims="">1.4×</p><p class="what heavy" data-id="label" data-bind="content.label">What the first counts</p></div>
+  <div class="half" data-id="second"><p class="num heavy" data-id="number-2" data-bind="content.second.value" data-claims="">2.1×</p><p class="what heavy" data-id="label-2" data-bind="content.second.label">What the second counts</p></div>
+  <p class="vs heavy" data-id="vs">vs</p>
+ </div>
+ <p class="more" data-id="context" data-bind="content.evidence" data-claims="">The line that says why the pair matters.</p>
+ <p class="more heavy" data-id="turn" data-bind="content.turn" data-claims="" style="margin-top:16px;color:var(--brand-ink)">What the pair turns on, when the story has it.</p>
+</div>
+<p class="abs small" data-id="source" data-bind="content.source" data-claims="" style="left:var(--brand-margin-left);top:calc(var(--bottom) - 20px);width:var(--brand-content-width)">Where the numbers come from.</p>
+</section>
+</body></html>

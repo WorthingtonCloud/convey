@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Cover</title>
+<!-- Pattern skeleton: cover. Answers: What is this deck, and why should I listen?
+     Brand variables only (tokens.css from the Brand Profile); never a color, font or size of its own.
+     data-bind ties each text to its storyboard field; replace the placeholder words, keep the structure. -->
+<link rel="stylesheet" href="tokens.css">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.slide { position: relative; width: 1280px; height: 720px; overflow: hidden; background: var(--brand-ground);
+  color: var(--brand-body); font-family: var(--brand-font-body); font-weight: var(--brand-weight-body);
+  font-size: var(--brand-text-size); line-height: var(--brand-text-line); font-kerning: none; }
+.abs { position: absolute; }
+.headline { position: absolute; left: var(--brand-title-left, var(--brand-margin-left)); top: var(--brand-margin-top); width: var(--brand-title-width, var(--brand-content-width));
+  font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink);
+  font-size: var(--brand-headline-size); line-height: var(--brand-headline-line); letter-spacing: var(--brand-title-tracking); }
+.body { position: absolute; left: var(--brand-margin-left); width: var(--brand-content-width);
+  top: calc(var(--brand-margin-top) + 2 * var(--brand-headline-line) + 40px);
+  bottom: calc(720px - var(--brand-margin-footer-top) + 24px); }
+.small { font-size: var(--brand-small-size); line-height: var(--brand-small-line); color: var(--brand-body); }
+.strong { font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink); }
+.rule { height: 2px; background: var(--brand-signal); }
+.cover-title { position: absolute; left: var(--brand-margin-left); top: 250px; width: calc(var(--brand-content-width) - 120px);
+  font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink);
+  font-size: var(--brand-statement-size); line-height: var(--brand-statement-line); letter-spacing: var(--brand-title-tracking); }
+.cover-rule { position: absolute; left: var(--brand-margin-left); top: 222px; width: 96px; }
+.cover-sub { position: absolute; left: var(--brand-margin-left); top: 470px; width: 760px; color: var(--brand-body); }
+.cover-meta { position: absolute; left: var(--brand-margin-left); top: calc(var(--brand-margin-footer-top) - 48px); width: 760px; }
+</style></head>
+<body><section class="slide" data-pattern="cover">
+<div class="rule cover-rule" data-id="signal" data-deco></div>
+<h1 class="cover-title" data-id="title" data-bind="headline">The deck's governing message, in one sentence</h1>
+<p class="cover-sub" data-id="subtitle" data-bind="content.subtitle">Who it is for and what it asks of them, in a line or two of plain words.</p>
+<p class="cover-meta small" data-id="meta" data-bind="content.meta">Presenter name · Month 1, 2026</p>
+</section>
+</body></html>

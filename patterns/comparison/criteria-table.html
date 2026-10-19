@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Two options, criterion by criterion</title>
+<!-- Variant comparison / criteria-table (title-only). Up to five criteria (content.criteria) down the left, each
+     option's answer in its column (left.points and right.points, in the same order). The side with status "pick"
+     gets a column of raised cells under a head in the data color. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.t { position: absolute; left: var(--brand-margin-left); top: var(--top); width: var(--brand-content-width);
+  height: calc(var(--bottom) - var(--top)); display: flex; flex-direction: column; }
+.r { flex: 1; display: flex; align-items: stretch; column-gap: 12px; border-top: 1px solid var(--brand-rule); }
+.r.head { flex: 0 0 auto; border-top: 0; }
+.k { flex: 0 0 28%; display: flex; align-items: center; padding: 12px 0; font-size: 24px; line-height: 29.33px; }
+.c { flex: 1; display: flex; align-items: center; padding: 12px 20px; font-size: 24px; line-height: 29.33px; color: var(--brand-body); }
+.hd { flex: 1; padding: 14px 20px; font-size: 28px; line-height: 32px; }
+.c.is-pick { background: var(--brand-raised); }
+.hd.is-pick { background: var(--brand-data-1); color: var(--brand-on-data-1); }
+.blank { flex: 0 0 28%; }
+</style>
+</head>
+<body><section class="slide" data-pattern="comparison" data-variant="criteria-table" data-role="title-only">
+<h1 class="headline" data-id="headline" data-bind="headline" data-claims="">Which side wins, criterion by criterion</h1>
+<div class="t" data-id="table">
+ <div class="r head" data-id="heads"><div class="blank" data-id="corner"></div><p class="hd heavy" data-id="left-head" data-bind="content.left.head" data-class="content.left.status">Option A</p><p class="hd heavy" data-id="right-head" data-bind="content.right.head" data-class="content.right.status">Option B</p></div>
+  <div class="r" data-id="row-1" data-when="content.criteria.0"><p class="k heavy" data-id="k-1" data-bind="content.criteria.0">Criterion</p><p class="c" data-id="left-1" data-bind="content.left.points.0" data-class="content.left.status" data-claims="">How it answers</p><p class="c" data-id="right-1" data-bind="content.right.points.0" data-class="content.right.status" data-claims="">How it answers</p></div>
+  <div class="r" data-id="row-2" data-when="content.criteria.1"><p class="k heavy" data-id="k-2" data-bind="content.criteria.1">Criterion</p><p class="c" data-id="left-2" data-bind="content.left.points.1" data-class="content.left.status" data-claims="">How it answers</p><p class="c" data-id="right-2" data-bind="content.right.points.1" data-class="content.right.status" data-claims="">How it answers</p></div>
+  <div class="r" data-id="row-3" data-when="content.criteria.2"><p class="k heavy" data-id="k-3" data-bind="content.criteria.2">Criterion</p><p class="c" data-id="left-3" data-bind="content.left.points.2" data-class="content.left.status" data-claims="">How it answers</p><p class="c" data-id="right-3" data-bind="content.right.points.2" data-class="content.right.status" data-claims="">How it answers</p></div>
+  <div class="r" data-id="row-4" data-when="content.criteria.3"><p class="k heavy" data-id="k-4" data-bind="content.criteria.3">Criterion</p><p class="c" data-id="left-4" data-bind="content.left.points.3" data-class="content.left.status" data-claims="">How it answers</p><p class="c" data-id="right-4" data-bind="content.right.points.3" data-class="content.right.status" data-claims="">How it answers</p></div>
+  <div class="r" data-id="row-5" data-when="content.criteria.4"><p class="k heavy" data-id="k-5" data-bind="content.criteria.4">Criterion</p><p class="c" data-id="left-5" data-bind="content.left.points.4" data-class="content.left.status" data-claims="">How it answers</p><p class="c" data-id="right-5" data-bind="content.right.points.4" data-class="content.right.status" data-claims="">How it answers</p></div>
+</div>
+</section>
+</body></html>

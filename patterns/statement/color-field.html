@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>One sentence the audience should repeat</title>
+<!-- Variant statement / color-field (full-bleed). The whole slide in the signal color, the sentence in the type color for the signal (--brand-on-signal)
+     with its emphasis words in the other type color where that still reads at display size (--brand-on-signal-hit), else the same color. Once per deck at most: the loudest slide there is. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.field.signal { background: var(--brand-signal); }
+.stack { position: absolute; left: var(--bleed-left); top: 96px; width: var(--bleed-width); height: calc(528px - var(--caveat-row, 0px));
+  display: flex; flex-direction: column; justify-content: center; }
+.kicker { color: var(--brand-on-signal); }
+.say { margin-top: 20px; font-size: 80px; line-height: 84px; color: var(--brand-on-signal); }
+.hit { color: var(--brand-on-signal-hit); }
+.foot { margin-top: 36px; max-width: 760px; font-size: 22px; line-height: 29.33px; color: var(--brand-on-signal); }
+</style>
+</head>
+<body><section class="slide" data-pattern="statement" data-variant="color-field" data-role="full-bleed">
+<div class="field signal" data-id="field"></div>
+<div class="stack" data-id="stack">
+ <p class="eyebrow kicker" data-id="kicker" data-bind="content.kicker">A short kicker</p>
+ <h1 class="say heavy" data-id="statement" data-bind="headline" data-claims="">One sentence the audience should repeat</h1>
+ <p class="foot" data-id="source" data-bind="content.source" data-claims="">Where it comes from, in a line.</p>
+</div>
+</section>
+</body></html>

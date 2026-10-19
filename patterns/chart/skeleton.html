@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Chart</title>
+<!-- Pattern skeleton: chart. Answers: What does the trend or the split show?
+     Brand variables only (tokens.css from the Brand Profile); never a color, font or size of its own.
+     data-bind ties each text to its storyboard field; replace the placeholder words, keep the structure. -->
+<link rel="stylesheet" href="tokens.css">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.slide { position: relative; width: 1280px; height: 720px; overflow: hidden; background: var(--brand-ground);
+  color: var(--brand-body); font-family: var(--brand-font-body); font-weight: var(--brand-weight-body);
+  font-size: var(--brand-text-size); line-height: var(--brand-text-line); font-kerning: none; }
+.abs { position: absolute; }
+.headline { position: absolute; left: var(--brand-title-left, var(--brand-margin-left)); top: var(--brand-margin-top); width: var(--brand-title-width, var(--brand-content-width));
+  font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink);
+  font-size: var(--brand-headline-size); line-height: var(--brand-headline-line); letter-spacing: var(--brand-title-tracking); }
+.body { position: absolute; left: var(--brand-margin-left); width: var(--brand-content-width);
+  top: calc(var(--brand-margin-top) + 2 * var(--brand-headline-line) + 40px);
+  bottom: calc(720px - var(--brand-margin-footer-top) + 24px); }
+.small { font-size: var(--brand-small-size); line-height: var(--brand-small-line); color: var(--brand-body); }
+.strong { font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink); }
+.rule { height: 2px; background: var(--brand-signal); }
+.chart-fig { position: absolute; left: var(--brand-margin-left); width: var(--brand-content-width);
+  top: calc(var(--brand-margin-top) + 2 * var(--brand-headline-line) + 40px);
+  height: calc(var(--brand-margin-footer-top) - var(--brand-margin-top) - 2 * var(--brand-headline-line) - 112px);
+  font-family: var(--brand-font-body); color: var(--brand-muted); --chart-grid: var(--brand-rule); }
+.chart-take { position: absolute; left: calc(var(--brand-margin-left) + var(--brand-content-width) * 0.64 + 40px);
+  top: calc(var(--brand-margin-top) + 2 * var(--brand-headline-line) + 40px); width: calc(var(--brand-content-width) * 0.36 - 40px); }
+.chart-cav { position: absolute; left: calc(var(--brand-margin-left) + var(--brand-content-width) * 0.64 + 40px);
+  bottom: calc(720px - var(--brand-margin-footer-top) + 72px); width: calc(var(--brand-content-width) * 0.36 - 40px);
+  font-size: 18px; line-height: 24px; color: var(--brand-body); }
+.slide:has(.chart-take) .chart-fig { width: calc(var(--brand-content-width) * 0.64); }
+.chart-src { position: absolute; left: var(--brand-margin-left); top: calc(var(--brand-margin-footer-top) - 52px); width: var(--brand-content-width); }
+</style></head>
+<body><section class="slide" data-pattern="chart">
+<h1 class="headline" data-id="headline" data-bind="headline">The chart's point as a sentence: what rose, what fell, by how much</h1>
+<figure class="chart-fig" data-id="chart" data-bind="content.chart" data-claims=""
+  data-chart='{"type":"column","categories":["Q1","Q2","Q3","Q4"],"series":[{"name":"This year","values":[42,48,55,61],"color":"var(--brand-data-1)"},{"name":"Last year","values":[38,40,41,44],"color":"var(--brand-data-2)"}],"axis":{"min":0,"max":80,"step":20,"format":"{v}"},"fontSize":16}'></figure>
+<p class="chart-take" data-id="takeaway" data-bind="content.takeaway" data-claims="">What to see in the chart, and what it does not show (optional: leave it out for a full-width chart).</p>
+<p class="chart-cav" data-id="caveat" data-bind="caveat" data-when="content.takeaway">With a takeaway, the caveat sits under it.</p>
+<p class="chart-src small" data-id="source" data-bind="content.source">Source: where the numbers come from. Illustrative values in this skeleton.</p>
+</section>
+<script src="chart.js"></script>
+</body></html>

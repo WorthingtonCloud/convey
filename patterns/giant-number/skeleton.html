@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Big number</title>
+<!-- Pattern skeleton: giant-number. Answers: How big is it?
+     On a template's own big-number layout each text takes its placeholder: the number, what it counts, what it is
+     compared with (evidence) and a second remark (turn). Elsewhere it keeps this grid on the title-only layout.
+     Brand variables only (tokens.css from the Brand Profile); never a color or font of its own.
+     data-bind ties each text to its storyboard field; replace the placeholder words, keep the structure. -->
+<link rel="stylesheet" href="tokens.css">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.slide { position: relative; width: 1280px; height: 720px; overflow: hidden; background: var(--brand-ground);
+  color: var(--brand-body); font-family: var(--brand-font-body); font-weight: var(--brand-weight-body);
+  font-size: var(--brand-text-size); line-height: var(--brand-text-line); font-kerning: none; }
+.abs { position: absolute; }
+.headline { position: absolute; left: var(--brand-title-left, var(--brand-margin-left)); top: var(--brand-margin-top); width: var(--brand-title-width, var(--brand-content-width));
+  font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink);
+  font-size: var(--brand-headline-size); line-height: var(--brand-headline-line); letter-spacing: var(--brand-title-tracking); }
+.body { position: absolute; left: var(--brand-margin-left); width: var(--brand-content-width);
+  top: calc(var(--brand-margin-top) + 2 * var(--brand-headline-line) + 40px);
+  bottom: calc(720px - var(--brand-margin-footer-top) + 24px); }
+.small { font-size: var(--brand-small-size); line-height: var(--brand-small-line); color: var(--brand-body); }
+.strong { font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink); }
+.rule { height: 2px; background: var(--brand-signal); }
+.src { position: absolute; left: var(--brand-margin-left); top: calc(var(--brand-margin-footer-top) - 36px); width: var(--brand-content-width); }
+.num { font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink);
+  font-size: 144px; line-height: 152px; letter-spacing: -0.03em; }
+.hero { display: flex; flex-direction: column; }
+.under { display: flex; column-gap: 48px; margin-top: 24px; padding-top: 20px; border-top: 2px solid var(--brand-signal); }
+.under > * { flex: 1; }
+.what { font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink);
+  font-size: 26px; line-height: 32px; }
+.more { margin-top: 12px; }
+.cav { margin-top: 20px; font-size: 18px; line-height: 24px; }  /* read by the room: 18 px */
+</style></head>
+<body><section class="slide" data-pattern="giant-number">
+<h1 class="headline" data-id="headline" data-bind="headline" data-claims="">The headline says what the number means</h1>
+<div class="body hero" data-id="hero">
+  <p class="num" data-id="number" data-bind="content.value" data-claims="">42%</p>
+  <div class="under" data-id="under">
+    <div data-id="counts"><p class="what" data-id="label" data-bind="content.label">of what, counted how</p>
+      <p class="more" data-id="context" data-bind="content.evidence" data-claims="">The comparison that makes it big or small.</p></div>
+    <p class="more" data-id="turn" data-bind="content.turn" data-claims="">The twist: what the number doesn't settle.</p>
+  </div>
+  <p class="cav" data-id="caveat" data-bind="caveat">What the number leaves out (optional).</p>
+</div>
+<p class="src small" data-id="source" data-bind="content.source" data-claims="">Where the number comes from, and when.</p>
+</section>
+</body></html>

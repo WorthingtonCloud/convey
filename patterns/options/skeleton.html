@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Options</title>
+<!-- Pattern skeleton: options. Answers: What are the choices, and how do they differ?
+     On a template's own options layout each option's name and detail take their numbered placeholders (when the
+     count matches its slots). Elsewhere, two to four columns on the title-only layout.
+     Brand variables only (tokens.css from the Brand Profile); never a color or font of its own.
+     data-bind ties each text to its storyboard field; replace the placeholder words, keep the structure. -->
+<link rel="stylesheet" href="tokens.css">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.slide { position: relative; width: 1280px; height: 720px; overflow: hidden; background: var(--brand-ground);
+  color: var(--brand-body); font-family: var(--brand-font-body); font-weight: var(--brand-weight-body);
+  font-size: var(--brand-text-size); line-height: var(--brand-text-line); font-kerning: none; }
+.abs { position: absolute; }
+.headline { position: absolute; left: var(--brand-title-left, var(--brand-margin-left)); top: var(--brand-margin-top); width: var(--brand-title-width, var(--brand-content-width));
+  font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink);
+  font-size: var(--brand-headline-size); line-height: var(--brand-headline-line); letter-spacing: var(--brand-title-tracking); }
+.body { position: absolute; left: var(--brand-margin-left); width: var(--brand-content-width);
+  top: calc(var(--brand-margin-top) + 2 * var(--brand-headline-line) + 40px);
+  bottom: calc(720px - var(--brand-margin-footer-top) + 24px); }
+.small { font-size: var(--brand-small-size); line-height: var(--brand-small-line); color: var(--brand-body); }
+.strong { font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink); }
+.rule { height: 2px; background: var(--brand-signal); }
+.src { position: absolute; left: var(--brand-margin-left); top: calc(var(--brand-margin-footer-top) - 36px); width: var(--brand-content-width); }
+.opts { display: flex; gap: 32px; }
+.opt { flex: 1; border-top: 2px solid var(--brand-rule); padding-top: 16px; }
+.opt.lead { border-top-color: var(--brand-signal); }
+.opt .h { font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink);
+  font-size: 26px; line-height: 32px; }
+.opt .t { margin-top: 12px; }
+</style></head>
+<body><section class="slide" data-pattern="options">
+<h1 class="headline" data-id="headline" data-bind="headline">The choice in one sentence: what separates the options</h1>
+<div class="body opts" data-id="options">
+  <div class="opt lead" data-id="option-1"><p class="h" data-id="o1-head" data-bind="content.items.0.head">Option one</p>
+    <p class="t" data-id="o1-text" data-bind="content.items.0.text" data-claims="">What it does well, what it costs, where it fails.</p></div>
+  <div class="opt" data-id="option-2"><p class="h" data-id="o2-head" data-bind="content.items.1.head">Option two</p>
+    <p class="t" data-id="o2-text" data-bind="content.items.1.text" data-claims="">What it does well, what it costs, where it fails.</p></div>
+  <div class="opt" data-id="option-3"><p class="h" data-id="o3-head" data-bind="content.items.2.head">Option three</p>
+    <p class="t" data-id="o3-text" data-bind="content.items.2.text" data-claims="">What it does well, what it costs, where it fails.</p></div>
+</div>
+<p class="src small" data-id="source" data-bind="content.source" data-claims="">Where the figures come from.</p>
+</section>
+</body></html>

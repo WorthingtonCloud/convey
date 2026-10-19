@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>What changed between then and now</title>
+<!-- Variant before-after / two-panels (title-only layout). Then on a quiet raised panel, now on a panel in the data
+     color with ground-colored type, a signal disc on the seam pointing from one to the other. Both panels hold the
+     same three lines in the same places: when, the value with what it counts, and the other side of the split. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.pair { position: absolute; left: var(--brand-margin-left); top: var(--top); width: var(--brand-content-width);
+  height: calc(var(--bottom) - var(--top) - 44px); display: flex; column-gap: 24px; }
+.panel { flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 32px 36px 30px; }
+.then { background: var(--brand-raised); color: var(--brand-muted); }
+.now { background: var(--brand-data-1); color: var(--brand-on-data-1); }
+.big { font-size: 120px; line-height: 124px; letter-spacing: -0.03em; color: inherit; }
+.lbl { margin-top: 4px; font-size: 22px; line-height: 29.33px; color: inherit; }
+.alt { padding-top: 16px; border-top: 1px solid currentColor; font-size: 18px; line-height: 24px; color: inherit; }
+.seam { position: absolute; left: calc(var(--brand-margin-left) + var(--brand-content-width) / 2 - 32px);
+  top: calc((var(--top) + var(--bottom) - 44px) / 2 - 32px); width: 64px; height: 64px; border-radius: 50%;
+  background: var(--brand-signal); }
+</style>
+</head>
+<body><section class="slide" data-pattern="before-after" data-variant="two-panels" data-role="title-only">
+<h1 class="headline" data-id="headline" data-bind="headline" data-claims="">What changed between then and now, said as the change</h1>
+<div class="pair" data-id="pair">
+ <div class="panel then" data-id="then">
+  <p class="eyebrow" data-id="then-when" data-bind="content.before.when">Before</p>
+  <div data-id="then-main"><p class="big heavy" data-id="then-value" data-bind="content.before.value" data-claims="">30%</p><p class="lbl" data-id="then-label" data-bind="content.before.label">what the value counts</p></div>
+  <p class="alt" data-id="then-alt" data-bind="content.before.alt" data-claims="">The other side of the split then</p>
+ </div>
+ <div class="panel now" data-id="now">
+  <p class="eyebrow" data-id="now-when" data-bind="content.after.when">After</p>
+  <div data-id="now-main"><p class="big heavy" data-id="now-value" data-bind="content.after.value" data-claims="">45%</p><p class="lbl" data-id="now-label" data-bind="content.after.label">what the value counts</p></div>
+  <p class="alt" data-id="now-alt" data-bind="content.after.alt" data-claims="">The other side of the split now</p>
+ </div>
+</div>
+<div class="seam" data-id="seam"></div>
+<svg class="abs" data-id="seam-arrow" width="32" height="32" viewBox="0 0 32 32" style="left:calc(var(--brand-margin-left) + var(--brand-content-width) / 2 - 16px);top:calc((var(--top) + var(--bottom) - 44px) / 2 - 16px);color:var(--brand-on-data-1)"><path d="M4 13h14V5l12 11-12 11v-8H4z" fill="currentColor"/></svg>
+<p class="abs small" data-id="source" data-bind="content.source" data-claims="" style="left:var(--brand-margin-left);top:calc(var(--bottom) - 20px);width:var(--brand-content-width)">Source: where both values come from.</p>
+</section>
+</body></html>

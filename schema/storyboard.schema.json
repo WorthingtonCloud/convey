@@ -1,0 +1,41 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "convey.storyboard/1",
+ "title": "Presentation Model: the argument and each slide's content",
+ "type": "object",
+ "required": ["schema", "governing_message", "arc", "ask", "slides"],
+ "additionalProperties": false,
+ "properties": {
+  "schema": {"enum": ["convey.storyboard/1"]},
+  "governing_message": {"type": "string", "minLength": 1},
+  "arc": {"enum": ["decision", "live-persuasive", "operating-review", "technical", "chronological"]},
+  "pillars": {"type": "array", "items": {"type": "object", "required": ["text", "claim_ids"], "additionalProperties": false,
+   "properties": {"text": {"type": "string"}, "claim_ids": {"type": "array", "items": {"type": "string"}}}}},
+  "counterpoint": {"type": "string", "description": "the strongest limitation or alternative reading, and what would change the decision"},
+  "ask": {"type": "string", "description": "the decision or action sought, or 'none: informational'"},
+  "approved": {"type": ["object", "null"], "additionalProperties": false,
+   "properties": {"by": {"type": "string"}, "at": {"type": "string"}, "note": {"type": "string"}}},
+  "choices": {"type": "array", "items": {"type": "string"}, "description": "just-build: every choice made without the story gate"},
+  "slides": {"type": "array", "minItems": 1, "items": {
+   "type": "object",
+   "required": ["id", "pattern", "headline", "audience_question", "claim_ids", "content"],
+   "additionalProperties": false,
+   "properties": {
+    "id": {"type": "string", "pattern": "^S-[0-9]+$"},
+    "pattern": {"enum": ["cover", "closing", "agenda", "section", "executive-summary", "key-finding", "kpi-row", "comparison", "chart",
+     "diagram", "photo-led", "quote", "scorecard", "options", "statement", "giant-number", "before-after", "steps", "timeline", "matrix"]},
+    "variant": {"type": "string", "pattern": "^[a-z0-9-]+$", "description": "patterns/<pattern>/<variant>.html; leave out for skeleton.html"},
+    "role": {"enum": ["agenda", "divider", "appendix"]},
+    "headline": {"type": "string", "minLength": 1},
+    "emphasis": {"type": "array", "items": {"type": "string"}, "description": "headline words a variant may color (only on a fill it painted)"},
+    "audience_question": {"type": "string"},
+    "claim_ids": {"type": "array", "items": {"type": "string"}},
+    "content": {"type": "object", "description": "the pattern's typed slots; see patterns/<id>/pattern.md"},
+    "caveat": {"type": "string", "description": "the qualification that must stay visible"},
+    "notes": {"type": "string"},
+    "density": {"enum": ["live", "read-ahead"]},
+    "status": {"enum": ["draft", "approved", "composed"]}
+   }
+  }}
+ }
+}

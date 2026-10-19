@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Where each case lands on two questions</title>
+<!-- Variant matrix / quadrants (title-only). A 2x2 of raised tiles, read top-left, top-right, bottom-left,
+     bottom-right; the axes are named outside the grid, low to high (left to right, bottom to top). A quadrant with
+     status "pick" is the tile in the data color. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.grid { position: absolute; left: calc(var(--brand-margin-left) + 136px); top: var(--top);
+  width: calc(var(--brand-content-width) - 136px); height: calc(var(--bottom) - var(--top) - 40px);
+  display: flex; flex-wrap: wrap; gap: 12px; }
+.q { flex: 0 0 calc(50% - 6px); background: var(--brand-raised); padding: 22px 26px; }
+.qh { font-size: 30px; line-height: 36px; }
+.qt { margin-top: 10px; font-size: 20px; line-height: 28px; color: var(--brand-body); }
+.is-pick { background: var(--brand-data-1); }
+.is-pick .qh, .is-pick .qt { color: var(--brand-on-data-1); }
+.xl .mid { color: var(--brand-ink); }
+.xl { left: calc(var(--brand-margin-left) + 136px); top: calc(var(--bottom) - 24px); width: calc(var(--brand-content-width) - 136px);
+  display: flex; justify-content: space-between; }
+.yl { left: var(--brand-margin-left); top: var(--top); width: 116px; height: calc(var(--bottom) - var(--top) - 40px);
+  display: flex; flex-direction: column; justify-content: space-between; }
+.yl .mid { color: var(--brand-ink); }
+</style>
+</head>
+<body><section class="slide" data-pattern="matrix" data-variant="quadrants" data-role="title-only">
+<h1 class="headline" data-id="headline" data-bind="headline" data-claims="">Where each case lands on two questions, said as the pattern</h1>
+<div class="grid" data-id="grid">
+  <div class="q" data-id="q-1" data-class="content.quadrants.0.status"><p class="qh heavy" data-id="qh-1" data-bind="content.quadrants.0.head">High on the side question, low on the base one</p><p class="qt" data-id="qt-1" data-bind="content.quadrants.0.text" data-claims="">What lands here, in a line or two.</p></div>
+  <div class="q" data-id="q-2" data-class="content.quadrants.1.status"><p class="qh heavy" data-id="qh-2" data-bind="content.quadrants.1.head">High on both</p><p class="qt" data-id="qt-2" data-bind="content.quadrants.1.text" data-claims="">What lands here, in a line or two.</p></div>
+  <div class="q" data-id="q-3" data-class="content.quadrants.2.status"><p class="qh heavy" data-id="qh-3" data-bind="content.quadrants.2.head">Low on both</p><p class="qt" data-id="qt-3" data-bind="content.quadrants.2.text" data-claims="">What lands here, in a line or two.</p></div>
+  <div class="q" data-id="q-4" data-class="content.quadrants.3.status"><p class="qh heavy" data-id="qh-4" data-bind="content.quadrants.3.head">Low on the side question, high on the base one</p><p class="qt" data-id="qt-4" data-bind="content.quadrants.3.text" data-claims="">What lands here, in a line or two.</p></div>
+</div>
+<div class="abs xl" data-id="x-axis"><p class="eyebrow" data-id="x-low" data-bind="content.x.low">Low</p><p class="eyebrow mid" data-id="x-label" data-bind="content.x.label">The question along the bottom</p><p class="eyebrow" data-id="x-high" data-bind="content.x.high">High</p></div>
+<div class="abs yl" data-id="y-axis"><p class="eyebrow" data-id="y-high" data-bind="content.y.high">High</p><p class="eyebrow mid" data-id="y-label" data-bind="content.y.label">The question up the side</p><p class="eyebrow" data-id="y-low" data-bind="content.y.low">Low</p></div>
+</section>
+</body></html>

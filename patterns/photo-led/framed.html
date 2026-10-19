@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>A headline the photo makes felt</title>
+<!-- Variant photo-led / framed (title-only). The template's title, logo and footer stay; the photo sits in a rounded
+     frame on the right of the body, the kicker and one sentence on the left. The company-template way to show a photo. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.text { position: absolute; left: var(--brand-margin-left); top: var(--top); width: calc(var(--brand-content-width) * 0.42);
+  height: calc(var(--bottom) - var(--top)); display: flex; flex-direction: column; justify-content: center; }
+.kicker { color: var(--brand-ink); }
+.sub { margin-top: 16px; font-size: 28px; line-height: 36px; color: var(--brand-body); }
+.credit { margin-top: 24px; }
+.photo { left: calc(var(--brand-margin-left) + var(--brand-content-width) * 0.42 + 40px); top: var(--top);
+  width: calc(var(--brand-content-width) * 0.58 - 40px); height: calc(var(--bottom) - var(--top));
+  object-fit: cover; object-position: 50% 50%; border-radius: 16px; }
+</style>
+</head>
+<body><section class="slide" data-pattern="photo-led" data-variant="framed" data-role="title-only">
+<h1 class="headline" data-id="headline" data-bind="headline" data-claims="">A headline the photo makes felt</h1>
+<div class="text" data-id="text">
+ <p class="eyebrow kicker" data-id="kicker" data-bind="content.kicker">A short kicker</p>
+ <p class="sub" data-id="subtitle" data-bind="content.subtitle" data-claims="">One sentence on what the photo shows, and why it matters here.</p>
+ <p class="small credit" data-id="credit" data-bind="content.credit">Photo credit</p>
+</div>
+<img class="abs photo" data-id="photo" data-bind="content.image" alt="" src="photo.jpg">
+</section>
+</body></html>

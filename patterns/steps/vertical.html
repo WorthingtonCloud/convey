@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>The steps, in order</title>
+<!-- Variant steps / vertical (title-only). Three to six steps down the slide, each a numbered disc on a rail with its
+     label and its note on one line: reads like a checklist. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.list { position: absolute; left: var(--brand-margin-left); top: var(--top); width: var(--brand-content-width);
+  height: calc(var(--bottom) - var(--top)); display: flex; flex-direction: column; }
+.step { flex: 1; position: relative; display: flex; align-items: center; column-gap: 28px; }
+.link { position: absolute; left: 21px; top: 50%; width: 2px; height: 100%; background: var(--brand-rule); }
+.step:last-child .link { display: none; }
+.disc { position: relative; flex: none; width: 44px; height: 44px; border-radius: 50%; background: var(--brand-signal);
+  color: var(--brand-on-signal); display: flex; align-items: center; justify-content: center; font-size: 20px; line-height: 24px; }
+.t { flex: 0 0 32%; font-size: 28px; line-height: 32px; }
+.d { flex: 1; font-size: 20px; line-height: 28px; color: var(--brand-body); }
+</style>
+</head>
+<body><section class="slide" data-pattern="steps" data-variant="vertical" data-role="title-only">
+<h1 class="headline" data-id="headline" data-bind="headline" data-claims="">The steps, and what they add up to together</h1>
+<div class="list" data-id="steps">
+  <div class="step" data-id="step-1"><div class="link" data-id="link-1"></div><p class="disc heavy" data-id="n-1" data-index="content.steps.0">1</p><p class="t heavy" data-id="t-1" data-bind="content.steps.0.label">Step 1</p><p class="d" data-id="d-1" data-bind="content.steps.0.note" data-claims="">What to do, in one line.</p></div>
+  <div class="step" data-id="step-2"><div class="link" data-id="link-2"></div><p class="disc heavy" data-id="n-2" data-index="content.steps.1">2</p><p class="t heavy" data-id="t-2" data-bind="content.steps.1.label">Step 2</p><p class="d" data-id="d-2" data-bind="content.steps.1.note" data-claims="">What to do, in one line.</p></div>
+  <div class="step" data-id="step-3"><div class="link" data-id="link-3"></div><p class="disc heavy" data-id="n-3" data-index="content.steps.2">3</p><p class="t heavy" data-id="t-3" data-bind="content.steps.2.label">Step 3</p><p class="d" data-id="d-3" data-bind="content.steps.2.note" data-claims="">What to do, in one line.</p></div>
+</div>
+</section>
+</body></html>

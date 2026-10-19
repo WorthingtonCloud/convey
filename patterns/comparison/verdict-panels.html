@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Which side wins, and why</title>
+<!-- Variant comparison / verdict-panels (title-only). Two raised panels with the same criteria in the same order; the
+     side whose status is "pick" is the panel in the signal color; "pass" (the side that held up) in the data color. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.pair { position: absolute; left: var(--brand-margin-left); top: var(--top); width: var(--brand-content-width);
+  height: calc(var(--bottom) - var(--top)); display: flex; column-gap: 24px; }
+.side { flex: 1; background: var(--brand-raised); padding: 32px 36px; }
+.head { font-size: 36px; line-height: 40px; }
+.pts { margin-top: 24px; list-style-type: "–  "; padding-left: 28px; font-size: 22px; line-height: 29.33px; color: var(--brand-body); }
+.pts li + li { margin-top: 12px; }
+/* The pick in the signal color ("this is the thing"): data colors belong to the options and charts. */
+.is-pick { background: var(--brand-signal); }
+.is-pick .head, .is-pick .pts { color: var(--brand-on-signal); }
+/* A side that held up, against one that hasn't yet (proven / not yet): the data color, as scorecard's pass rows. The
+   signal color there read as a warning (Oct 19, 2026). */
+.is-pass { background: var(--brand-data-1); }
+.is-pass .head, .is-pass .pts { color: var(--brand-on-data-1); }
+</style>
+</head>
+<body><section class="slide" data-pattern="comparison" data-variant="verdict-panels" data-role="title-only">
+<h1 class="headline" data-id="headline" data-bind="headline" data-claims="">Which side wins, and the reason in one clause</h1>
+<div class="pair" data-id="pair">
+ <div class="side" data-id="left" data-class="content.left.status"><p class="head heavy" data-id="left-head" data-bind="content.left.head">Option A</p>
+  <ul class="pts" data-id="left-points" data-bind="content.left.points" data-claims=""><li>First point</li><li>Second point</li></ul></div>
+ <div class="side" data-id="right" data-class="content.right.status"><p class="head heavy" data-id="right-head" data-bind="content.right.head">Option B</p>
+  <ul class="pts" data-id="right-points" data-bind="content.right.points" data-claims=""><li>First point</li><li>Second point</li></ul></div>
+</div>
+</section>
+</body></html>

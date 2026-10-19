@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>The finding, stated plainly</title>
+<!-- Variant key-finding / evidence-panel (title-only). The finding is the headline; under it one raised panel with a
+     signal edge holds the number that proves it, large, beside the evidence. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.panel { position: absolute; left: var(--brand-margin-left); top: var(--top); width: var(--brand-content-width);
+  height: calc(var(--bottom) - var(--top) - 48px); background: var(--brand-raised); border-left: 8px solid var(--brand-signal);
+  display: flex; align-items: center; column-gap: 48px; padding: 0 48px 0 40px; }
+.value { flex: none; font-size: 120px; line-height: 124px; letter-spacing: -0.03em; }
+.side { flex: 1; }
+.kicker { color: var(--brand-signal-text); }
+.ev { margin-top: 12px; font-size: 28px; line-height: 36px; color: var(--brand-body); }
+</style>
+</head>
+<body><section class="slide" data-pattern="key-finding" data-variant="evidence-panel" data-role="title-only">
+<h1 class="headline" data-id="headline" data-bind="headline" data-claims="">The finding, stated so plainly it can be repeated</h1>
+<div class="panel" data-id="panel">
+ <p class="value heavy" data-id="value" data-bind="content.value" data-claims="">42%</p>
+ <div class="side" data-id="side"><p class="eyebrow kicker" data-id="kicker" data-bind="content.kicker">What it measures</p>
+  <p class="ev" data-id="evidence" data-bind="content.evidence" data-claims="">The single strongest piece of evidence, with what it is compared against.</p></div>
+</div>
+<p class="abs small" data-id="source" data-bind="content.source" data-claims="" style="left:var(--brand-margin-left);top:calc(var(--bottom) - 20px);width:var(--brand-content-width)">Source: where the number comes from, and when.</p>
+</section>
+</body></html>

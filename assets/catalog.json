@@ -1,0 +1,1246 @@
+{
+ "about": "The skill's picture vocabulary. Every file here is drawn for this skill, released MIT-0 with it, and copied from no icon library. Icons use only path, rect, circle and line, solid strokes and fills, no text and no gradients, so each one becomes a native, editable PowerPoint group. Color comes only from currentColor (set `color` on the icon) or var(--brand-*).",
+ "grid": 48,
+ "stroke": 3,
+ "min_size": 32,
+ "style": "Line: 3-unit round-capped, round-cornered strokes on a 48-unit grid, no fills. Drawn for 32 px and up; lint refuses a smaller icon.",
+ "groups": [
+  "people",
+  "time",
+  "money",
+  "data",
+  "risk",
+  "technology",
+  "work",
+  "ideas"
+ ],
+ "icons": [
+  {
+   "id": "person",
+   "file": "icons/person.svg",
+   "group": "people",
+   "concepts": [
+    "person",
+    "user",
+    "customer",
+    "employee",
+    "individual",
+    "owner",
+    "stakeholder",
+    "account",
+    "profile"
+   ]
+  },
+  {
+   "id": "team",
+   "file": "icons/team.svg",
+   "group": "people",
+   "concepts": [
+    "team",
+    "group",
+    "people",
+    "staff",
+    "audience",
+    "community",
+    "department",
+    "users",
+    "collaboration"
+   ]
+  },
+  {
+   "id": "person-add",
+   "file": "icons/person-add.svg",
+   "group": "people",
+   "concepts": [
+    "hire",
+    "add user",
+    "new member",
+    "onboarding",
+    "recruit",
+    "invite",
+    "headcount",
+    "sign up"
+   ]
+  },
+  {
+   "id": "handshake",
+   "file": "icons/handshake.svg",
+   "group": "people",
+   "concepts": [
+    "partnership",
+    "agreement",
+    "deal",
+    "contract signed",
+    "alliance",
+    "vendor",
+    "cooperation",
+    "trust",
+    "welcome"
+   ]
+  },
+  {
+   "id": "presentation",
+   "file": "icons/presentation.svg",
+   "group": "people",
+   "concepts": [
+    "presentation",
+    "briefing",
+    "training",
+    "report out",
+    "pitch",
+    "workshop",
+    "dashboard review",
+    "teaching"
+   ]
+  },
+  {
+   "id": "org-chart",
+   "file": "icons/org-chart.svg",
+   "group": "people",
+   "concepts": [
+    "organization",
+    "hierarchy",
+    "structure",
+    "reporting line",
+    "org chart",
+    "governance",
+    "ownership",
+    "roles"
+   ]
+  },
+  {
+   "id": "conversation",
+   "file": "icons/conversation.svg",
+   "group": "people",
+   "concepts": [
+    "conversation",
+    "discussion",
+    "feedback",
+    "interview",
+    "dialogue",
+    "chat",
+    "negotiation",
+    "consultation"
+   ]
+  },
+  {
+   "id": "speech",
+   "file": "icons/speech.svg",
+   "group": "people",
+   "concepts": [
+    "message",
+    "comment",
+    "quote",
+    "statement",
+    "note",
+    "announcement text",
+    "testimonial",
+    "opinion"
+   ]
+  },
+  {
+   "id": "clock",
+   "file": "icons/clock.svg",
+   "group": "time",
+   "concepts": [
+    "time",
+    "clock",
+    "duration",
+    "deadline",
+    "hours",
+    "wait",
+    "latency",
+    "schedule",
+    "speed"
+   ]
+  },
+  {
+   "id": "calendar",
+   "file": "icons/calendar.svg",
+   "group": "time",
+   "concepts": [
+    "calendar",
+    "date",
+    "schedule",
+    "plan",
+    "timeline",
+    "month",
+    "event",
+    "booking",
+    "quarter"
+   ]
+  },
+  {
+   "id": "hourglass",
+   "file": "icons/hourglass.svg",
+   "group": "time",
+   "concepts": [
+    "waiting",
+    "time running out",
+    "delay",
+    "pending",
+    "patience",
+    "expiry",
+    "countdown"
+   ]
+  },
+  {
+   "id": "stopwatch",
+   "file": "icons/stopwatch.svg",
+   "group": "time",
+   "concepts": [
+    "speed",
+    "fast",
+    "response time",
+    "timing",
+    "sprint",
+    "efficiency",
+    "cycle time",
+    "turnaround"
+   ]
+  },
+  {
+   "id": "history",
+   "file": "icons/history.svg",
+   "group": "time",
+   "concepts": [
+    "history",
+    "past",
+    "rollback",
+    "previous version",
+    "audit trail",
+    "undo",
+    "archive",
+    "before"
+   ]
+  },
+  {
+   "id": "money",
+   "file": "icons/money.svg",
+   "group": "money",
+   "concepts": [
+    "money",
+    "cost",
+    "price",
+    "budget",
+    "spend",
+    "cash",
+    "payment",
+    "revenue",
+    "savings",
+    "funding"
+   ]
+  },
+  {
+   "id": "coins",
+   "file": "icons/coins.svg",
+   "group": "money",
+   "concepts": [
+    "savings",
+    "reserves",
+    "capital",
+    "investment",
+    "accumulate",
+    "finances",
+    "piggy bank",
+    "treasury"
+   ]
+  },
+  {
+   "id": "wallet",
+   "file": "icons/wallet.svg",
+   "group": "money",
+   "concepts": [
+    "wallet",
+    "payments",
+    "consumer spending",
+    "personal finance",
+    "balance",
+    "purse"
+   ]
+  },
+  {
+   "id": "price-tag",
+   "file": "icons/price-tag.svg",
+   "group": "money",
+   "concepts": [
+    "price",
+    "pricing",
+    "discount",
+    "sale",
+    "tag",
+    "label",
+    "offer",
+    "value",
+    "sku"
+   ]
+  },
+  {
+   "id": "receipt",
+   "file": "icons/receipt.svg",
+   "group": "money",
+   "concepts": [
+    "receipt",
+    "invoice",
+    "bill",
+    "expense",
+    "transaction",
+    "purchase",
+    "statement",
+    "charge"
+   ]
+  },
+  {
+   "id": "bank",
+   "file": "icons/bank.svg",
+   "group": "money",
+   "concepts": [
+    "bank",
+    "finance",
+    "institution",
+    "government",
+    "public sector",
+    "legal",
+    "treasury",
+    "headquarters"
+   ]
+  },
+  {
+   "id": "credit-card",
+   "file": "icons/credit-card.svg",
+   "group": "money",
+   "concepts": [
+    "card",
+    "payment",
+    "checkout",
+    "billing",
+    "subscription",
+    "credit",
+    "charge"
+   ]
+  },
+  {
+   "id": "growth",
+   "file": "icons/growth.svg",
+   "group": "data",
+   "concepts": [
+    "growth",
+    "increase",
+    "trend",
+    "improvement",
+    "gain",
+    "rising",
+    "performance",
+    "progress",
+    "upside"
+   ]
+  },
+  {
+   "id": "decline",
+   "file": "icons/decline.svg",
+   "group": "data",
+   "concepts": [
+    "decline",
+    "decrease",
+    "drop",
+    "loss",
+    "falling",
+    "downturn",
+    "churn",
+    "reduction",
+    "downside"
+   ]
+  },
+  {
+   "id": "bar-chart",
+   "file": "icons/bar-chart.svg",
+   "group": "data",
+   "concepts": [
+    "chart",
+    "data",
+    "metrics",
+    "comparison",
+    "statistics",
+    "analytics",
+    "results",
+    "kpi",
+    "report"
+   ]
+  },
+  {
+   "id": "pie-chart",
+   "file": "icons/pie-chart.svg",
+   "group": "data",
+   "concepts": [
+    "share",
+    "proportion",
+    "breakdown",
+    "allocation",
+    "segment",
+    "market share",
+    "composition",
+    "split"
+   ]
+  },
+  {
+   "id": "target",
+   "file": "icons/target.svg",
+   "group": "data",
+   "concepts": [
+    "target",
+    "goal",
+    "objective",
+    "aim",
+    "accuracy",
+    "focus",
+    "okr",
+    "outcome",
+    "bullseye"
+   ]
+  },
+  {
+   "id": "gauge",
+   "file": "icons/gauge.svg",
+   "group": "data",
+   "concepts": [
+    "performance",
+    "capacity",
+    "utilization",
+    "level",
+    "measure",
+    "score",
+    "health",
+    "dashboard",
+    "speed"
+   ]
+  },
+  {
+   "id": "balance",
+   "file": "icons/balance.svg",
+   "group": "data",
+   "concepts": [
+    "balance",
+    "fairness",
+    "trade-off",
+    "compare",
+    "weigh",
+    "legal",
+    "compliance",
+    "justice",
+    "judgment"
+   ]
+  },
+  {
+   "id": "funnel",
+   "file": "icons/funnel.svg",
+   "group": "data",
+   "concepts": [
+    "funnel",
+    "conversion",
+    "pipeline",
+    "filter",
+    "narrowing",
+    "sales stages",
+    "leads",
+    "triage"
+   ]
+  },
+  {
+   "id": "table",
+   "file": "icons/table.svg",
+   "group": "data",
+   "concepts": [
+    "table",
+    "spreadsheet",
+    "grid",
+    "data set",
+    "matrix",
+    "list",
+    "ledger",
+    "records"
+   ]
+  },
+  {
+   "id": "shield",
+   "file": "icons/shield.svg",
+   "group": "risk",
+   "concepts": [
+    "security",
+    "protection",
+    "safety",
+    "compliance",
+    "trust",
+    "defense",
+    "secure",
+    "guarantee",
+    "verified"
+   ]
+  },
+  {
+   "id": "warning",
+   "file": "icons/warning.svg",
+   "group": "risk",
+   "concepts": [
+    "warning",
+    "risk",
+    "caution",
+    "alert",
+    "hazard",
+    "issue",
+    "danger",
+    "attention",
+    "problem"
+   ]
+  },
+  {
+   "id": "check-circle",
+   "file": "icons/check-circle.svg",
+   "group": "risk",
+   "concepts": [
+    "check",
+    "done",
+    "approved",
+    "success",
+    "complete",
+    "yes",
+    "pass",
+    "correct",
+    "verified"
+   ]
+  },
+  {
+   "id": "cross-circle",
+   "file": "icons/cross-circle.svg",
+   "group": "risk",
+   "concepts": [
+    "no",
+    "rejected",
+    "failed",
+    "error",
+    "cancel",
+    "wrong",
+    "blocked",
+    "stop",
+    "decline"
+   ]
+  },
+  {
+   "id": "info",
+   "file": "icons/info.svg",
+   "group": "risk",
+   "concepts": [
+    "information",
+    "note",
+    "details",
+    "about",
+    "help",
+    "context",
+    "fyi",
+    "explanation"
+   ]
+  },
+  {
+   "id": "question",
+   "file": "icons/question.svg",
+   "group": "risk",
+   "concepts": [
+    "question",
+    "unknown",
+    "faq",
+    "help",
+    "uncertainty",
+    "ask",
+    "open issue",
+    "why"
+   ]
+  },
+  {
+   "id": "lock",
+   "file": "icons/lock.svg",
+   "group": "risk",
+   "concepts": [
+    "locked",
+    "private",
+    "secure",
+    "confidential",
+    "restricted",
+    "access control",
+    "encryption",
+    "closed"
+   ]
+  },
+  {
+   "id": "unlock",
+   "file": "icons/unlock.svg",
+   "group": "risk",
+   "concepts": [
+    "unlocked",
+    "open",
+    "access",
+    "unblock",
+    "released",
+    "available",
+    "permission granted"
+   ]
+  },
+  {
+   "id": "key",
+   "file": "icons/key.svg",
+   "group": "risk",
+   "concepts": [
+    "key",
+    "access",
+    "credential",
+    "password",
+    "solution",
+    "key factor",
+    "unlock",
+    "login"
+   ]
+  },
+  {
+   "id": "eye",
+   "file": "icons/eye.svg",
+   "group": "risk",
+   "concepts": [
+    "visibility",
+    "view",
+    "monitor",
+    "watch",
+    "transparency",
+    "insight",
+    "observe",
+    "review",
+    "oversight"
+   ]
+  },
+  {
+   "id": "flag",
+   "file": "icons/flag.svg",
+   "group": "risk",
+   "concepts": [
+    "milestone",
+    "flag",
+    "goal reached",
+    "priority",
+    "marker",
+    "report",
+    "issue raised",
+    "finish"
+   ]
+  },
+  {
+   "id": "fire",
+   "file": "icons/fire.svg",
+   "group": "risk",
+   "concepts": [
+    "incident",
+    "urgent",
+    "crisis",
+    "outage",
+    "hot",
+    "burning issue",
+    "emergency",
+    "firefighting"
+   ]
+  },
+  {
+   "id": "bug",
+   "file": "icons/bug.svg",
+   "group": "risk",
+   "concepts": [
+    "bug",
+    "defect",
+    "error",
+    "glitch",
+    "software problem",
+    "malware",
+    "fault",
+    "testing"
+   ]
+  },
+  {
+   "id": "cloud",
+   "file": "icons/cloud.svg",
+   "group": "technology",
+   "concepts": [
+    "cloud",
+    "hosted",
+    "online",
+    "internet",
+    "service",
+    "saas",
+    "remote",
+    "platform"
+   ]
+  },
+  {
+   "id": "server",
+   "file": "icons/server.svg",
+   "group": "technology",
+   "concepts": [
+    "server",
+    "infrastructure",
+    "data center",
+    "hosting",
+    "backend",
+    "hardware",
+    "rack",
+    "on-premises"
+   ]
+  },
+  {
+   "id": "database",
+   "file": "icons/database.svg",
+   "group": "technology",
+   "concepts": [
+    "database",
+    "data",
+    "storage",
+    "warehouse",
+    "records",
+    "repository",
+    "sql",
+    "data store"
+   ]
+  },
+  {
+   "id": "laptop",
+   "file": "icons/laptop.svg",
+   "group": "technology",
+   "concepts": [
+    "laptop",
+    "computer",
+    "device",
+    "workstation",
+    "end user",
+    "desktop",
+    "it",
+    "remote work"
+   ]
+  },
+  {
+   "id": "phone",
+   "file": "icons/phone.svg",
+   "group": "technology",
+   "concepts": [
+    "phone",
+    "mobile",
+    "app",
+    "smartphone",
+    "device",
+    "sms",
+    "call",
+    "on the go"
+   ]
+  },
+  {
+   "id": "network",
+   "file": "icons/network.svg",
+   "group": "technology",
+   "concepts": [
+    "network",
+    "connections",
+    "nodes",
+    "ecosystem",
+    "relationships",
+    "graph",
+    "integration",
+    "distributed"
+   ]
+  },
+  {
+   "id": "code",
+   "file": "icons/code.svg",
+   "group": "technology",
+   "concepts": [
+    "code",
+    "software",
+    "developer",
+    "programming",
+    "script",
+    "engineering",
+    "api",
+    "automation"
+   ]
+  },
+  {
+   "id": "gear",
+   "file": "icons/gear.svg",
+   "group": "technology",
+   "concepts": [
+    "settings",
+    "configuration",
+    "process",
+    "operations",
+    "engineering",
+    "mechanism",
+    "automation",
+    "maintenance"
+   ]
+  },
+  {
+   "id": "plug",
+   "file": "icons/plug.svg",
+   "group": "technology",
+   "concepts": [
+    "integration",
+    "connect",
+    "plug-in",
+    "power",
+    "api",
+    "adapter",
+    "energy",
+    "connector"
+   ]
+  },
+  {
+   "id": "chip",
+   "file": "icons/chip.svg",
+   "group": "technology",
+   "concepts": [
+    "processor",
+    "hardware",
+    "ai",
+    "compute",
+    "chip",
+    "semiconductor",
+    "technology",
+    "model"
+   ]
+  },
+  {
+   "id": "wifi",
+   "file": "icons/wifi.svg",
+   "group": "technology",
+   "concepts": [
+    "wireless",
+    "connectivity",
+    "internet",
+    "signal",
+    "network access",
+    "online",
+    "broadcast"
+   ]
+  },
+  {
+   "id": "globe",
+   "file": "icons/globe.svg",
+   "group": "technology",
+   "concepts": [
+    "global",
+    "world",
+    "international",
+    "website",
+    "internet",
+    "worldwide",
+    "region",
+    "language"
+   ]
+  },
+  {
+   "id": "link",
+   "file": "icons/link.svg",
+   "group": "technology",
+   "concepts": [
+    "link",
+    "connection",
+    "dependency",
+    "url",
+    "chain",
+    "relationship",
+    "attach",
+    "integration"
+   ]
+  },
+  {
+   "id": "document",
+   "file": "icons/document.svg",
+   "group": "work",
+   "concepts": [
+    "document",
+    "report",
+    "file",
+    "policy",
+    "contract",
+    "paper",
+    "record",
+    "proposal",
+    "page"
+   ]
+  },
+  {
+   "id": "folder",
+   "file": "icons/folder.svg",
+   "group": "work",
+   "concepts": [
+    "folder",
+    "files",
+    "archive",
+    "project",
+    "directory",
+    "category",
+    "collection",
+    "case"
+   ]
+  },
+  {
+   "id": "clipboard",
+   "file": "icons/clipboard.svg",
+   "group": "work",
+   "concepts": [
+    "checklist",
+    "tasks",
+    "plan",
+    "requirements",
+    "audit",
+    "to-do",
+    "inspection",
+    "review list"
+   ]
+  },
+  {
+   "id": "briefcase",
+   "file": "icons/briefcase.svg",
+   "group": "work",
+   "concepts": [
+    "business",
+    "work",
+    "job",
+    "career",
+    "portfolio",
+    "professional",
+    "services",
+    "consulting"
+   ]
+  },
+  {
+   "id": "building",
+   "file": "icons/building.svg",
+   "group": "work",
+   "concepts": [
+    "office",
+    "company",
+    "headquarters",
+    "organization",
+    "enterprise",
+    "corporate",
+    "site",
+    "city"
+   ]
+  },
+  {
+   "id": "factory",
+   "file": "icons/factory.svg",
+   "group": "work",
+   "concepts": [
+    "factory",
+    "manufacturing",
+    "production",
+    "industry",
+    "plant",
+    "operations",
+    "supply"
+   ]
+  },
+  {
+   "id": "truck",
+   "file": "icons/truck.svg",
+   "group": "work",
+   "concepts": [
+    "delivery",
+    "shipping",
+    "logistics",
+    "transport",
+    "supply chain",
+    "distribution",
+    "fleet"
+   ]
+  },
+  {
+   "id": "package",
+   "file": "icons/package.svg",
+   "group": "work",
+   "concepts": [
+    "package",
+    "product",
+    "box",
+    "shipment",
+    "release",
+    "bundle",
+    "inventory",
+    "deliverable"
+   ]
+  },
+  {
+   "id": "cart",
+   "file": "icons/cart.svg",
+   "group": "work",
+   "concepts": [
+    "shopping",
+    "purchase",
+    "order",
+    "ecommerce",
+    "buy",
+    "retail",
+    "checkout",
+    "basket"
+   ]
+  },
+  {
+   "id": "store",
+   "file": "icons/store.svg",
+   "group": "work",
+   "concepts": [
+    "store",
+    "shop",
+    "retail",
+    "branch",
+    "storefront",
+    "marketplace",
+    "location",
+    "outlet"
+   ]
+  },
+  {
+   "id": "mail",
+   "file": "icons/mail.svg",
+   "group": "work",
+   "concepts": [
+    "email",
+    "mail",
+    "message",
+    "letter",
+    "newsletter",
+    "contact",
+    "inbox",
+    "send"
+   ]
+  },
+  {
+   "id": "inbox",
+   "file": "icons/inbox.svg",
+   "group": "work",
+   "concepts": [
+    "inbox",
+    "intake",
+    "requests",
+    "queue",
+    "incoming",
+    "tickets",
+    "backlog",
+    "triage"
+   ]
+  },
+  {
+   "id": "signpost",
+   "file": "icons/signpost.svg",
+   "group": "ideas",
+   "concepts": [
+    "decision",
+    "direction",
+    "choice",
+    "options",
+    "crossroads",
+    "strategy",
+    "roadmap",
+    "guidance"
+   ]
+  },
+  {
+   "id": "lightbulb",
+   "file": "icons/lightbulb.svg",
+   "group": "ideas",
+   "concepts": [
+    "idea",
+    "insight",
+    "innovation",
+    "solution",
+    "creativity",
+    "tip",
+    "learning",
+    "discovery"
+   ]
+  },
+  {
+   "id": "rocket",
+   "file": "icons/rocket.svg",
+   "group": "ideas",
+   "concepts": [
+    "launch",
+    "start",
+    "growth",
+    "startup",
+    "release",
+    "accelerate",
+    "go live",
+    "ambition"
+   ]
+  },
+  {
+   "id": "search",
+   "file": "icons/search.svg",
+   "group": "ideas",
+   "concepts": [
+    "search",
+    "research",
+    "find",
+    "investigate",
+    "discovery",
+    "analysis",
+    "audit",
+    "look up"
+   ]
+  },
+  {
+   "id": "sliders",
+   "file": "icons/sliders.svg",
+   "group": "ideas",
+   "concepts": [
+    "settings",
+    "options",
+    "adjust",
+    "tune",
+    "filter",
+    "controls",
+    "preferences",
+    "customize"
+   ]
+  },
+  {
+   "id": "cycle",
+   "file": "icons/cycle.svg",
+   "group": "ideas",
+   "concepts": [
+    "cycle",
+    "refresh",
+    "iterate",
+    "recurring",
+    "renewal",
+    "continuous improvement",
+    "loop",
+    "sync"
+   ]
+  },
+  {
+   "id": "split",
+   "file": "icons/split.svg",
+   "group": "ideas",
+   "concepts": [
+    "split",
+    "branch",
+    "divide",
+    "options",
+    "fork",
+    "diverge",
+    "alternatives",
+    "segmentation"
+   ]
+  },
+  {
+   "id": "merge",
+   "file": "icons/merge.svg",
+   "group": "ideas",
+   "concepts": [
+    "merge",
+    "combine",
+    "consolidate",
+    "converge",
+    "join",
+    "integration",
+    "unify",
+    "acquisition"
+   ]
+  },
+  {
+   "id": "layers",
+   "file": "icons/layers.svg",
+   "group": "ideas",
+   "concepts": [
+    "layers",
+    "stack",
+    "levels",
+    "architecture",
+    "tiers",
+    "platform",
+    "depth",
+    "components"
+   ]
+  },
+  {
+   "id": "puzzle",
+   "file": "icons/puzzle.svg",
+   "group": "ideas",
+   "concepts": [
+    "fit",
+    "integration",
+    "missing piece",
+    "solution",
+    "compatibility",
+    "component",
+    "module",
+    "problem solving"
+   ]
+  },
+  {
+   "id": "trophy",
+   "file": "icons/trophy.svg",
+   "group": "ideas",
+   "concepts": [
+    "winner",
+    "award",
+    "achievement",
+    "success",
+    "best",
+    "competition",
+    "recognition",
+    "champion"
+   ]
+  },
+  {
+   "id": "megaphone",
+   "file": "icons/megaphone.svg",
+   "group": "ideas",
+   "concepts": [
+    "announcement",
+    "marketing",
+    "campaign",
+    "communication",
+    "launch news",
+    "promotion",
+    "broadcast"
+   ]
+  },
+  {
+   "id": "bell",
+   "file": "icons/bell.svg",
+   "group": "ideas",
+   "concepts": [
+    "notification",
+    "alert",
+    "reminder",
+    "alarm",
+    "update",
+    "ping",
+    "subscribe"
+   ]
+  },
+  {
+   "id": "edit",
+   "file": "icons/edit.svg",
+   "group": "work",
+   "concepts": [
+    "edit",
+    "pencil",
+    "write",
+    "typing",
+    "fix",
+    "revise",
+    "correction",
+    "draft",
+    "change",
+    "annotate"
+   ]
+  }
+ ]
+}

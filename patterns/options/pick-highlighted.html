@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Which option comes out ahead</title>
+<!-- Variant options / pick-highlighted (title-only). Two to four cards, each with one value that decides it (value, five
+     characters or so) and what it measures; the card with status "pick" is filled in the data color, the rest stay
+     raised with an edge in their own data color. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.cards { position: absolute; left: var(--brand-margin-left); top: var(--top); width: var(--brand-content-width);
+  height: calc(var(--bottom) - var(--top) - 40px); display: flex; column-gap: 16px; }
+.opt { flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 24px 24px 28px;
+  background: var(--brand-raised); border-top: 6px solid var(--c); }
+.top { display: flex; align-items: center; column-gap: 12px; color: var(--c); }
+.name { font-size: 32px; line-height: 36px; }
+.val { font-size: 56px; line-height: 60px; letter-spacing: -0.02em; }
+.txt { margin-top: 8px; font-size: 18px; line-height: 24px; color: var(--brand-body); }
+.is-pick { background: var(--brand-data-1); border-top-color: var(--brand-data-1); }
+.is-pick .top, .is-pick .name, .is-pick .val, .is-pick .txt { color: var(--brand-on-data-1); }
+</style>
+</head>
+<body><section class="slide" data-pattern="options" data-variant="pick-highlighted" data-role="title-only">
+<h1 class="headline" data-id="headline" data-bind="headline" data-claims="">Which option comes out ahead, and by what measure</h1>
+<div class="cards" data-id="options">
+  <div class="opt" data-id="opt-1" data-class="content.items.0.status" style="--c:var(--brand-data-1)"><div class="top" data-id="opt-1-top"><svg width="40" height="40" data-icon-bind="content.items.0.icon" data-id="icon-1"></svg><p class="name heavy" data-id="name-1" data-bind="content.items.0.head">Option 1</p></div><div data-id="opt-1-fig"><p class="val heavy" data-id="val-1" data-bind="content.items.0.value" data-claims="">$40K</p><p class="txt" data-id="txt-1" data-bind="content.items.0.text" data-claims="">What the value measures</p></div></div>
+  <div class="opt" data-id="opt-2" data-class="content.items.1.status" style="--c:var(--brand-data-2)"><div class="top" data-id="opt-2-top"><svg width="40" height="40" data-icon-bind="content.items.1.icon" data-id="icon-2"></svg><p class="name heavy" data-id="name-2" data-bind="content.items.1.head">Option 2</p></div><div data-id="opt-2-fig"><p class="val heavy" data-id="val-2" data-bind="content.items.1.value" data-claims="">$40K</p><p class="txt" data-id="txt-2" data-bind="content.items.1.text" data-claims="">What the value measures</p></div></div>
+  <div class="opt" data-id="opt-3" data-class="content.items.2.status" style="--c:var(--brand-data-3)"><div class="top" data-id="opt-3-top"><svg width="40" height="40" data-icon-bind="content.items.2.icon" data-id="icon-3"></svg><p class="name heavy" data-id="name-3" data-bind="content.items.2.head">Option 3</p></div><div data-id="opt-3-fig"><p class="val heavy" data-id="val-3" data-bind="content.items.2.value" data-claims="">$40K</p><p class="txt" data-id="txt-3" data-bind="content.items.2.text" data-claims="">What the value measures</p></div></div>
+  <div class="opt" data-id="opt-4" data-class="content.items.3.status" style="--c:var(--brand-data-4)"><div class="top" data-id="opt-4-top"><svg width="40" height="40" data-icon-bind="content.items.3.icon" data-id="icon-4"></svg><p class="name heavy" data-id="name-4" data-bind="content.items.3.head">Option 4</p></div><div data-id="opt-4-fig"><p class="val heavy" data-id="val-4" data-bind="content.items.3.value" data-claims="">$40K</p><p class="txt" data-id="txt-4" data-bind="content.items.3.text" data-claims="">What the value measures</p></div></div>
+</div>
+<p class="abs small" data-id="source" data-bind="content.source" data-claims="" style="left:var(--brand-margin-left);top:calc(var(--bottom) - 20px);width:var(--brand-content-width)">Source: where the values come from.</p>
+</section>
+</body></html>

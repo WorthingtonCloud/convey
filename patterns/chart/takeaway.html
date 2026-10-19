@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>The headline states what the chart shows</title>
+<!-- Variant chart / takeaway (title-only). The chart takes the left two thirds with a value on every bar; a raised panel
+     on the right says what to take from it, in a sentence. The storyboard's chart brings the data. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.fig { position: absolute; left: var(--brand-margin-left); top: var(--top); width: calc(var(--brand-content-width) * 0.62);
+  height: calc(var(--bottom) - var(--top) - 40px);
+  font-family: var(--brand-font-body); font-weight: var(--brand-weight-body); color: var(--brand-body); --chart-grid: var(--brand-rule); }
+.panel { position: absolute; left: calc(var(--brand-margin-left) + var(--brand-content-width) * 0.62 + 40px); top: var(--top);
+  width: calc(var(--brand-content-width) * 0.38 - 40px); height: calc(var(--bottom) - var(--top) - 40px);
+  background: var(--brand-raised); padding: 32px 28px; display: flex; flex-direction: column; justify-content: center; }
+.kicker { color: var(--brand-signal-text); }
+.take { margin-top: 16px; font-size: 28px; line-height: 36px; }
+.cav { margin-top: 20px; font-size: 18px; line-height: 24px; color: var(--brand-body); }
+</style>
+</head>
+<body><section class="slide" data-pattern="chart" data-variant="takeaway" data-role="title-only">
+<h1 class="headline" data-id="headline" data-bind="headline" data-claims="">The headline states what the chart shows</h1>
+<figure class="fig" data-id="chart" data-bind="content.chart" data-claims="" data-chart='{"type": "column", "categories": ["A", "B", "C"], "series": [{"name": "Share", "values": [30, 50, 40], "color": "var(--brand-data-1)"}], "axis": {"min": 0, "max": 60, "step": 20, "format": "{v}%"}, "fontSize": 16, "gap": 50, "labels": true, "valueLabelColor": "var(--brand-body)"}'></figure>
+<div class="panel" data-id="panel"><p class="eyebrow kicker" data-id="kicker">The takeaway</p>
+ <p class="take heavy" data-id="takeaway" data-bind="content.takeaway" data-claims="">What to take from the chart, in one sentence.</p>
+ <p class="cav" data-id="caveat" data-bind="caveat">The qualification that must stay visible.</p></div>
+<p class="abs small" data-id="source" data-bind="content.source" data-claims="" style="left:var(--brand-margin-left);top:calc(var(--bottom) - 20px);width:var(--brand-content-width)">Source: where the data comes from, and when.</p>
+</section>
+<script src="chart.js"></script>
+</body></html>

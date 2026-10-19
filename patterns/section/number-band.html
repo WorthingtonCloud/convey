@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>The question this part answers</title>
+<!-- Variant section / number-band (full-bleed). A band of the signal color down the left holds the part number in the
+     ground color; the question and one line of what's coming sit centred on the open ground. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.band { left: 0; top: 0; width: 400px; height: 720px; background: var(--brand-signal); }
+.kicker { left: var(--bleed-left); top: 412px; width: 300px; color: var(--brand-on-signal); }
+.num { left: var(--bleed-left); top: 440px; width: 320px; font-size: 200px; line-height: 208px; color: var(--brand-on-signal); }
+.stack { position: absolute; left: 480px; top: 96px; width: 720px; height: 528px; display: flex; flex-direction: column; justify-content: center; }
+.say { font-size: 72px; line-height: 76px; }
+.sf { margin-top: 28px; width: 640px; font-size: 24px; line-height: 32px; color: var(--brand-body); }
+</style>
+</head>
+<body><section class="slide" data-pattern="section" data-variant="number-band" data-role="full-bleed">
+<div class="field" data-id="field"></div>
+<div class="abs band" data-id="band"></div>
+<p class="abs eyebrow kicker" data-id="kicker" data-bind="content.kicker">Part 1 of 3</p>
+<p class="abs heavy num" data-id="number" data-bind="content.number">01</p>
+<div class="stack" data-id="stack">
+ <h1 class="say heavy" data-id="title" data-bind="headline">The question this part answers</h1>
+ <p class="sf" data-id="standfirst" data-bind="content.standfirst" data-claims="">One line on why this part matters, and what the audience will know at its end.</p>
+</div>
+</section>
+</body></html>

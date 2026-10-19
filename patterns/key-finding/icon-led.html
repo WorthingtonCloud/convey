@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>The finding, stated plainly</title>
+<!-- Variant key-finding / icon-led (title-only). The finding is the headline; under it a large icon (content.icon, by
+     name from the skill's set) in a signal disc, and the evidence beside it at reading size. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.body { position: absolute; left: var(--brand-margin-left); top: var(--top); width: var(--brand-content-width);
+  height: calc(var(--bottom) - var(--top) - 48px); display: flex; align-items: center; column-gap: 56px; }
+.disc { flex: none; width: 208px; height: 208px; border-radius: 50%; background: var(--brand-signal); color: var(--brand-on-signal);
+  display: flex; align-items: center; justify-content: center; }
+.side { flex: 1; }
+.kicker { color: var(--brand-ink); }
+.ev { margin-top: 14px; font-size: 32px; line-height: 40px; color: var(--brand-body); }
+</style>
+</head>
+<body><section class="slide" data-pattern="key-finding" data-variant="icon-led" data-role="title-only">
+<h1 class="headline" data-id="headline" data-bind="headline" data-claims="">The finding, stated so plainly it can be repeated</h1>
+<div class="body" data-id="body">
+ <div class="disc" data-id="disc"><svg width="112" height="112" data-icon-bind="content.icon" data-id="icon"></svg></div>
+ <div class="side" data-id="side"><p class="eyebrow kicker" data-id="kicker" data-bind="content.kicker">What it's about</p>
+  <p class="ev" data-id="evidence" data-bind="content.evidence" data-claims="">The single strongest piece of evidence, with what it is compared against.</p></div>
+</div>
+<p class="abs small" data-id="source" data-bind="content.source" data-claims="" style="left:var(--brand-margin-left);top:calc(var(--bottom) - 20px);width:var(--brand-content-width)">Source: where it comes from, and when.</p>
+</section>
+</body></html>

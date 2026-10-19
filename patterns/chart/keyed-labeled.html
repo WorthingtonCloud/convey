@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>The headline states what the chart shows</title>
+<!-- Variant chart / keyed-labeled (title-only layout). The key on the plot's top edge (compose writes it from the
+     series names), every value on its bar, the qualification under the headline and the source at the foot. This
+     file's chart spec sets only the look (value labels, type size, bar gap); the storyboard's chart brings the data. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.fig { position: absolute; left: var(--brand-margin-left); width: var(--brand-content-width);
+  top: calc(var(--top) + 52px); height: calc(var(--bottom) - var(--top) - 88px);
+  font-family: var(--brand-font-body); font-weight: var(--brand-weight-body); color: var(--brand-body); --chart-grid: var(--brand-rule); }
+</style>
+</head>
+<body><section class="slide" data-pattern="chart" data-variant="keyed-labeled" data-role="title-only">
+<h1 class="headline" data-id="headline" data-bind="headline" data-claims="">The headline states what the chart shows</h1>
+<p class="abs quiet" data-id="caveat" data-bind="caveat" style="left:var(--brand-margin-left);top:var(--top);width:var(--brand-content-width);font-size:20px;line-height:28px">The qualification that must stay visible.</p>
+<figure class="fig" data-id="chart" data-bind="content.chart" data-claims="" data-chart='{"type": "column", "categories": ["A", "B", "C"], "series": [{"name": "First", "values": [30, 50, 40], "color": "var(--brand-data-1)"}, {"name": "Second", "values": [20, 35, 45], "color": "var(--brand-data-2)"}], "axis": {"min": 0, "max": 60, "step": 20, "format": "{v}"}, "fontSize": 16, "gap": 60, "labels": true, "valueLabelColor": "var(--brand-body)"}'></figure>
+<p class="abs small" data-id="source" data-bind="content.source" data-claims="" style="left:var(--brand-margin-left);top:calc(var(--bottom) - 20px);width:var(--brand-content-width)">Source: where the data comes from, and when.</p>
+</section>
+<script src="chart.js"></script>
+</body></html>

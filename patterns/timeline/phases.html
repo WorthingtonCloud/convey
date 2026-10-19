@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>The plan in phases</title>
+<!-- Variant timeline / phases (title-only). Three to five phases as bands in the data colors, end to end, each named
+     inside its band in the ground color; when and what happens sit under each. Equal widths: the order matters, not
+     the length (use a chart for durations). -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.row { position: absolute; left: var(--brand-margin-left); top: calc((var(--top) + var(--bottom) - 40px) / 2 - 130px);
+  width: var(--brand-content-width); display: flex; align-items: flex-start; column-gap: 6px; }
+.ph { flex: 1; }
+.band { height: 120px; display: flex; align-items: center; padding: 0 20px; }
+.bl { font-size: 28px; line-height: 32px; color: inherit; }
+.when { margin-top: 24px; padding-right: 12px; color: var(--brand-body); }
+.n { margin-top: 12px; padding-right: 12px; font-size: 20px; line-height: 28px; color: var(--brand-body); }
+</style>
+</head>
+<body><section class="slide" data-pattern="timeline" data-variant="phases" data-role="title-only">
+<h1 class="headline" data-id="headline" data-bind="headline" data-claims="">The plan in phases, said as where it ends</h1>
+<div class="row" data-id="phases">
+  <div class="ph" data-id="phase-1" data-class="content.milestones.0.status"><div class="band" data-id="band-1" style="background:var(--brand-data-1);color:var(--brand-on-data-1)"><p class="bl heavy" data-id="l-1" data-bind="content.milestones.0.label">Phase 1</p></div><p class="eyebrow when" data-id="when-1" data-bind="content.milestones.0.when">When</p><p class="n" data-id="note-1" data-bind="content.milestones.0.note" data-claims="">What happens in it, in one line.</p></div>
+  <div class="ph" data-id="phase-2" data-class="content.milestones.1.status"><div class="band" data-id="band-2" style="background:var(--brand-data-2);color:var(--brand-on-data-2)"><p class="bl heavy" data-id="l-2" data-bind="content.milestones.1.label">Phase 2</p></div><p class="eyebrow when" data-id="when-2" data-bind="content.milestones.1.when">When</p><p class="n" data-id="note-2" data-bind="content.milestones.1.note" data-claims="">What happens in it, in one line.</p></div>
+  <div class="ph" data-id="phase-3" data-class="content.milestones.2.status"><div class="band" data-id="band-3" style="background:var(--brand-data-3);color:var(--brand-on-data-3)"><p class="bl heavy" data-id="l-3" data-bind="content.milestones.2.label">Phase 3</p></div><p class="eyebrow when" data-id="when-3" data-bind="content.milestones.2.when">When</p><p class="n" data-id="note-3" data-bind="content.milestones.2.note" data-claims="">What happens in it, in one line.</p></div>
+  <div class="ph" data-id="phase-4" data-class="content.milestones.3.status"><div class="band" data-id="band-4" style="background:var(--brand-data-4);color:var(--brand-on-data-4)"><p class="bl heavy" data-id="l-4" data-bind="content.milestones.3.label">Phase 4</p></div>
+  <div class="ph" data-id="phase-5" data-class="content.milestones.4.status"><div class="band" data-id="band-5" style="background:var(--brand-data-5);color:var(--brand-on-data-5)"><p class="bl heavy" data-id="l-5" data-bind="content.milestones.4.label">Phase 5</p></div><p class="eyebrow when" data-id="when-4" data-bind="content.milestones.3.when">When</p><p class="n" data-id="note-4" data-bind="content.milestones.3.note" data-claims="">What happens in it, in one line.</p></div>
+</div>
+<p class="abs small" data-id="source" data-bind="content.source" data-claims="" style="left:var(--brand-margin-left);top:calc(var(--bottom) - 20px);width:var(--brand-content-width)">Source: where the plan comes from.</p>
+</section>
+</body></html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>The one number, and what it means</title>
+<!-- Variant giant-number / number-left (title-only layout). The number at display size, set at 1.04 times its size
+     (PowerPoint places big type exactly there), what it counts beside it, and the twist under a signal rule.
+     Four characters or fewer ("79%", "1.4×", "$83B"); longer values take number-top. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.hero { position: absolute; left: var(--brand-margin-left); top: var(--top); width: var(--brand-content-width);
+  height: calc(var(--bottom) - var(--top) - 40px); display: flex; align-items: center; column-gap: 56px; }
+/* The number takes a quarter of the content width, up to 288 px, on whole 4 px steps: at 288 px on a narrow template
+   (Madison's 836 px) the words beside it ran up into the headline (Oct 18, 2026 stress test). */
+.num { flex: none; font-size: round(down, min(288px, var(--brand-content-width) * 0.25), 4px);
+  line-height: round(nearest, min(300px, var(--brand-content-width) * 0.2604), 4px); letter-spacing: -0.04em; }
+.side { flex: 1; }
+.what { font-size: 32px; line-height: 40px; }
+.more { margin-top: 20px; color: var(--brand-body); }
+.turn { margin-top: 28px; padding-top: 20px; border-top: 4px solid var(--brand-signal); width: 100%; font-size: 24px; line-height: 32px; }
+</style>
+</head>
+<body><section class="slide" data-pattern="giant-number" data-variant="number-left" data-role="title-only">
+<h1 class="headline" data-id="headline" data-bind="headline" data-claims="">The headline says what the number means</h1>
+<div class="hero" data-id="hero">
+ <p class="num heavy" data-id="number" data-bind="content.value" data-claims="">42%</p>
+ <div class="side" data-id="side">
+  <p class="what heavy" data-id="label" data-bind="content.label">of what, counted how</p>
+  <p class="more" data-id="context" data-bind="content.evidence" data-claims="">The comparison that makes it big or small.</p>
+  <p class="turn heavy" data-id="turn" data-bind="content.turn" data-claims="">The twist: what the number doesn't settle.</p>
+ </div>
+</div>
+<p class="abs small" data-id="source" data-bind="content.source" data-claims="" style="left:var(--brand-margin-left);top:calc(var(--bottom) - 20px);width:var(--brand-content-width)">Where the number comes from, and when.</p>
+</section>
+</body></html>

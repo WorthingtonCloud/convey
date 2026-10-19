@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>What the points add up to</title>
+<!-- Variant executive-summary / numbered-columns (title-only). Two to four raised columns, each numbered large in the
+     signal color (compose writes the numbers), then its head and one line. The numbers are on fills the variant
+     painted, so they read on any template's background. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.cols { position: absolute; left: var(--brand-margin-left); top: var(--top); width: var(--brand-content-width);
+  height: calc(var(--bottom) - var(--top)); display: flex; column-gap: 16px; }
+.col { flex: 1; background: var(--brand-raised); padding: 28px 28px 32px; display: flex; flex-direction: column; }
+.num { font-size: 64px; line-height: 64px; color: var(--brand-signal); }
+.h { margin-top: auto; font-size: 30px; line-height: 36px; }
+.t { margin-top: 12px; font-size: 20px; line-height: 28px; color: var(--brand-body); }
+</style>
+</head>
+<body><section class="slide" data-pattern="executive-summary" data-variant="numbered-columns" data-role="title-only">
+<h1 class="headline" data-id="headline" data-bind="headline" data-claims="">What the points add up to, said as one sentence</h1>
+<div class="cols" data-id="items">
+ <div class="col" data-id="item-1"><p class="num heavy" data-id="n-1" data-index="content.items.0" data-pad="2">01</p><p class="h heavy" data-id="h-1" data-bind="content.items.0.head">First point</p><p class="t" data-id="t-1" data-bind="content.items.0.text" data-claims="">Its evidence, with its number.</p></div>
+ <div class="col" data-id="item-2"><p class="num heavy" data-id="n-2" data-index="content.items.1" data-pad="2">02</p><p class="h heavy" data-id="h-2" data-bind="content.items.1.head">Second point</p><p class="t" data-id="t-2" data-bind="content.items.1.text" data-claims="">Its evidence, with its number.</p></div>
+ <div class="col" data-id="item-3"><p class="num heavy" data-id="n-3" data-index="content.items.2" data-pad="2">03</p><p class="h heavy" data-id="h-3" data-bind="content.items.2.head">Third point</p><p class="t" data-id="t-3" data-bind="content.items.2.text" data-claims="">Its evidence, with its number.</p></div>
+</div>
+</section>
+</body></html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>How many of the claims held up</title>
+<!-- Variant scorecard / ledger (title-only layout). One row per claim: the verdict, the claim, the evidence. A row
+     whose status is "pass" is a band in the data color with ground-colored type; "fail" rows carry the signal color's
+     cross, "mixed" rows a dash. The ledger is one raised panel, so the colors sit on a fill the variant painted. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.rows { position: absolute; left: var(--brand-margin-left); top: var(--top); width: var(--brand-content-width);
+  height: calc(var(--bottom) - var(--top)); display: flex; flex-direction: column; background: var(--brand-raised); }
+.row { flex: 1; display: flex; align-items: center; column-gap: 24px; padding: 0 24px; }
+.row + .row { border-top: 1px solid var(--brand-rule); }
+.verdict { flex: 0 0 112px; display: flex; align-items: center; column-gap: 12px; color: var(--brand-ink); }
+.verdict svg { color: var(--brand-signal); }  /* the mark carries the color; a 16 px tag in it read 3.7:1 on a light panel */
+.claim { flex: 0 0 34%; font-size: 24px; line-height: 29.33px; }
+.ev { flex: 1; font-size: 18px; line-height: 24px; color: var(--brand-body); }
+.is-pass { background: var(--brand-data-1); }
+.is-pass .verdict, .is-pass .verdict svg, .is-pass .claim, .is-pass .ev { color: var(--brand-on-data-1); }
+.is-mixed .verdict, .is-mixed .verdict svg { color: var(--brand-muted); }
+</style>
+</head>
+<body><section class="slide" data-pattern="scorecard" data-variant="ledger" data-role="title-only">
+<h1 class="headline" data-id="headline" data-bind="headline" data-claims="">How many of the claims held up, said as a count</h1>
+<div class="rows" data-id="rows">
+ <div class="row" data-id="row-1" data-class="content.items.0.status">
+  <div class="verdict" data-id="verdict-1">
+   <svg width="32" height="32" data-when="content.items.0.status=fail" data-icon="cross-circle" data-id="icon-1" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><path d="M17 17l14 14M31 17L17 31"/></svg>
+   <svg width="32" height="32" data-when="content.items.0.status=pass" data-icon="check-circle" data-id="icon-1-pass" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><path d="M16 24l6 6 11-12"/></svg>
+   <svg width="32" height="32" data-when="content.items.0.status=mixed" data-icon="dash-circle" data-id="icon-1-mixed" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><path d="M16 24h16"/></svg>
+   <p class="eyebrow" data-id="tag-1" data-bind="content.items.0.verdict">Fail</p></div>
+  <p class="claim heavy" data-id="claim-1" data-bind="content.items.0.head">The claim, as people say it</p>
+  <p class="ev" data-id="ev-1" data-bind="content.items.0.text" data-claims="">The evidence that settles it, with its number.</p>
+ </div>
+ <div class="row" data-id="row-2" data-class="content.items.1.status">
+  <div class="verdict" data-id="verdict-2">
+   <svg width="32" height="32" data-when="content.items.1.status=fail" data-icon="cross-circle" data-id="icon-2" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><path d="M17 17l14 14M31 17L17 31"/></svg>
+   <svg width="32" height="32" data-when="content.items.1.status=pass" data-icon="check-circle" data-id="icon-2-pass" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><path d="M16 24l6 6 11-12"/></svg>
+   <svg width="32" height="32" data-when="content.items.1.status=mixed" data-icon="dash-circle" data-id="icon-2-mixed" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><path d="M16 24h16"/></svg>
+   <p class="eyebrow" data-id="tag-2" data-bind="content.items.1.verdict">Pass</p></div>
+  <p class="claim heavy" data-id="claim-2" data-bind="content.items.1.head">A second claim</p>
+  <p class="ev" data-id="ev-2" data-bind="content.items.1.text" data-claims="">Its evidence, with its number.</p>
+ </div>
+</div>
+</section>
+</body></html>

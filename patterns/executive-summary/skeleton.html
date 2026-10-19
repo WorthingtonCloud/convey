@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Executive summary</title>
+<!-- Pattern skeleton: executive-summary. Answers: What do I need to know if I read only this slide?
+     Brand variables only (tokens.css from the Brand Profile); never a color, font or size of its own.
+     data-bind ties each text to its storyboard field; replace the placeholder words, keep the structure. -->
+<link rel="stylesheet" href="tokens.css">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.slide { position: relative; width: 1280px; height: 720px; overflow: hidden; background: var(--brand-ground);
+  color: var(--brand-body); font-family: var(--brand-font-body); font-weight: var(--brand-weight-body);
+  font-size: var(--brand-text-size); line-height: var(--brand-text-line); font-kerning: none; }
+.abs { position: absolute; }
+.headline { position: absolute; left: var(--brand-title-left, var(--brand-margin-left)); top: var(--brand-margin-top); width: var(--brand-title-width, var(--brand-content-width));
+  font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink);
+  font-size: var(--brand-headline-size); line-height: var(--brand-headline-line); letter-spacing: var(--brand-title-tracking); }
+.body { position: absolute; left: var(--brand-margin-left); width: var(--brand-content-width);
+  top: calc(var(--brand-margin-top) + 2 * var(--brand-headline-line) + 40px);
+  bottom: calc(720px - var(--brand-margin-footer-top) + 24px); }
+.small { font-size: var(--brand-small-size); line-height: var(--brand-small-line); color: var(--brand-body); }
+.strong { font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink); }
+.rule { height: 2px; background: var(--brand-signal); }
+.cols { display: flex; gap: 32px; }
+.col { flex: 1; border-top: 2px solid var(--brand-rule); padding-top: 20px; }
+.col.lead { border-top-color: var(--brand-signal); }
+.col h2 { font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink);
+  font-size: var(--brand-text-size); line-height: var(--brand-text-line); margin-bottom: 12px; }
+</style></head>
+<body><section class="slide" data-pattern="executive-summary">
+<h1 class="headline" data-id="headline" data-bind="headline">The answer first: what the reader should conclude from all of this</h1>
+<div class="body cols" data-id="findings">
+  <div class="col lead" data-id="finding-1"><h2 data-id="finding-1-head" data-bind="content.items.0.head">First finding, said as a claim</h2>
+    <p data-id="finding-1-text" data-bind="content.items.0.text">The evidence behind it in two short sentences, with the number that proves it.</p></div>
+  <div class="col" data-id="finding-2"><h2 data-id="finding-2-head" data-bind="content.items.1.head">Second finding, said as a claim</h2>
+    <p data-id="finding-2-text" data-bind="content.items.1.text">The evidence behind it in two short sentences, with the number that proves it.</p></div>
+  <div class="col" data-id="finding-3"><h2 data-id="finding-3-head" data-bind="content.items.2.head">What we recommend</h2>
+    <p data-id="finding-3-text" data-bind="content.items.2.text">The decision asked for, its cost, and when it is needed.</p></div>
+</div>
+</section>
+</body></html>

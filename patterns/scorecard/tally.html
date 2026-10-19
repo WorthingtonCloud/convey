@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>How many of the claims held up</title>
+<!-- Variant scorecard / tally (title-only). The count first (content.tally: a value and what it counts) on a raised
+     panel, then the claims alone, one line each with its verdict icon: the live-talk version of the ledger. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.wrap { position: absolute; left: var(--brand-margin-left); top: var(--top); width: var(--brand-content-width);
+  height: calc(var(--bottom) - var(--top)); display: flex; column-gap: 40px; }
+.count { flex: 0 0 36%; background: var(--brand-raised); padding: 32px; display: flex; flex-direction: column; justify-content: center; }
+.tv { font-size: 104px; line-height: 108px; letter-spacing: -0.02em; color: var(--brand-signal); }
+.tl { margin-top: 12px; font-size: 26px; line-height: 32px; }
+.list { flex: 1; display: flex; flex-direction: column; }
+.row { flex: 1; display: flex; align-items: center; column-gap: 18px; border-top: 1px solid var(--brand-rule); }
+.verdict { flex: none; display: flex; color: var(--brand-ink); }
+.claim { font-size: 24px; line-height: 29.33px; }
+.is-pass .claim { color: var(--brand-ink); }
+.is-fail .claim { color: var(--brand-body); }
+</style>
+</head>
+<body><section class="slide" data-pattern="scorecard" data-variant="tally" data-role="title-only">
+<h1 class="headline" data-id="headline" data-bind="headline" data-claims="">How many of the claims held up, said as a count</h1>
+<div class="wrap" data-id="body">
+ <div class="count" data-id="count"><p class="tv heavy" data-id="tally" data-bind="content.tally.value" data-claims="">5 of 6</p><p class="tl heavy" data-id="tally-label" data-bind="content.tally.label">claims didn't hold up</p></div>
+ <div class="list" data-id="claims">
+  <div class="row" data-id="row-1" data-class="content.items.0.status"><div class="verdict" data-id="verdict-1"><svg width="32" height="32" data-when="content.items.0.status=fail" data-icon="cross-circle" data-id="icon-1" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><path d="M17 17l14 14M31 17L17 31"/></svg><svg width="32" height="32" data-when="content.items.0.status=pass" data-icon="check-circle" data-id="icon-1-pass" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><path d="M16 24l6 6 11-12"/></svg><svg width="32" height="32" data-when="content.items.0.status=mixed" data-icon="dash-circle" data-id="icon-1-mixed" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><path d="M16 24h16"/></svg></div><p class="claim heavy" data-id="claim-1" data-bind="content.items.0.head">The claim, as people say it</p></div>
+  <div class="row" data-id="row-2" data-class="content.items.1.status"><div class="verdict" data-id="verdict-2"><svg width="32" height="32" data-when="content.items.1.status=fail" data-icon="cross-circle" data-id="icon-2" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><path d="M17 17l14 14M31 17L17 31"/></svg><svg width="32" height="32" data-when="content.items.1.status=pass" data-icon="check-circle" data-id="icon-2-pass" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><path d="M16 24l6 6 11-12"/></svg><svg width="32" height="32" data-when="content.items.1.status=mixed" data-icon="dash-circle" data-id="icon-2-mixed" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><path d="M16 24h16"/></svg></div><p class="claim heavy" data-id="claim-2" data-bind="content.items.1.head">The claim, as people say it</p></div>
+  <div class="row" data-id="row-3" data-class="content.items.2.status"><div class="verdict" data-id="verdict-3"><svg width="32" height="32" data-when="content.items.2.status=fail" data-icon="cross-circle" data-id="icon-3" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><path d="M17 17l14 14M31 17L17 31"/></svg><svg width="32" height="32" data-when="content.items.2.status=pass" data-icon="check-circle" data-id="icon-3-pass" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><path d="M16 24l6 6 11-12"/></svg><svg width="32" height="32" data-when="content.items.2.status=mixed" data-icon="dash-circle" data-id="icon-3-mixed" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><path d="M16 24h16"/></svg></div><p class="claim heavy" data-id="claim-3" data-bind="content.items.2.head">The claim, as people say it</p></div>
+ </div>
+</div>
+</section>
+</body></html>

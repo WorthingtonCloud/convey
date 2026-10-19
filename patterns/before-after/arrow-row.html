@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>What changed between then and now</title>
+<!-- Variant before-after / arrow-row (title-only). One row read left to right: then, smaller; an arrow; now, at display
+     size. No panels, so it suits a template that wants its own background to show. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.row { position: absolute; left: var(--brand-margin-left); top: var(--top); width: var(--brand-content-width);
+  height: calc(var(--bottom) - var(--top) - 40px); display: flex; align-items: center; column-gap: 28px; }
+.then { flex: 0 0 auto; }
+.now { flex: 1; }
+.when { color: var(--brand-body); }
+.v1 { margin-top: 8px; font-size: 72px; line-height: 76px; letter-spacing: -0.03em; color: var(--brand-body); }
+.v2 { margin-top: 8px; font-size: 128px; line-height: 136px; letter-spacing: -0.03em; }
+.lbl { margin-top: 4px; font-size: 22px; line-height: 29.33px; color: var(--brand-body); }
+.arrow { flex: none; color: var(--brand-ink); }
+</style>
+</head>
+<body><section class="slide" data-pattern="before-after" data-variant="arrow-row" data-role="title-only">
+<h1 class="headline" data-id="headline" data-bind="headline" data-claims="">What changed between then and now, said as the change</h1>
+<div class="row" data-id="row">
+ <div class="then" data-id="then"><p class="eyebrow when" data-id="then-when" data-bind="content.before.when">Before</p><p class="v1 heavy" data-id="then-value" data-bind="content.before.value" data-claims="">30%</p><p class="lbl" data-id="then-label" data-bind="content.before.label">what the value counts</p></div>
+ <svg class="arrow" data-id="arrow" width="64" height="32" viewBox="0 0 96 48"><path d="M0 20h72V6l24 18-24 18V28H0z" fill="currentColor"/></svg>
+ <div class="now" data-id="now"><p class="eyebrow when" data-id="now-when" data-bind="content.after.when">After</p><p class="v2 heavy" data-id="now-value" data-bind="content.after.value" data-claims="">45%</p><p class="lbl" data-id="now-label" data-bind="content.after.label">what the value counts</p></div>
+</div>
+<p class="abs small" data-id="source" data-bind="content.source" data-claims="" style="left:var(--brand-margin-left);top:calc(var(--bottom) - 20px);width:var(--brand-content-width)">Source: where both values come from.</p>
+</section>
+</body></html>

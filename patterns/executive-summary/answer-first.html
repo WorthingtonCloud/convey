@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>The answer, then why</title>
+<!-- Variant executive-summary / answer-first (title-only). The answer on a panel in the data color, in the ground
+     color, left; the two to four reasons stacked beside it under hairlines. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.wrap { position: absolute; left: var(--brand-margin-left); top: var(--top); width: var(--brand-content-width);
+  height: calc(var(--bottom) - var(--top)); display: flex; column-gap: 40px; }
+.answer { flex: 0 0 38%; background: var(--brand-data-1); padding: 32px 32px 36px; display: flex; align-items: flex-end; }
+.a { font-size: 36px; line-height: 40px; color: var(--brand-on-data-1); }
+.items { flex: 1; display: flex; flex-direction: column; }
+.item { flex: 1; border-top: 1px solid var(--brand-rule); padding-top: 16px; }
+.h { font-size: 24px; line-height: 29.33px; }
+.t { margin-top: 6px; font-size: 18px; line-height: 24px; color: var(--brand-body); }
+</style>
+</head>
+<body><section class="slide" data-pattern="executive-summary" data-variant="answer-first" data-role="title-only">
+<h1 class="headline" data-id="headline" data-bind="headline" data-claims="">The governing message, said as the answer</h1>
+<div class="wrap" data-id="body">
+ <div class="answer" data-id="answer-panel"><p class="a heavy" data-id="answer" data-bind="content.answer" data-claims="">The answer, in a dozen words or fewer.</p></div>
+ <div class="items" data-id="items">
+  <div class="item" data-id="item-1"><p class="h heavy" data-id="h-1" data-bind="content.items.0.head">First reason</p><p class="t" data-id="t-1" data-bind="content.items.0.text" data-claims="">Its evidence, with its number.</p></div>
+  <div class="item" data-id="item-2"><p class="h heavy" data-id="h-2" data-bind="content.items.1.head">Second reason</p><p class="t" data-id="t-2" data-bind="content.items.1.text" data-claims="">Its evidence, with its number.</p></div>
+  <div class="item" data-id="item-3"><p class="h heavy" data-id="h-3" data-bind="content.items.2.head">Third reason</p><p class="t" data-id="t-3" data-bind="content.items.2.text" data-claims="">Its evidence, with its number.</p></div>
+ </div>
+</div>
+</section>
+</body></html>

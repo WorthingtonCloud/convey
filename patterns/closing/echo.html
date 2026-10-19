@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>The deck's message, once more</title>
+<!-- Variant closing / echo (full-bleed). The opening photo again, full bleed, under a wash in the ground color that
+     rises from the foot; the closing line, one sentence under it and where to go sit on the wash. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.photo { left: 0; top: 0; width: 1280px; height: 720px; object-fit: cover; object-position: 50% 50%; }
+.wash { left: 0; top: 0; width: 1280px; height: 720px;
+  background: linear-gradient(0deg, var(--brand-field, var(--brand-ground)) 0%, var(--brand-field, var(--brand-ground)) 45%, transparent 90%); }
+.stack { position: absolute; left: var(--bleed-left); top: 300px; width: var(--bleed-width); height: calc(352px - var(--caveat-row, 0px));
+  display: flex; flex-direction: column; justify-content: flex-end; }
+.say { font-size: 56px; line-height: 60px; }
+.sub { margin-top: 20px; max-width: 860px; font-size: 22px; line-height: 29.33px; color: var(--brand-body); }
+.meta { margin-top: 24px; font-size: 20px; line-height: 24px; color: var(--brand-signal-text); }
+</style>
+</head>
+<body><section class="slide" data-pattern="closing" data-variant="echo" data-role="full-bleed">
+<div class="field" data-id="field"></div>
+<img class="abs photo" data-id="photo" data-bind="content.image" alt="" src="photo.jpg">
+<div class="abs wash" data-id="wash"></div>
+<div class="stack" data-id="stack">
+ <h1 class="say heavy" data-id="title" data-bind="headline" data-claims="">The deck's message, once more, as the last thing said</h1>
+ <p class="sub" data-id="subtitle" data-bind="content.subtitle" data-claims="">One sentence on what to do with it.</p>
+ <p class="meta heavy" data-id="meta" data-bind="content.meta">Where to go: a link, or who to call</p>
+</div>
+</section>
+</body></html>

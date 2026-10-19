@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>The numbers say one thing</title>
+<!-- Variant kpi-row / tiles (title-only). Two to four raised tiles, the value at the top, what it counts and against
+     what at the foot. An item with status "lead" is the tile in the data color, with ground-colored type. Values of
+     five characters or fewer ("2.1×", "4,677"). -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.tiles { position: absolute; left: var(--brand-margin-left); top: var(--top); width: var(--brand-content-width);
+  height: calc(var(--bottom) - var(--top) - 24px); display: flex; column-gap: 16px; }
+.tile { flex: 1; background: var(--brand-raised); padding: 28px 24px 28px; display: flex; flex-direction: column; justify-content: space-between; }
+.v { font-size: 64px; line-height: 68px; letter-spacing: -0.02em; }
+.l { font-size: 22px; line-height: 28px; }
+.n { margin-top: 8px; font-size: 18px; line-height: 24px; color: var(--brand-body); }
+/* The lead tile in the signal color: data colors belong to the options and charts. */
+.is-lead { background: var(--brand-signal); }
+.is-lead .v, .is-lead .l, .is-lead .n { color: var(--brand-on-signal); }
+</style>
+</head>
+<body><section class="slide" data-pattern="kpi-row" data-variant="tiles" data-role="title-only">
+<h1 class="headline" data-id="headline" data-bind="headline" data-claims="">The numbers say one thing: name it here</h1>
+<div class="tiles" data-id="metrics">
+  <div class="tile" data-id="metric-1" data-class="content.items.0.status"><p class="v heavy" data-id="v-1" data-bind="content.items.0.value" data-claims="">42%</p><div data-id="lbl-1"><p class="l heavy" data-id="l-1" data-bind="content.items.0.label">Metric name</p><p class="n" data-id="note-1" data-bind="content.items.0.note" data-claims="">Against what</p></div></div>
+  <div class="tile" data-id="metric-2" data-class="content.items.1.status"><p class="v heavy" data-id="v-2" data-bind="content.items.1.value" data-claims="">3.1×</p><div data-id="lbl-2"><p class="l heavy" data-id="l-2" data-bind="content.items.1.label">Metric name</p><p class="n" data-id="note-2" data-bind="content.items.1.note" data-claims="">Against what</p></div></div>
+  <div class="tile" data-id="metric-3" data-class="content.items.2.status"><p class="v heavy" data-id="v-3" data-bind="content.items.2.value" data-claims="">12</p><div data-id="lbl-3"><p class="l heavy" data-id="l-3" data-bind="content.items.2.label">Metric name</p><p class="n" data-id="note-3" data-bind="content.items.2.note" data-claims="">Against what</p></div></div>
+</div>
+</section>
+</body></html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>The options, told apart by what differs</title>
+<!-- Variant options / cards-on-baseline (title-only layout). One card per option (two to four), each in the data color
+     it keeps on every chart in the deck, with the two facts that tell the options apart. The baseline isn't a peer:
+     it is the floor under all of them, a full-width bar every card stands on. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.opts { position: absolute; left: var(--brand-margin-left); top: var(--top); width: var(--brand-content-width);
+  height: calc(var(--bottom) - var(--top)); display: flex; flex-direction: column; row-gap: 16px; }
+.cards { flex: 1; display: flex; column-gap: 16px; }
+.opt { flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 20px 22px 22px;
+  background: var(--brand-raised); border-top: 4px solid var(--c); }
+.top { display: flex; align-items: center; column-gap: 12px; color: var(--c); }
+.name { font-size: 32px; line-height: 36px; }
+.k { margin-top: 14px; font-size: 16px; line-height: 20px; letter-spacing: 0.08em; color: var(--brand-muted); }
+.v { margin-top: 4px; font-size: 18px; line-height: 24px; color: var(--brand-body); }
+.base { flex: 0 0 auto; display: flex; align-items: center; column-gap: 24px; padding: 18px 22px;
+  background: var(--brand-ground); border: 2px solid var(--brand-rule); color: var(--brand-muted); }
+.base .name { flex: 0 0 auto; }
+.base .v { margin: 0; flex: 1; }
+</style>
+</head>
+<body><section class="slide" data-pattern="options" data-variant="cards-on-baseline" data-role="title-only">
+<h1 class="headline" data-id="headline" data-bind="headline" data-claims="">The options, told apart by the two facts that differ most</h1>
+<div class="opts" data-id="options">
+ <div class="cards" data-id="cards">
+  <div class="opt" data-id="opt-1" style="--c:var(--brand-data-1)">
+   <div class="top" data-id="opt-1-top"><svg width="40" height="40" data-icon-bind="content.items.0.icon" data-id="icon-1"></svg><p class="name heavy" data-id="name-1" data-bind="content.items.0.head">Option one</p></div>
+   <div data-id="opt-1-facts"><p class="k eyebrow" data-id="k-1a" data-bind="content.items.0.facts.0.label">First fact</p><p class="v" data-id="v-1a" data-bind="content.items.0.facts.0.value" data-claims="">How this option answers it</p><p class="k eyebrow" data-id="k-1b" data-bind="content.items.0.facts.1.label">Second fact</p><p class="v" data-id="v-1b" data-bind="content.items.0.facts.1.value" data-claims="">How this option answers it</p></div>
+  </div>
+  <div class="opt" data-id="opt-2" style="--c:var(--brand-data-2)">
+   <div class="top" data-id="opt-2-top"><svg width="40" height="40" data-icon-bind="content.items.1.icon" data-id="icon-2"></svg><p class="name heavy" data-id="name-2" data-bind="content.items.1.head">Option two</p></div>
+   <div data-id="opt-2-facts"><p class="k eyebrow" data-id="k-2a" data-bind="content.items.1.facts.0.label">First fact</p><p class="v" data-id="v-2a" data-bind="content.items.1.facts.0.value" data-claims="">How this option answers it</p><p class="k eyebrow" data-id="k-2b" data-bind="content.items.1.facts.1.label">Second fact</p><p class="v" data-id="v-2b" data-bind="content.items.1.facts.1.value" data-claims="">How this option answers it</p></div>
+  </div>
+  <div class="opt" data-id="opt-3" style="--c:var(--brand-data-3)">
+   <div class="top" data-id="opt-3-top"><svg width="40" height="40" data-icon-bind="content.items.2.icon" data-id="icon-3"></svg><p class="name heavy" data-id="name-3" data-bind="content.items.2.head">Option three</p></div>
+   <div data-id="opt-3-facts"><p class="k eyebrow" data-id="k-3a" data-bind="content.items.2.facts.0.label">First fact</p><p class="v" data-id="v-3a" data-bind="content.items.2.facts.0.value" data-claims="">How this option answers it</p><p class="k eyebrow" data-id="k-3b" data-bind="content.items.2.facts.1.label">Second fact</p><p class="v" data-id="v-3b" data-bind="content.items.2.facts.1.value" data-claims="">How this option answers it</p></div>
+  </div>
+  <div class="opt" data-id="opt-4" style="--c:var(--brand-data-4)">
+   <div class="top" data-id="opt-4-top"><svg width="40" height="40" data-icon-bind="content.items.3.icon" data-id="icon-4"></svg><p class="name heavy" data-id="name-4" data-bind="content.items.3.head">Option four</p></div>
+   <div data-id="opt-4-facts"><p class="k eyebrow" data-id="k-4a" data-bind="content.items.3.facts.0.label">First fact</p><p class="v" data-id="v-4a" data-bind="content.items.3.facts.0.value" data-claims="">How this option answers it</p><p class="k eyebrow" data-id="k-4b" data-bind="content.items.3.facts.1.label">Second fact</p><p class="v" data-id="v-4b" data-bind="content.items.3.facts.1.value" data-claims="">How this option answers it</p></div>
+  </div>
+ </div>
+ <div class="base" data-id="baseline" data-when="content.baseline">
+  <svg width="40" height="40" data-icon-bind="content.baseline.icon" data-id="icon-base"></svg>
+  <div data-id="base-head"><p class="eyebrow" data-id="base-tag" data-bind="content.baseline.tag" style="color:var(--brand-signal-text)">The baseline</p><p class="name heavy" data-id="base-name" data-bind="content.baseline.head">Do nothing</p></div>
+  <p class="v" data-id="base-text" data-bind="content.baseline.text" data-claims="">What doing nothing means here, and why every option has to beat it.</p>
+ </div>
+</div>
+</section>
+</body></html>

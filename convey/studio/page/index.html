@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deck review</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='1' y='3' width='14' height='10' rx='1.5' fill='none' stroke='%234f8cff' stroke-width='1.6'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="studio.css">
+</head>
+<body>
+<!-- Adapted from Video Kit's Review Studio page (MIT; its author contributes this adaptation under MIT-0). -->
+<header class="top">
+  <div class="where"><b id="proj">…</b><span id="round"></span></div>
+  <div class="turn" id="turn" role="status"></div>
+  <div class="top-r">
+    <span class="keys">← → slides · F full screen · N note · Esc let go</span>
+    <button id="fsbtn" title="Full screen (F)">Full screen</button>
+  </div>
+</header>
+<main class="main">
+  <nav class="thumbs" id="thumbs" aria-label="Slides"></nav>
+  <section class="center">
+    <div class="room" id="room">
+      <div class="stage" id="stage">
+        <iframe id="slide" title="The slide"></iframe>
+        <svg class="overlay" id="overlay" viewBox="0 0 1280 720" preserveAspectRatio="none" aria-hidden="true"></svg>
+        <div class="fsbar" id="fsbar"></div>
+      </div>
+    </div>
+    <div class="probs" id="probs" aria-live="polite"></div>
+    <div class="notebar" id="notebar">
+      <div class="about">
+        <span class="seg" id="level" role="group" aria-label="What the note is about">
+          <button data-level="object" disabled>This object</button><button data-level="slide" class="on">This slide</button><button data-level="deck">Whole deck</button>
+        </span>
+        <span class="chip" id="chip" hidden></span>
+        <span class="asks" id="asks" role="group" aria-label="What you want done"></span>
+      </div>
+      <div class="row">
+        <textarea id="ntext" rows="2" placeholder="Leave a note on this slide. Click any text on the slide to type a fix right there."></textarea>
+        <span class="tools"><button data-tool="box" title="Drag a box on the slide">Box</button><button data-tool="arrow" title="Drag from this to there">Arrow</button></span>
+        <button class="primary" id="nadd">Add note</button>
+      </div>
+    </div>
+  </section>
+  <aside class="drawer" id="drawer" aria-label="This round">
+    <div class="dbody" id="dbody">
+      <section class="dsec" id="sec-asks" hidden></section>
+      <section class="dsec" id="sec-summary" hidden></section>
+      <section class="dsec" id="sec-notes"></section>
+      <section class="dsec" id="sec-edits" hidden></section>
+      <section class="dsec" id="sec-check"></section>
+    </div>
+    <div class="dfoot">
+      <button id="approve" title="You're happy with the whole deck: the agent exports it">Approve the deck</button>
+      <button class="primary" id="send" disabled>Review &amp; send</button>
+      <p id="sendp"></p>
+    </div>
+  </aside>
+</main>
+<div class="sheet" id="sheet" hidden><div class="scard" role="dialog" aria-labelledby="sh-h">
+  <h2 id="sh-h">Before it goes to the agent</h2>
+  <p id="sh-p">Everything you did this round, in order. Undo anything you don't want. Nothing has gone to the agent yet.</p>
+  <ol class="flog" id="sh-list"></ol>
+  <div class="sfoot"><button id="sh-back">Keep going</button><button class="primary" id="sh-send">Send to agent</button></div>
+</div></div>
+<div class="sheet" id="sent" hidden><div class="scard" role="dialog" aria-labelledby="st-h">
+  <h2 id="st-h">Sent.</h2>
+  <p id="st-p"></p>
+  <div class="sfoot"><button class="primary" id="st-ok">Back to the deck</button></div>
+</div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"><span id="toast-t"></span><button id="toast-u" hidden>Undo</button></div>
+<script type="module" src="studio.js"></script>
+</body>
+</html>

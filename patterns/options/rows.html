@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>The options, side by side on the same facts</title>
+<!-- Variant options / rows (title-only). Two to five options as raised rows, each keeping its data color as an edge,
+     with the same two facts in the same columns. A row with status "pick" is filled in the data color. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.rows { position: absolute; left: var(--brand-margin-left); top: var(--top); width: var(--brand-content-width);
+  height: calc(var(--bottom) - var(--top)); display: flex; flex-direction: column; row-gap: 10px; }
+.row { flex: 1; display: flex; align-items: center; column-gap: 28px; padding: 0 28px 0 24px; background: var(--brand-raised);
+  border-left: 8px solid var(--c); }
+.who { flex: 0 0 26%; display: flex; align-items: center; column-gap: 14px; color: var(--c); }
+.name { font-size: 30px; line-height: 36px; }
+.f { flex: 1; }
+.k { font-size: 16px; line-height: 20px; letter-spacing: 0.08em; color: var(--brand-muted); }
+.v { margin-top: 4px; font-size: 20px; line-height: 28px; color: var(--brand-body); }
+.is-pick { background: var(--brand-data-1); border-left-color: var(--brand-data-1); }
+.is-pick .who, .is-pick .name, .is-pick .k, .is-pick .v { color: var(--brand-on-data-1); }
+</style>
+</head>
+<body><section class="slide" data-pattern="options" data-variant="rows" data-role="title-only">
+<h1 class="headline" data-id="headline" data-bind="headline" data-claims="">The options, side by side on the facts that tell them apart</h1>
+<div class="rows" data-id="options">
+  <div class="row" data-id="opt-1" data-class="content.items.0.status" style="--c:var(--brand-data-1)"><div class="who" data-id="opt-1-name"><svg width="40" height="40" data-icon-bind="content.items.0.icon" data-id="icon-1"></svg><p class="name heavy" data-id="name-1" data-bind="content.items.0.head">Option 1</p></div><div class="f" data-id="f-1a"><p class="k eyebrow" data-id="k-1a" data-bind="content.items.0.facts.0.label">First fact</p><p class="v" data-id="v-1a" data-bind="content.items.0.facts.0.value" data-claims="">How it answers</p></div><div class="f" data-id="f-1b"><p class="k eyebrow" data-id="k-1b" data-bind="content.items.0.facts.1.label">Second fact</p><p class="v" data-id="v-1b" data-bind="content.items.0.facts.1.value" data-claims="">How it answers</p></div></div>
+  <div class="row" data-id="opt-2" data-class="content.items.1.status" style="--c:var(--brand-data-2)"><div class="who" data-id="opt-2-name"><svg width="40" height="40" data-icon-bind="content.items.1.icon" data-id="icon-2"></svg><p class="name heavy" data-id="name-2" data-bind="content.items.1.head">Option 2</p></div><div class="f" data-id="f-2a"><p class="k eyebrow" data-id="k-2a" data-bind="content.items.1.facts.0.label">First fact</p><p class="v" data-id="v-2a" data-bind="content.items.1.facts.0.value" data-claims="">How it answers</p></div><div class="f" data-id="f-2b"><p class="k eyebrow" data-id="k-2b" data-bind="content.items.1.facts.1.label">Second fact</p><p class="v" data-id="v-2b" data-bind="content.items.1.facts.1.value" data-claims="">How it answers</p></div></div>
+  <div class="row" data-id="opt-3" data-class="content.items.2.status" style="--c:var(--brand-data-3)"><div class="who" data-id="opt-3-name"><svg width="40" height="40" data-icon-bind="content.items.2.icon" data-id="icon-3"></svg><p class="name heavy" data-id="name-3" data-bind="content.items.2.head">Option 3</p></div><div class="f" data-id="f-3a"><p class="k eyebrow" data-id="k-3a" data-bind="content.items.2.facts.0.label">First fact</p><p class="v" data-id="v-3a" data-bind="content.items.2.facts.0.value" data-claims="">How it answers</p></div><div class="f" data-id="f-3b"><p class="k eyebrow" data-id="k-3b" data-bind="content.items.2.facts.1.label">Second fact</p><p class="v" data-id="v-3b" data-bind="content.items.2.facts.1.value" data-claims="">How it answers</p></div></div>
+  <div class="row" data-id="opt-4" data-class="content.items.3.status" style="--c:var(--brand-data-4)"><div class="who" data-id="opt-4-name"><svg width="40" height="40" data-icon-bind="content.items.3.icon" data-id="icon-4"></svg><p class="name heavy" data-id="name-4" data-bind="content.items.3.head">Option 4</p></div><div class="f" data-id="f-4a"><p class="k eyebrow" data-id="k-4a" data-bind="content.items.3.facts.0.label">First fact</p><p class="v" data-id="v-4a" data-bind="content.items.3.facts.0.value" data-claims="">How it answers</p></div><div class="f" data-id="f-4b"><p class="k eyebrow" data-id="k-4b" data-bind="content.items.3.facts.1.label">Second fact</p><p class="v" data-id="v-4b" data-bind="content.items.3.facts.1.value" data-claims="">How it answers</p></div></div>
+  <div class="row" data-id="opt-5" data-class="content.items.4.status" style="--c:var(--brand-data-5)"><div class="who" data-id="opt-5-name"><svg width="40" height="40" data-icon-bind="content.items.4.icon" data-id="icon-5"></svg><p class="name heavy" data-id="name-5" data-bind="content.items.4.head">Option 5</p></div><div class="f" data-id="f-5a"><p class="k eyebrow" data-id="k-5a" data-bind="content.items.4.facts.0.label">First fact</p><p class="v" data-id="v-5a" data-bind="content.items.4.facts.0.value" data-claims="">How it answers</p></div><div class="f" data-id="f-5b"><p class="k eyebrow" data-id="k-5b" data-bind="content.items.4.facts.1.label">Second fact</p><p class="v" data-id="v-5b" data-bind="content.items.4.facts.1.value" data-claims="">How it answers</p></div></div>
+</div>
+</section>
+</body></html>

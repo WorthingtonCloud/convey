@@ -1,0 +1,33 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "convey.brief/1",
+ "title": "Communication brief: who the deck is for and what it must do",
+ "type": "object",
+ "required": ["schema", "title", "audience", "purpose", "mode", "outcome", "brand"],
+ "additionalProperties": false,
+ "properties": {
+  "schema": {"enum": ["convey.brief/1"]},
+  "title": {"type": "string", "minLength": 1},
+  "audience": {
+   "type": "object", "required": ["who"], "additionalProperties": false,
+   "properties": {
+    "who": {"type": "string", "minLength": 1, "description": "who they are and what they already know"},
+    "knows": {"type": "string", "description": "what they understand, or wrongly assume, today"},
+    "concerns": {"type": "array", "items": {"type": "string"}}
+   }
+  },
+  "purpose": {"enum": ["decide", "inform", "persuade", "review", "explain", "train"]},
+  "mode": {"enum": ["live", "read-ahead", "decision", "operating-review", "technical"]},
+  "outcome": {"type": "string", "minLength": 1,
+   "description": "what they should do or understand afterward; 'informational: no decision requested' is allowed"},
+  "minutes": {"type": "number", "description": "speaking time, for a live deck"},
+  "slide_budget": {"type": "integer"},
+  "must_include": {"type": "array", "items": {"type": "string"}},
+  "sensitivity": {"type": "string"},
+  "brand": {"type": "string", "description": "a Brand Profile name or folder"},
+  "autonomy": {"enum": ["staged", "just-build"], "description": "just-build skips the story gate; every choice is logged"},
+  "answers": {"type": "array", "description": "the interview: each question asked and its answer",
+   "items": {"type": "object", "required": ["q", "a"], "additionalProperties": false,
+             "properties": {"q": {"type": "string"}, "a": {"type": "string"}}}}
+ }
+}

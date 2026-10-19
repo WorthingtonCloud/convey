@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>A headline the photo makes felt</title>
+<!-- Variant photo-led / wash-left (full-bleed). The photo fills the right of the slide; a fade in the ground color
+     runs from the text side into it, so the type always sits on the ground, never on the picture. The title takes three
+     lines at most (data-fit-lines: compose sets a longer one smaller), so it never reaches the subtitle. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+</head>
+<body><section class="slide" data-pattern="photo-led" data-variant="wash-left" data-role="full-bleed">
+<div class="field" data-id="field"></div>
+<img class="abs" data-id="photo" data-bind="content.image" alt="" src="photo.jpg" style="left:420px;top:0;width:860px;height:720px;object-fit:cover;object-position:50% 50%">
+<div class="abs" data-id="wash" style="left:420px;top:0;width:560px;height:720px;background:linear-gradient(90deg, var(--brand-field, var(--brand-ground)) 0%, transparent 100%)"></div>
+<p class="abs eyebrow" data-id="kicker" data-bind="content.kicker" style="left:var(--bleed-left);top:176px;width:600px;color:var(--brand-signal-text)">A short kicker</p>
+<h1 class="abs heavy" data-id="title" data-bind="headline" data-claims="" data-fit-lines="3" style="left:var(--bleed-left);top:212px;width:660px;font-size:80px;line-height:84px">A headline the photo makes felt</h1>
+<p class="abs" data-id="subtitle" data-bind="content.subtitle" data-claims="" style="left:var(--bleed-left);top:488px;width:520px;font-size:24px;line-height:32px;color:var(--brand-body)">One line that says what the audience will get from the next few minutes.</p>
+<p class="abs small" data-id="credit" data-bind="content.credit" style="left:var(--bleed-left);top:calc(640px - var(--caveat-row, 0px));width:520px">Photo credit</p>
+</section>
+</body></html>

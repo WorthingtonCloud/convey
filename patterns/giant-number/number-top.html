@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>The one number, and what it means</title>
+<!-- Variant giant-number / number-top (title-only). The number centred at 200 px (up to about eight characters), what
+     it counts under it, then the comparison that gives it scale, all on one centred axis. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.stack { position: absolute; left: var(--brand-margin-left); top: var(--top); width: var(--brand-content-width);
+  height: calc(var(--bottom) - var(--top) - 40px); display: flex; flex-direction: column; justify-content: center;
+  align-items: center; text-align: center; }
+.num { font-size: 200px; line-height: 208px; letter-spacing: -0.03em; }
+.what { margin-top: 8px; font-size: 32px; line-height: 40px; }
+.more { margin-top: 16px; max-width: 820px; font-size: 22px; line-height: 29.33px; color: var(--brand-body); }
+</style>
+</head>
+<body><section class="slide" data-pattern="giant-number" data-variant="number-top" data-role="title-only">
+<h1 class="headline" data-id="headline" data-bind="headline" data-claims="">The headline says what the number means</h1>
+<div class="stack" data-id="hero">
+ <p class="num heavy" data-id="number" data-bind="content.value" data-claims="">4,677</p>
+ <p class="what heavy" data-id="label" data-bind="content.label">of what, counted how</p>
+ <p class="more" data-id="context" data-bind="content.evidence" data-claims="">The comparison that makes it big or small.</p>
+</div>
+<p class="abs small" data-id="source" data-bind="content.source" data-claims="" style="left:var(--brand-margin-left);top:calc(var(--bottom) - 20px);width:var(--brand-content-width)">Where the number comes from, and when.</p>
+</section>
+</body></html>

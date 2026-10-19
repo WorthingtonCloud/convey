@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>What this talk covers</title>
+<!-- Variant agenda / numbered (title-only). Three to five parts as raised bands, each numbered in the signal color,
+     its name and the question it answers on one line. A part with status "current" is the band in the data color. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.parts { position: absolute; left: var(--brand-margin-left); top: var(--top); width: var(--brand-content-width);
+  height: calc(var(--bottom) - var(--top)); display: flex; flex-direction: column; row-gap: 12px; }
+.part { flex: 1; background: var(--brand-raised); display: flex; align-items: center; column-gap: 28px; padding: 0 32px; }
+.num { flex: 0 0 72px; font-size: 40px; line-height: 44px; color: var(--brand-signal); }
+.h { flex: 0 0 34%; font-size: 30px; line-height: 36px; }
+.t { flex: 1; font-size: 20px; line-height: 28px; color: var(--brand-body); }
+.is-current { background: var(--brand-data-1); }
+.is-current .num, .is-current .h, .is-current .t { color: var(--brand-on-data-1); }
+</style>
+</head>
+<body><section class="slide" data-pattern="agenda" data-variant="numbered" data-role="title-only">
+<h1 class="headline" data-id="headline" data-bind="headline">What this talk covers, said as the promise</h1>
+<div class="parts" data-id="parts">
+  <div class="part" data-id="part-1" data-class="content.items.0.status"><p class="num heavy" data-id="n-1" data-index="content.items.0" data-pad="2">01</p><p class="h heavy" data-id="h-1" data-bind="content.items.0.head">Part 1</p><p class="t" data-id="t-1" data-bind="content.items.0.text" data-claims="">The question this part answers.</p></div>
+  <div class="part" data-id="part-2" data-class="content.items.1.status"><p class="num heavy" data-id="n-2" data-index="content.items.1" data-pad="2">02</p><p class="h heavy" data-id="h-2" data-bind="content.items.1.head">Part 2</p><p class="t" data-id="t-2" data-bind="content.items.1.text" data-claims="">The question this part answers.</p></div>
+  <div class="part" data-id="part-3" data-class="content.items.2.status"><p class="num heavy" data-id="n-3" data-index="content.items.2" data-pad="2">03</p><p class="h heavy" data-id="h-3" data-bind="content.items.2.head">Part 3</p><p class="t" data-id="t-3" data-bind="content.items.2.text" data-claims="">The question this part answers.</p></div>
+  <div class="part" data-id="part-4" data-class="content.items.3.status"><p class="num heavy" data-id="n-4" data-index="content.items.3" data-pad="2">03</p><p class="h heavy" data-id="h-4" data-bind="content.items.3.head">Part 3</p><p class="t" data-id="t-4" data-bind="content.items.3.text" data-claims="">The question this part answers.</p></div>
+  <div class="part" data-id="part-5" data-class="content.items.4.status"><p class="num heavy" data-id="n-5" data-index="content.items.4" data-pad="2">03</p><p class="h heavy" data-id="h-5" data-bind="content.items.4.head">Part 3</p><p class="t" data-id="t-5" data-bind="content.items.4.text" data-claims="">The question this part answers.</p></div>
+</div>
+</section>
+</body></html>

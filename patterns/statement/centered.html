@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>One sentence the audience should repeat</title>
+<!-- Variant statement / centered (full-bleed). The sentence alone, centred at display size with its emphasis words in
+     the signal color, a kicker over it and its source under it. The quietest moment a deck has. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.stack { position: absolute; left: 112px; top: 72px; width: 1056px; height: calc(576px - var(--caveat-row, 0px)); display: flex; flex-direction: column;
+  justify-content: center; align-items: center; text-align: center; }
+.kicker { color: var(--brand-signal-text); }
+.say { margin-top: 24px; font-size: 80px; line-height: 84px; }
+.hit { color: var(--brand-signal); }
+.foot { margin-top: 36px; max-width: 760px; font-size: 20px; line-height: 28px; color: var(--brand-body); }
+</style>
+</head>
+<body><section class="slide" data-pattern="statement" data-variant="centered" data-role="full-bleed">
+<div class="field" data-id="field"></div>
+<div class="stack" data-id="stack">
+ <p class="eyebrow kicker" data-id="kicker" data-bind="content.kicker">A short kicker</p>
+ <h1 class="say heavy" data-id="statement" data-bind="headline" data-claims="">One sentence the audience should repeat</h1>
+ <p class="foot" data-id="source" data-bind="content.source" data-claims="">Where it comes from, in a line.</p>
+</div>
+</section>
+</body></html>

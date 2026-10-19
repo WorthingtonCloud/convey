@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>KPI row</title>
+<!-- Pattern skeleton: kpi-row. Answers: How are we doing on the numbers that matter?
+     Brand variables only (tokens.css from the Brand Profile); never a color, font or size of its own.
+     data-bind ties each text to its storyboard field; replace the placeholder words, keep the structure. -->
+<link rel="stylesheet" href="tokens.css">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.slide { position: relative; width: 1280px; height: 720px; overflow: hidden; background: var(--brand-ground);
+  color: var(--brand-body); font-family: var(--brand-font-body); font-weight: var(--brand-weight-body);
+  font-size: var(--brand-text-size); line-height: var(--brand-text-line); font-kerning: none; }
+.abs { position: absolute; }
+.headline { position: absolute; left: var(--brand-title-left, var(--brand-margin-left)); top: var(--brand-margin-top); width: var(--brand-title-width, var(--brand-content-width));
+  font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink);
+  font-size: var(--brand-headline-size); line-height: var(--brand-headline-line); letter-spacing: var(--brand-title-tracking); }
+.body { position: absolute; left: var(--brand-margin-left); width: var(--brand-content-width);
+  top: calc(var(--brand-margin-top) + 2 * var(--brand-headline-line) + 40px);
+  bottom: calc(720px - var(--brand-margin-footer-top) + 24px); }
+.small { font-size: var(--brand-small-size); line-height: var(--brand-small-line); color: var(--brand-body); }
+.strong { font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink); }
+.rule { height: 2px; background: var(--brand-signal); }
+.kpis { display: flex; gap: 32px; }
+.kpi { flex: 1; border-top: 2px solid var(--brand-rule); padding-top: 16px; }
+.kpi.lead { border-top-color: var(--brand-signal); }
+.kpi .v { font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink);
+  font-size: var(--brand-statement-size); line-height: var(--brand-statement-line); }
+.kpi .l { font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink); margin-top: 8px; }
+.kpi .n { margin-top: 8px; }
+</style></head>
+<body><section class="slide" data-pattern="kpi-row">
+<h1 class="headline" data-id="headline" data-bind="headline">The numbers say one thing: name it here</h1>
+<div class="body kpis" data-id="metrics">
+  <div class="kpi lead" data-id="metric-1"><p class="v" data-id="m1-value" data-bind="content.items.0.value" data-claims="">42%</p>
+    <p class="l" data-id="m1-label" data-bind="content.items.0.label">Metric name</p>
+    <p class="n small" data-id="m1-note" data-bind="content.items.0.note">Versus 31% last year</p></div>
+  <div class="kpi" data-id="metric-2"><p class="v" data-id="m2-value" data-bind="content.items.1.value" data-claims="">3.1×</p>
+    <p class="l" data-id="m2-label" data-bind="content.items.1.label">Metric name</p>
+    <p class="n small" data-id="m2-note" data-bind="content.items.1.note">Versus the target of 2×</p></div>
+  <div class="kpi" data-id="metric-3"><p class="v" data-id="m3-value" data-bind="content.items.2.value" data-claims="">12</p>
+    <p class="l" data-id="m3-label" data-bind="content.items.2.label">Metric name</p>
+    <p class="n small" data-id="m3-note" data-bind="content.items.2.note">Versus 18 a quarter ago</p></div>
+  <div class="kpi" data-id="metric-4"><p class="v" data-id="m4-value" data-bind="content.items.3.value" data-claims="">$2.4M</p>
+    <p class="l" data-id="m4-label" data-bind="content.items.3.label">Metric name</p>
+    <p class="n small" data-id="m4-note" data-bind="content.items.3.note">Versus the $2.0M plan</p></div>
+</div>
+</section>
+</body></html>

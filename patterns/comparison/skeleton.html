@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Comparison</title>
+<!-- Pattern skeleton: comparison. Answers: How do the options differ, and which wins?
+     Brand variables only (tokens.css from the Brand Profile); never a color, font or size of its own.
+     data-bind ties each text to its storyboard field; replace the placeholder words, keep the structure. -->
+<link rel="stylesheet" href="tokens.css">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.slide { position: relative; width: 1280px; height: 720px; overflow: hidden; background: var(--brand-ground);
+  color: var(--brand-body); font-family: var(--brand-font-body); font-weight: var(--brand-weight-body);
+  font-size: var(--brand-text-size); line-height: var(--brand-text-line); font-kerning: none; }
+.abs { position: absolute; }
+.headline { position: absolute; left: var(--brand-title-left, var(--brand-margin-left)); top: var(--brand-margin-top); width: var(--brand-title-width, var(--brand-content-width));
+  font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink);
+  font-size: var(--brand-headline-size); line-height: var(--brand-headline-line); letter-spacing: var(--brand-title-tracking); }
+.body { position: absolute; left: var(--brand-margin-left); width: var(--brand-content-width);
+  top: calc(var(--brand-margin-top) + 2 * var(--brand-headline-line) + 40px);
+  bottom: calc(720px - var(--brand-margin-footer-top) + 24px); }
+.small { font-size: var(--brand-small-size); line-height: var(--brand-small-line); color: var(--brand-body); }
+.strong { font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink); }
+.rule { height: 2px; background: var(--brand-signal); }
+.cmp { display: flex; gap: 32px; align-items: flex-start; }
+.side { flex: 1; background: var(--brand-raised); padding: 24px 28px; }
+.side.win { border-top: 2px solid var(--brand-signal); }
+.side h2 { font-family: var(--brand-font-heading); font-weight: var(--brand-weight-heading); color: var(--brand-ink);
+  font-size: var(--brand-text-size); line-height: var(--brand-text-line); margin-bottom: 12px; }
+.side ul { list-style-type: "–  "; padding-left: 24px; color: var(--brand-ink); }
+.side li + li { margin-top: 8px; }
+</style></head>
+<body><section class="slide" data-pattern="comparison">
+<h1 class="headline" data-id="headline" data-bind="headline">Option B wins on cost and risk; say why in one sentence</h1>
+<div class="body cmp" data-id="options">
+  <div class="side" data-id="option-a"><h2 data-id="a-head" data-bind="content.left.head">Option A: the current way</h2>
+    <ul data-id="a-points" data-bind="content.left.points"><li>What it costs, in one line</li><li>What it risks, in one line</li><li>How long it takes</li></ul></div>
+  <div class="side win" data-id="option-b"><h2 data-id="b-head" data-bind="content.right.head">Option B: the proposal</h2>
+    <ul data-id="b-points" data-bind="content.right.points"><li>What it costs, in one line</li><li>What it risks, in one line</li><li>How long it takes</li></ul></div>
+</div>
+</section>
+</body></html>

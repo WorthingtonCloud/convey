@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>One number leads, the rest support it</title>
+<!-- Variant kpi-row / hero-and-supporting (title-only). The first item at display size on the left, what it counts
+     under it; the other two or three stacked on the right under hairlines. Lead value: five characters or fewer. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.wrap { position: absolute; left: var(--brand-margin-left); top: var(--top); width: var(--brand-content-width);
+  height: calc(var(--bottom) - var(--top)); display: flex; column-gap: 48px; }
+.hero { flex: 0 0 50%; display: flex; flex-direction: column; justify-content: center; }
+.hv { font-size: 176px; line-height: 184px; letter-spacing: -0.04em; }
+.hl { margin-top: 8px; font-size: 28px; line-height: 36px; }
+.hn { margin-top: 8px; font-size: 20px; line-height: 28px; color: var(--brand-body); }
+.rest { flex: 1; display: flex; flex-direction: column; }
+.row { flex: 1; display: flex; flex-direction: column; justify-content: center; border-top: 1px solid var(--brand-rule); }
+.v { font-size: 48px; line-height: 52px; }
+.l { margin-top: 4px; font-size: 18px; line-height: 24px; color: var(--brand-body); }
+</style>
+</head>
+<body><section class="slide" data-pattern="kpi-row" data-variant="hero-and-supporting" data-role="title-only">
+<h1 class="headline" data-id="headline" data-bind="headline" data-claims="">One number leads, the others put it in proportion</h1>
+<div class="wrap" data-id="metrics">
+ <div class="hero" data-id="metric-1"><p class="hv heavy" data-id="v-1" data-bind="content.items.0.value" data-claims="">42%</p>
+  <p class="hl heavy" data-id="l-1" data-bind="content.items.0.label">What the lead number counts</p>
+  <p class="hn" data-id="note-1" data-bind="content.items.0.note" data-claims="">Against what</p></div>
+ <div class="rest" data-id="rest">
+  <div class="row" data-id="metric-2"><p class="v heavy" data-id="v-2" data-bind="content.items.1.value" data-claims="">3.1×</p><p class="l" data-id="l-2" data-bind="content.items.1.label">What it counts</p></div>
+  <div class="row" data-id="metric-3"><p class="v heavy" data-id="v-3" data-bind="content.items.2.value" data-claims="">12</p><p class="l" data-id="l-3" data-bind="content.items.2.label">What it counts</p></div>
+  <div class="row" data-id="metric-4"><p class="v heavy" data-id="v-4" data-bind="content.items.3.value" data-claims="">$2.4M</p><p class="l" data-id="l-4" data-bind="content.items.3.label">What it counts</p></div>
+ </div>
+</div>
+</section>
+</body></html>

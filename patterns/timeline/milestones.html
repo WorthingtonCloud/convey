@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>How we got here</title>
+<!-- Variant timeline / milestones (title-only). Three to six dated points on one line, read left to right: when, what
+     happened, why it matters. A milestone with status "now" is a solid disc ringed in the signal color; the rest are hollow. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.line { position: absolute; left: var(--brand-margin-left); top: calc((var(--top) + var(--bottom) - 40px) / 2 - 140px);
+  width: var(--brand-content-width); display: flex; align-items: flex-start; column-gap: 24px; }
+.m { flex: 1; position: relative; padding-top: 52px; }
+.link { position: absolute; left: 14px; top: 13px; width: calc(100% + 24px); height: 2px; background: var(--brand-rule); }
+.m:last-child .link { display: none; }
+.dot { position: absolute; left: 0; top: 0; width: 28px; height: 28px; border-radius: 50%; background: var(--brand-ground);
+  border: 3px solid var(--brand-ink); }
+.is-now .dot { background: var(--brand-ink); border-color: var(--brand-signal); border-width: 6px; }
+.when { color: var(--brand-body); }
+.l { margin-top: 12px; font-size: 36px; line-height: 40px; }
+.n { margin-top: 12px; font-size: 20px; line-height: 28px; color: var(--brand-body); }
+</style>
+</head>
+<body><section class="slide" data-pattern="timeline" data-variant="milestones" data-role="title-only">
+<h1 class="headline" data-id="headline" data-bind="headline" data-claims="">How we got here, said as the turn the dates show</h1>
+<div class="line" data-id="timeline">
+  <div class="m" data-id="m-1" data-class="content.milestones.0.status"><div class="link" data-id="link-1"></div><div class="dot" data-id="dot-1"></div><p class="eyebrow when" data-id="when-1" data-bind="content.milestones.0.when">When</p><p class="l heavy" data-id="l-1" data-bind="content.milestones.0.label" data-claims="">What happened</p><p class="n" data-id="note-1" data-bind="content.milestones.0.note" data-claims="">Why it matters, in one line.</p></div>
+  <div class="m" data-id="m-2" data-class="content.milestones.1.status"><div class="link" data-id="link-2"></div><div class="dot" data-id="dot-2"></div><p class="eyebrow when" data-id="when-2" data-bind="content.milestones.1.when">When</p><p class="l heavy" data-id="l-2" data-bind="content.milestones.1.label" data-claims="">What happened</p><p class="n" data-id="note-2" data-bind="content.milestones.1.note" data-claims="">Why it matters, in one line.</p></div>
+  <div class="m" data-id="m-3" data-class="content.milestones.2.status"><div class="link" data-id="link-3"></div><div class="dot" data-id="dot-3"></div><p class="eyebrow when" data-id="when-3" data-bind="content.milestones.2.when">When</p><p class="l heavy" data-id="l-3" data-bind="content.milestones.2.label" data-claims="">What happened</p><p class="n" data-id="note-3" data-bind="content.milestones.2.note" data-claims="">Why it matters, in one line.</p></div>
+  <div class="m" data-id="m-4" data-class="content.milestones.3.status"><div class="link" data-id="link-4"></div><div class="dot" data-id="dot-4"></div><p class="eyebrow when" data-id="when-4" data-bind="content.milestones.3.when">When</p><p class="l heavy" data-id="l-4" data-bind="content.milestones.3.label" data-claims="">What happened</p><p class="n" data-id="note-4" data-bind="content.milestones.3.note" data-claims="">Why it matters, in one line.</p></div>
+  <div class="m" data-id="m-5" data-class="content.milestones.4.status"><div class="link" data-id="link-5"></div><div class="dot" data-id="dot-5"></div><p class="eyebrow when" data-id="when-5" data-bind="content.milestones.4.when">When</p><p class="l heavy" data-id="l-5" data-bind="content.milestones.4.label" data-claims="">What happened</p><p class="n" data-id="note-5" data-bind="content.milestones.4.note" data-claims="">Why it matters, in one line.</p></div>
+  <div class="m" data-id="m-6" data-class="content.milestones.5.status"><div class="link" data-id="link-6"></div><div class="dot" data-id="dot-6"></div><p class="eyebrow when" data-id="when-6" data-bind="content.milestones.5.when">When</p><p class="l heavy" data-id="l-6" data-bind="content.milestones.5.label" data-claims="">What happened</p><p class="n" data-id="note-6" data-bind="content.milestones.5.note" data-claims="">Why it matters, in one line.</p></div>
+</div>
+<p class="abs small" data-id="source" data-bind="content.source" data-claims="" style="left:var(--brand-margin-left);top:calc(var(--bottom) - 20px);width:var(--brand-content-width)">Source: where the dates come from.</p>
+</section>
+</body></html>

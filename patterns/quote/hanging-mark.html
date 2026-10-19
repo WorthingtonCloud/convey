@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>The quote, in the speaker's own words</title>
+<!-- Variant quote / hanging-mark (full-bleed). The opening mark hangs in the left margin, so the quote's first letters
+     line up with everything under it. One quote, who said it, one line of context, centred top to bottom. -->
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="base.css">
+<style>
+.stack { position: absolute; left: calc(var(--bleed-left) + 136px); top: 72px; width: 940px; height: calc(576px - var(--caveat-row, 0px));
+  display: flex; flex-direction: column; justify-content: center; }
+.lead { position: relative; }
+.mark { position: absolute; left: -136px; top: -18px; width: 136px; font-size: 240px; line-height: 240px; color: var(--brand-signal); }
+.say { font-size: 72px; line-height: 76px; }
+.rule { margin-top: 36px; width: 56px; height: 4px; background: var(--brand-signal); }
+.who { margin-top: 24px; font-size: 24px; line-height: 32px; }
+.ctx { margin-top: 8px; width: 760px; color: var(--brand-body); }
+.src { margin-top: 24px; }
+</style>
+</head>
+<body><section class="slide" data-pattern="quote" data-variant="hanging-mark" data-role="full-bleed">
+<div class="field" data-id="field"></div>
+<div class="stack" data-id="stack">
+ <div class="lead" data-id="lead"><p class="mark heavy" data-id="mark">&ldquo;</p>
+ <h1 class="say heavy" data-id="quote" data-bind="headline" data-claims="">The quote, in the speaker's own words, short enough to say aloud</h1></div>
+ <div class="rule" data-id="rule"></div>
+ <p class="who heavy" data-id="who" data-bind="content.who">Who said it</p>
+ <p class="ctx" data-id="context" data-bind="content.context" data-claims="">One line of context: why this voice matters here, with its number if it has one.</p>
+ <p class="src small" data-id="source" data-bind="content.source">Where and when it was said</p>
+</div>
+</section>
+</body></html>

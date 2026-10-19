@@ -1,0 +1,9 @@
+#!/usr/bin/env python3
+"""Runs on any stock Python 3.9+, nothing to install: python3 skill/bin/convey lint slides/"""
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from convey.cli import main  # noqa: E402
+
+sys.exit(main())

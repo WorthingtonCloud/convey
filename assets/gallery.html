@@ -1,0 +1,654 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Icon gallery</title>
+<style>:root { --brand-ground: #ffffff; --brand-raised: #eeeeee; --brand-ink: #1a1a1a; --brand-body: #333333;
+  --brand-muted: #6b6b6b; --brand-rule: #d0d0d0; --brand-font-body: system-ui; --brand-font-heading: system-ui;
+  --brand-weight-heading: 600; --brand-text-size: 18px; --brand-text-line: 26px; }
+body { margin: 0; padding: 32px; background: var(--brand-ground); color: var(--brand-body);
+  font: 14px/20px var(--brand-font-body), system-ui, sans-serif; }
+h1 { font-size: 24px; line-height: 30px; color: var(--brand-ink); margin: 0 0 6px; }
+h2 { font-size: 17px; color: var(--brand-ink); margin: 28px 0 10px; }
+p.note { color: var(--brand-muted); margin: 0 0 8px; max-width: 760px; }
+main { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+main.parts { grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); }
+figure { margin: 0; padding: 14px; background: var(--brand-raised); border-radius: 6px; }
+.ic { display: flex; align-items: flex-end; gap: 14px; color: var(--brand-ink); }
+.stage { position: relative; height: 150px; color: var(--brand-ink); } .abs { position: absolute; }
+figcaption { margin-top: 10px; color: var(--brand-muted); font-size: 12px; line-height: 17px; }
+figcaption b { color: var(--brand-ink); font-size: 14px; }
+</style></head><body><h1>Icons (81) and diagram parts (8)</h1>
+<p class="note">Line: 3-unit round-capped, round-cornered strokes on a 48-unit grid, no fills. Drawn for 32 px and up; lint refuses a smaller icon. Shown at 56 and 32 px. Paste one with <code>convey assets show ID</code>,
+or a part with <code>convey assets part NAME key=value…</code>.</p>
+<h2>People</h2><main><figure><div class="ic"><svg width="56" height="56" data-icon="person" data-id="icon-person" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="24" cy="15" r="7"/>
+<path d="M10 41v-2a11 11 0 0 1 11-11h6a11 11 0 0 1 11 11v2"/>
+</svg><svg width="32" height="32" data-icon="person" data-id="person-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="24" cy="15" r="7"/>
+<path d="M10 41v-2a11 11 0 0 1 11-11h6a11 11 0 0 1 11 11v2"/>
+</svg></div><figcaption><b>person</b><br>person, user, customer, employee, individual, owner, stakeholder, account, profile</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="team" data-id="icon-team" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="24" cy="15" r="6"/>
+<path d="M14 40v-2a8 8 0 0 1 8-8h4a8 8 0 0 1 8 8v2"/>
+<circle cx="10" cy="19" r="4.5"/>
+<path d="M3 37v-1a6 6 0 0 1 6-6h2"/>
+<circle cx="38" cy="19" r="4.5"/>
+<path d="M45 37v-1a6 6 0 0 0-6-6h-2"/>
+</svg><svg width="32" height="32" data-icon="team" data-id="team-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="24" cy="15" r="6"/>
+<path d="M14 40v-2a8 8 0 0 1 8-8h4a8 8 0 0 1 8 8v2"/>
+<circle cx="10" cy="19" r="4.5"/>
+<path d="M3 37v-1a6 6 0 0 1 6-6h2"/>
+<circle cx="38" cy="19" r="4.5"/>
+<path d="M45 37v-1a6 6 0 0 0-6-6h-2"/>
+</svg></div><figcaption><b>team</b><br>team, group, people, staff, audience, community, department, users, collaboration</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="person-add" data-id="icon-person-add" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="20" cy="15" r="7"/>
+<path d="M6 41v-2a11 11 0 0 1 11-11h6a11 11 0 0 1 6 1.8"/>
+<path d="M38 28v12M32 34h12"/>
+</svg><svg width="32" height="32" data-icon="person-add" data-id="person-add-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="20" cy="15" r="7"/>
+<path d="M6 41v-2a11 11 0 0 1 11-11h6a11 11 0 0 1 6 1.8"/>
+<path d="M38 28v12M32 34h12"/>
+</svg></div><figcaption><b>person-add</b><br>hire, add user, new member, onboarding, recruit, invite, headcount, sign up</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="handshake" data-id="icon-handshake" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M4 14v16M44 14v16"/>
+<path d="M4 17h6l8-3h6"/>
+<path d="M44 17h-7l-9-3-8 7a3 3 0 0 0 4 4l5-4 11 10"/>
+<path d="M4 27h5l10 9a2.8 2.8 0 0 0 4-4"/>
+<path d="M19 30l7 7a2.8 2.8 0 0 0 4-4l-5-5"/>
+<path d="M44 27h-4"/>
+</svg><svg width="32" height="32" data-icon="handshake" data-id="handshake-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M4 14v16M44 14v16"/>
+<path d="M4 17h6l8-3h6"/>
+<path d="M44 17h-7l-9-3-8 7a3 3 0 0 0 4 4l5-4 11 10"/>
+<path d="M4 27h5l10 9a2.8 2.8 0 0 0 4-4"/>
+<path d="M19 30l7 7a2.8 2.8 0 0 0 4-4l-5-5"/>
+<path d="M44 27h-4"/>
+</svg></div><figcaption><b>handshake</b><br>partnership, agreement, deal, contract signed, alliance, vendor, cooperation, trust, welcome</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="presentation" data-id="icon-presentation" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="6" y="6" width="36" height="24" rx="2"/>
+<path d="M13 23l7-7 5 4 9-8"/>
+<path d="M24 30v6M16 43l8-7 8 7"/>
+</svg><svg width="32" height="32" data-icon="presentation" data-id="presentation-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="6" y="6" width="36" height="24" rx="2"/>
+<path d="M13 23l7-7 5 4 9-8"/>
+<path d="M24 30v6M16 43l8-7 8 7"/>
+</svg></div><figcaption><b>presentation</b><br>presentation, briefing, training, report out, pitch, workshop, dashboard review, teaching</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="org-chart" data-id="icon-org-chart" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="18" y="5" width="12" height="10" rx="2"/>
+<rect x="4" y="33" width="12" height="10" rx="2"/>
+<rect x="18" y="33" width="12" height="10" rx="2"/>
+<rect x="32" y="33" width="12" height="10" rx="2"/>
+<path d="M24 15v18M10 33v-9h28v9"/>
+</svg><svg width="32" height="32" data-icon="org-chart" data-id="org-chart-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="18" y="5" width="12" height="10" rx="2"/>
+<rect x="4" y="33" width="12" height="10" rx="2"/>
+<rect x="18" y="33" width="12" height="10" rx="2"/>
+<rect x="32" y="33" width="12" height="10" rx="2"/>
+<path d="M24 15v18M10 33v-9h28v9"/>
+</svg></div><figcaption><b>org-chart</b><br>organization, hierarchy, structure, reporting line, org chart, governance, ownership, roles</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="conversation" data-id="icon-conversation" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M7 6h20a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H15l-6 5v-5H7a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3z"/>
+<path d="M35 17h6a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3h-2v5l-6-5H23a3 3 0 0 1-3-3v-3"/>
+</svg><svg width="32" height="32" data-icon="conversation" data-id="conversation-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M7 6h20a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H15l-6 5v-5H7a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3z"/>
+<path d="M35 17h6a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3h-2v5l-6-5H23a3 3 0 0 1-3-3v-3"/>
+</svg></div><figcaption><b>conversation</b><br>conversation, discussion, feedback, interview, dialogue, chat, negotiation, consultation</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="speech" data-id="icon-speech" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 7h32a3 3 0 0 1 3 3v21a3 3 0 0 1-3 3H21l-9 8v-8H8a3 3 0 0 1-3-3V10a3 3 0 0 1 3-3z"/>
+<path d="M14 17h20M14 25h12"/>
+</svg><svg width="32" height="32" data-icon="speech" data-id="speech-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 7h32a3 3 0 0 1 3 3v21a3 3 0 0 1-3 3H21l-9 8v-8H8a3 3 0 0 1-3-3V10a3 3 0 0 1 3-3z"/>
+<path d="M14 17h20M14 25h12"/>
+</svg></div><figcaption><b>speech</b><br>message, comment, quote, statement, note, announcement text, testimonial, opinion</figcaption></figure></main><h2>Time</h2><main><figure><div class="ic"><svg width="56" height="56" data-icon="clock" data-id="icon-clock" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="24" cy="24" r="18"/>
+<path d="M24 13v11l7 5"/>
+</svg><svg width="32" height="32" data-icon="clock" data-id="clock-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="24" cy="24" r="18"/>
+<path d="M24 13v11l7 5"/>
+</svg></div><figcaption><b>clock</b><br>time, clock, duration, deadline, hours, wait, latency, schedule, speed</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="calendar" data-id="icon-calendar" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="6" y="9" width="36" height="33" rx="3"/>
+<path d="M6 18h36M15 5v8M33 5v8"/>
+<path d="M14 26h2M23 26h2M32 26h2M14 34h2M23 34h2"/>
+</svg><svg width="32" height="32" data-icon="calendar" data-id="calendar-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="6" y="9" width="36" height="33" rx="3"/>
+<path d="M6 18h36M15 5v8M33 5v8"/>
+<path d="M14 26h2M23 26h2M32 26h2M14 34h2M23 34h2"/>
+</svg></div><figcaption><b>calendar</b><br>calendar, date, schedule, plan, timeline, month, event, booking, quarter</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="hourglass" data-id="icon-hourglass" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M11 5h26M11 43h26"/>
+<path d="M15 5c0 10 9 12 9 19s-9 9-9 19M33 5c0 10-9 12-9 19s9 9 9 19"/>
+<path d="M19 38h10"/>
+</svg><svg width="32" height="32" data-icon="hourglass" data-id="hourglass-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M11 5h26M11 43h26"/>
+<path d="M15 5c0 10 9 12 9 19s-9 9-9 19M33 5c0 10-9 12-9 19s9 9 9 19"/>
+<path d="M19 38h10"/>
+</svg></div><figcaption><b>hourglass</b><br>waiting, time running out, delay, pending, patience, expiry, countdown</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="stopwatch" data-id="icon-stopwatch" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="24" cy="27" r="16"/>
+<path d="M24 27l6-6"/>
+<path d="M19 5h10M24 5v6"/>
+<path d="M37 13l3-3"/>
+</svg><svg width="32" height="32" data-icon="stopwatch" data-id="stopwatch-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="24" cy="27" r="16"/>
+<path d="M24 27l6-6"/>
+<path d="M19 5h10M24 5v6"/>
+<path d="M37 13l3-3"/>
+</svg></div><figcaption><b>stopwatch</b><br>speed, fast, response time, timing, sprint, efficiency, cycle time, turnaround</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="history" data-id="icon-history" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 24A16 16 0 1 0 12.7 12.7"/>
+<path d="M5 13h8V5"/>
+<path d="M24 16v8l6 4"/>
+</svg><svg width="32" height="32" data-icon="history" data-id="history-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 24A16 16 0 1 0 12.7 12.7"/>
+<path d="M5 13h8V5"/>
+<path d="M24 16v8l6 4"/>
+</svg></div><figcaption><b>history</b><br>history, past, rollback, previous version, audit trail, undo, archive, before</figcaption></figure></main><h2>Money</h2><main><figure><div class="ic"><svg width="56" height="56" data-icon="money" data-id="icon-money" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="5" y="12" width="38" height="24" rx="3"/>
+<circle cx="24" cy="24" r="5.5"/>
+<path d="M11 24h2M35 24h2"/>
+</svg><svg width="32" height="32" data-icon="money" data-id="money-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="5" y="12" width="38" height="24" rx="3"/>
+<circle cx="24" cy="24" r="5.5"/>
+<path d="M11 24h2M35 24h2"/>
+</svg></div><figcaption><b>money</b><br>money, cost, price, budget, spend, cash, payment, revenue, savings, funding</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="coins" data-id="icon-coins" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<ellipse cx="24" cy="11" rx="14" ry="5"/>
+<path d="M10 11v8c0 2.8 6.3 5 14 5s14-2.2 14-5v-8"/>
+<path d="M10 19v9c0 2.8 6.3 5 14 5s14-2.2 14-5v-9"/>
+<path d="M10 28v9c0 2.8 6.3 5 14 5s14-2.2 14-5v-9"/>
+</svg><svg width="32" height="32" data-icon="coins" data-id="coins-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<ellipse cx="24" cy="11" rx="14" ry="5"/>
+<path d="M10 11v8c0 2.8 6.3 5 14 5s14-2.2 14-5v-8"/>
+<path d="M10 19v9c0 2.8 6.3 5 14 5s14-2.2 14-5v-9"/>
+<path d="M10 28v9c0 2.8 6.3 5 14 5s14-2.2 14-5v-9"/>
+</svg></div><figcaption><b>coins</b><br>savings, reserves, capital, investment, accumulate, finances, piggy bank, treasury</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="wallet" data-id="icon-wallet" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M34 12V9a3 3 0 0 0-3-3H10a4 4 0 0 0-4 4"/>
+<path d="M6 10a4 4 0 0 0 4 4h28a3 3 0 0 1 3 3v22a3 3 0 0 1-3 3H10a4 4 0 0 1-4-4z"/>
+<path d="M41 23h-8a4 4 0 0 0 0 8h8"/>
+</svg><svg width="32" height="32" data-icon="wallet" data-id="wallet-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M34 12V9a3 3 0 0 0-3-3H10a4 4 0 0 0-4 4"/>
+<path d="M6 10a4 4 0 0 0 4 4h28a3 3 0 0 1 3 3v22a3 3 0 0 1-3 3H10a4 4 0 0 1-4-4z"/>
+<path d="M41 23h-8a4 4 0 0 0 0 8h8"/>
+</svg></div><figcaption><b>wallet</b><br>wallet, payments, consumer spending, personal finance, balance, purse</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="price-tag" data-id="icon-price-tag" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M6 8a2 2 0 0 1 2-2h14l20 20-16 16L6 22z"/>
+<circle cx="15" cy="15" r="3"/>
+</svg><svg width="32" height="32" data-icon="price-tag" data-id="price-tag-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M6 8a2 2 0 0 1 2-2h14l20 20-16 16L6 22z"/>
+<circle cx="15" cy="15" r="3"/>
+</svg></div><figcaption><b>price-tag</b><br>price, pricing, discount, sale, tag, label, offer, value, sku</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="receipt" data-id="icon-receipt" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M10 4v40l4.7-3 4.7 3 4.6-3 4.7 3 4.6-3 4.7 3V4l-4.7 3-4.6-3-4.7 3-4.6-3-4.7 3z"/>
+<path d="M17 16h14M17 23h14M17 30h8"/>
+</svg><svg width="32" height="32" data-icon="receipt" data-id="receipt-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M10 4v40l4.7-3 4.7 3 4.6-3 4.7 3 4.6-3 4.7 3V4l-4.7 3-4.6-3-4.7 3-4.6-3-4.7 3z"/>
+<path d="M17 16h14M17 23h14M17 30h8"/>
+</svg></div><figcaption><b>receipt</b><br>receipt, invoice, bill, expense, transaction, purchase, statement, charge</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="bank" data-id="icon-bank" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M5 17L24 6l19 11z"/>
+<path d="M10 21v15M19 21v15M29 21v15M38 21v15"/>
+<path d="M5 41h38"/>
+</svg><svg width="32" height="32" data-icon="bank" data-id="bank-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M5 17L24 6l19 11z"/>
+<path d="M10 21v15M19 21v15M29 21v15M38 21v15"/>
+<path d="M5 41h38"/>
+</svg></div><figcaption><b>bank</b><br>bank, finance, institution, government, public sector, legal, treasury, headquarters</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="credit-card" data-id="icon-credit-card" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="4" y="10" width="40" height="28" rx="3"/>
+<path d="M4 18h40"/>
+<path d="M11 30h8"/>
+</svg><svg width="32" height="32" data-icon="credit-card" data-id="credit-card-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="4" y="10" width="40" height="28" rx="3"/>
+<path d="M4 18h40"/>
+<path d="M11 30h8"/>
+</svg></div><figcaption><b>credit-card</b><br>card, payment, checkout, billing, subscription, credit, charge</figcaption></figure></main><h2>Data</h2><main><figure><div class="ic"><svg width="56" height="56" data-icon="growth" data-id="icon-growth" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M6 6v36h36"/>
+<path d="M12 34l9-9 6 5 13-14"/>
+<path d="M32 16h8v8"/>
+</svg><svg width="32" height="32" data-icon="growth" data-id="growth-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M6 6v36h36"/>
+<path d="M12 34l9-9 6 5 13-14"/>
+<path d="M32 16h8v8"/>
+</svg></div><figcaption><b>growth</b><br>growth, increase, trend, improvement, gain, rising, performance, progress, upside</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="decline" data-id="icon-decline" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M6 6v36h36"/>
+<path d="M12 14l9 9 6-5 13 14"/>
+<path d="M32 32h8v-8"/>
+</svg><svg width="32" height="32" data-icon="decline" data-id="decline-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M6 6v36h36"/>
+<path d="M12 14l9 9 6-5 13 14"/>
+<path d="M32 32h8v-8"/>
+</svg></div><figcaption><b>decline</b><br>decline, decrease, drop, loss, falling, downturn, churn, reduction, downside</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="bar-chart" data-id="icon-bar-chart" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M5 42h38"/>
+<rect x="9" y="26" width="7" height="16" rx="1"/>
+<rect x="20.5" y="12" width="7" height="30" rx="1"/>
+<rect x="32" y="20" width="7" height="22" rx="1"/>
+</svg><svg width="32" height="32" data-icon="bar-chart" data-id="bar-chart-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M5 42h38"/>
+<rect x="9" y="26" width="7" height="16" rx="1"/>
+<rect x="20.5" y="12" width="7" height="30" rx="1"/>
+<rect x="32" y="20" width="7" height="22" rx="1"/>
+</svg></div><figcaption><b>bar-chart</b><br>chart, data, metrics, comparison, statistics, analytics, results, kpi, report</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="pie-chart" data-id="icon-pie-chart" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M21 10a16 16 0 1 0 17 17H21z"/>
+<path d="M27 4a17 17 0 0 1 17 17H27z"/>
+</svg><svg width="32" height="32" data-icon="pie-chart" data-id="pie-chart-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M21 10a16 16 0 1 0 17 17H21z"/>
+<path d="M27 4a17 17 0 0 1 17 17H27z"/>
+</svg></div><figcaption><b>pie-chart</b><br>share, proportion, breakdown, allocation, segment, market share, composition, split</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="target" data-id="icon-target" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="24" cy="24" r="18"/>
+<circle cx="24" cy="24" r="11"/>
+<circle cx="24" cy="24" r="4"/>
+<path d="M27 21l11-11M32 10h6v6"/>
+</svg><svg width="32" height="32" data-icon="target" data-id="target-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="24" cy="24" r="18"/>
+<circle cx="24" cy="24" r="11"/>
+<circle cx="24" cy="24" r="4"/>
+<path d="M27 21l11-11M32 10h6v6"/>
+</svg></div><figcaption><b>target</b><br>target, goal, objective, aim, accuracy, focus, okr, outcome, bullseye</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="gauge" data-id="icon-gauge" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M7 36a17 17 0 1 1 34 0"/>
+<path d="M24 36l8-11"/>
+<circle cx="24" cy="36" r="3"/>
+</svg><svg width="32" height="32" data-icon="gauge" data-id="gauge-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M7 36a17 17 0 1 1 34 0"/>
+<path d="M24 36l8-11"/>
+<circle cx="24" cy="36" r="3"/>
+</svg></div><figcaption><b>gauge</b><br>performance, capacity, utilization, level, measure, score, health, dashboard, speed</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="balance" data-id="icon-balance" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M24 6v34M14 42h20M9 12h30"/>
+<path d="M4 28a6 6 0 0 0 12 0zM4 28l6-15 6 15"/>
+<path d="M32 28a6 6 0 0 0 12 0zM32 28l6-15 6 15"/>
+</svg><svg width="32" height="32" data-icon="balance" data-id="balance-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M24 6v34M14 42h20M9 12h30"/>
+<path d="M4 28a6 6 0 0 0 12 0zM4 28l6-15 6 15"/>
+<path d="M32 28a6 6 0 0 0 12 0zM32 28l6-15 6 15"/>
+</svg></div><figcaption><b>balance</b><br>balance, fairness, trade-off, compare, weigh, legal, compliance, justice, judgment</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="funnel" data-id="icon-funnel" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M5 8h38L28 26v14l-8 4V26z"/>
+</svg><svg width="32" height="32" data-icon="funnel" data-id="funnel-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M5 8h38L28 26v14l-8 4V26z"/>
+</svg></div><figcaption><b>funnel</b><br>funnel, conversion, pipeline, filter, narrowing, sales stages, leads, triage</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="table" data-id="icon-table" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="5" y="8" width="38" height="32" rx="3"/>
+<path d="M5 18h38M5 29h38M18 8v32"/>
+</svg><svg width="32" height="32" data-icon="table" data-id="table-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="5" y="8" width="38" height="32" rx="3"/>
+<path d="M5 18h38M5 29h38M18 8v32"/>
+</svg></div><figcaption><b>table</b><br>table, spreadsheet, grid, data set, matrix, list, ledger, records</figcaption></figure></main><h2>Risk</h2><main><figure><div class="ic"><svg width="56" height="56" data-icon="shield" data-id="icon-shield" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M24 5l16 6v11c0 10-7 17.5-16 21-9-3.5-16-11-16-21V11z"/>
+<path d="M17 24l5 5 9-10"/>
+</svg><svg width="32" height="32" data-icon="shield" data-id="shield-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M24 5l16 6v11c0 10-7 17.5-16 21-9-3.5-16-11-16-21V11z"/>
+<path d="M17 24l5 5 9-10"/>
+</svg></div><figcaption><b>shield</b><br>security, protection, safety, compliance, trust, defense, secure, guarantee, verified</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="warning" data-id="icon-warning" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M24 6L44 41H4z"/>
+<path d="M24 19v10"/>
+<path d="M24 35v.5"/>
+</svg><svg width="32" height="32" data-icon="warning" data-id="warning-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M24 6L44 41H4z"/>
+<path d="M24 19v10"/>
+<path d="M24 35v.5"/>
+</svg></div><figcaption><b>warning</b><br>warning, risk, caution, alert, hazard, issue, danger, attention, problem</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="check-circle" data-id="icon-check-circle" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="24" cy="24" r="18"/>
+<path d="M16 24l6 6 11-12"/>
+</svg><svg width="32" height="32" data-icon="check-circle" data-id="check-circle-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="24" cy="24" r="18"/>
+<path d="M16 24l6 6 11-12"/>
+</svg></div><figcaption><b>check-circle</b><br>check, done, approved, success, complete, yes, pass, correct, verified</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="cross-circle" data-id="icon-cross-circle" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="24" cy="24" r="18"/>
+<path d="M17 17l14 14M31 17L17 31"/>
+</svg><svg width="32" height="32" data-icon="cross-circle" data-id="cross-circle-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="24" cy="24" r="18"/>
+<path d="M17 17l14 14M31 17L17 31"/>
+</svg></div><figcaption><b>cross-circle</b><br>no, rejected, failed, error, cancel, wrong, blocked, stop, decline</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="info" data-id="icon-info" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="24" cy="24" r="18"/>
+<path d="M24 22v12"/>
+<path d="M24 15v.5"/>
+</svg><svg width="32" height="32" data-icon="info" data-id="info-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="24" cy="24" r="18"/>
+<path d="M24 22v12"/>
+<path d="M24 15v.5"/>
+</svg></div><figcaption><b>info</b><br>information, note, details, about, help, context, fyi, explanation</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="question" data-id="icon-question" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="24" cy="24" r="18"/>
+<path d="M18.5 19a5.5 5.5 0 1 1 7.6 5.1c-1.3.5-2.1 1.7-2.1 3v1.4"/>
+<path d="M24 34.5v.5"/>
+</svg><svg width="32" height="32" data-icon="question" data-id="question-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="24" cy="24" r="18"/>
+<path d="M18.5 19a5.5 5.5 0 1 1 7.6 5.1c-1.3.5-2.1 1.7-2.1 3v1.4"/>
+<path d="M24 34.5v.5"/>
+</svg></div><figcaption><b>question</b><br>question, unknown, faq, help, uncertainty, ask, open issue, why</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="lock" data-id="icon-lock" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="9" y="21" width="30" height="22" rx="3"/>
+<path d="M15 21v-6a9 9 0 0 1 18 0v6"/>
+<path d="M24 29v6"/>
+</svg><svg width="32" height="32" data-icon="lock" data-id="lock-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="9" y="21" width="30" height="22" rx="3"/>
+<path d="M15 21v-6a9 9 0 0 1 18 0v6"/>
+<path d="M24 29v6"/>
+</svg></div><figcaption><b>lock</b><br>locked, private, secure, confidential, restricted, access control, encryption, closed</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="unlock" data-id="icon-unlock" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="9" y="21" width="30" height="22" rx="3"/>
+<path d="M15 21v-6a9 9 0 0 1 17.4-3.2"/>
+<path d="M24 29v6"/>
+</svg><svg width="32" height="32" data-icon="unlock" data-id="unlock-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="9" y="21" width="30" height="22" rx="3"/>
+<path d="M15 21v-6a9 9 0 0 1 17.4-3.2"/>
+<path d="M24 29v6"/>
+</svg></div><figcaption><b>unlock</b><br>unlocked, open, access, unblock, released, available, permission granted</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="key" data-id="icon-key" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="15" cy="33" r="9"/>
+<path d="M21.4 26.6L41 7M33 15l5 5M28 20l4 4"/>
+</svg><svg width="32" height="32" data-icon="key" data-id="key-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="15" cy="33" r="9"/>
+<path d="M21.4 26.6L41 7M33 15l5 5M28 20l4 4"/>
+</svg></div><figcaption><b>key</b><br>key, access, credential, password, solution, key factor, unlock, login</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="eye" data-id="icon-eye" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M3 24C8 15 15 10 24 10S40 15 45 24C40 33 33 38 24 38S8 33 3 24z"/>
+<circle cx="24" cy="24" r="6"/>
+</svg><svg width="32" height="32" data-icon="eye" data-id="eye-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M3 24C8 15 15 10 24 10S40 15 45 24C40 33 33 38 24 38S8 33 3 24z"/>
+<circle cx="24" cy="24" r="6"/>
+</svg></div><figcaption><b>eye</b><br>visibility, view, monitor, watch, transparency, insight, observe, review, oversight</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="flag" data-id="icon-flag" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M10 44V5"/>
+<path d="M10 7h27l-6 8 6 8H10"/>
+</svg><svg width="32" height="32" data-icon="flag" data-id="flag-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M10 44V5"/>
+<path d="M10 7h27l-6 8 6 8H10"/>
+</svg></div><figcaption><b>flag</b><br>milestone, flag, goal reached, priority, marker, report, issue raised, finish</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="fire" data-id="icon-fire" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M24 44c-8 0-13-5-13-12 0-8 7-11 8-20 5 3 9 9 9 14 2-1 3-3 3-6 4 3 6 8 6 12 0 7-5 12-13 12z"/>
+<path d="M24 44c-3 0-5-2-5-5 0-4 5-6 5-10 3 3 5 6 5 10 0 3-2 5-5 5z"/>
+</svg><svg width="32" height="32" data-icon="fire" data-id="fire-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M24 44c-8 0-13-5-13-12 0-8 7-11 8-20 5 3 9 9 9 14 2-1 3-3 3-6 4 3 6 8 6 12 0 7-5 12-13 12z"/>
+<path d="M24 44c-3 0-5-2-5-5 0-4 5-6 5-10 3 3 5 6 5 10 0 3-2 5-5 5z"/>
+</svg></div><figcaption><b>fire</b><br>incident, urgent, crisis, outage, hot, burning issue, emergency, firefighting</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="bug" data-id="icon-bug" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<ellipse cx="24" cy="29" rx="9" ry="12"/>
+<path d="M18 17a6 6 0 0 1 12 0"/>
+<path d="M24 21v20"/>
+<path d="M15 26H7M15 34H7M33 26h8M33 34h8M16 39l-5 4M32 39l5 4M18 13l-4-5M30 13l4-5"/>
+</svg><svg width="32" height="32" data-icon="bug" data-id="bug-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<ellipse cx="24" cy="29" rx="9" ry="12"/>
+<path d="M18 17a6 6 0 0 1 12 0"/>
+<path d="M24 21v20"/>
+<path d="M15 26H7M15 34H7M33 26h8M33 34h8M16 39l-5 4M32 39l5 4M18 13l-4-5M30 13l4-5"/>
+</svg></div><figcaption><b>bug</b><br>bug, defect, error, glitch, software problem, malware, fault, testing</figcaption></figure></main><h2>Technology</h2><main><figure><div class="ic"><svg width="56" height="56" data-icon="cloud" data-id="icon-cloud" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M14 37A8 8 0 0 1 13.51 21.01A10.5 10.5 0 1 1 34.49 21.02A8 8 0 1 1 35 37z"/>
+</svg><svg width="32" height="32" data-icon="cloud" data-id="cloud-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M14 37A8 8 0 0 1 13.51 21.01A10.5 10.5 0 1 1 34.49 21.02A8 8 0 1 1 35 37z"/>
+</svg></div><figcaption><b>cloud</b><br>cloud, hosted, online, internet, service, saas, remote, platform</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="server" data-id="icon-server" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="6" y="6" width="36" height="14" rx="3"/>
+<rect x="6" y="28" width="36" height="14" rx="3"/>
+<path d="M13 13h2M13 35h2M30 13h6M30 35h6"/>
+</svg><svg width="32" height="32" data-icon="server" data-id="server-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="6" y="6" width="36" height="14" rx="3"/>
+<rect x="6" y="28" width="36" height="14" rx="3"/>
+<path d="M13 13h2M13 35h2M30 13h6M30 35h6"/>
+</svg></div><figcaption><b>server</b><br>server, infrastructure, data center, hosting, backend, hardware, rack, on-premises</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="database" data-id="icon-database" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<ellipse cx="24" cy="10" rx="16" ry="5"/>
+<path d="M8 10v28c0 2.8 7.2 5 16 5s16-2.2 16-5V10"/>
+<path d="M8 24c0 2.8 7.2 5 16 5s16-2.2 16-5"/>
+</svg><svg width="32" height="32" data-icon="database" data-id="database-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<ellipse cx="24" cy="10" rx="16" ry="5"/>
+<path d="M8 10v28c0 2.8 7.2 5 16 5s16-2.2 16-5V10"/>
+<path d="M8 24c0 2.8 7.2 5 16 5s16-2.2 16-5"/>
+</svg></div><figcaption><b>database</b><br>database, data, storage, warehouse, records, repository, sql, data store</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="laptop" data-id="icon-laptop" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="9" y="8" width="30" height="22" rx="2"/>
+<path d="M4 35h40v2a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3z"/>
+</svg><svg width="32" height="32" data-icon="laptop" data-id="laptop-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="9" y="8" width="30" height="22" rx="2"/>
+<path d="M4 35h40v2a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3z"/>
+</svg></div><figcaption><b>laptop</b><br>laptop, computer, device, workstation, end user, desktop, it, remote work</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="phone" data-id="icon-phone" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="13" y="4" width="22" height="40" rx="4"/>
+<path d="M21 37h6"/>
+</svg><svg width="32" height="32" data-icon="phone" data-id="phone-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="13" y="4" width="22" height="40" rx="4"/>
+<path d="M21 37h6"/>
+</svg></div><figcaption><b>phone</b><br>phone, mobile, app, smartphone, device, sms, call, on the go</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="network" data-id="icon-network" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="24" cy="9" r="5"/>
+<circle cx="9" cy="38" r="5"/>
+<circle cx="39" cy="38" r="5"/>
+<path d="M21.8 13.5L11.2 33.5M26.2 13.5l10.6 20M14 38h20"/>
+</svg><svg width="32" height="32" data-icon="network" data-id="network-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="24" cy="9" r="5"/>
+<circle cx="9" cy="38" r="5"/>
+<circle cx="39" cy="38" r="5"/>
+<path d="M21.8 13.5L11.2 33.5M26.2 13.5l10.6 20M14 38h20"/>
+</svg></div><figcaption><b>network</b><br>network, connections, nodes, ecosystem, relationships, graph, integration, distributed</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="code" data-id="icon-code" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M15 14L5 24l10 10M33 14l10 10-10 10M27 9l-6 30"/>
+</svg><svg width="32" height="32" data-icon="code" data-id="code-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M15 14L5 24l10 10M33 14l10 10-10 10M27 9l-6 30"/>
+</svg></div><figcaption><b>code</b><br>code, software, developer, programming, script, engineering, api, automation</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="gear" data-id="icon-gear" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M38.21 21.12L42.84 21.54L42.84 26.46L38.21 26.88L36.09 32.01L39.06 35.58L35.58 39.06L32.01 36.09L26.88 38.21L26.46 42.84L21.54 42.84L21.12 38.21L15.99 36.09L12.42 39.06L8.94 35.58L11.91 32.01L9.79 26.88L5.16 26.46L5.16 21.54L9.79 21.12L11.91 15.99L8.94 12.42L12.42 8.94L15.99 11.91L21.12 9.79L21.54 5.16L26.46 5.16L26.88 9.79L32.01 11.91L35.58 8.94L39.06 12.42L36.09 15.99z"/><circle cx="24" cy="24" r="6"/>
+</svg><svg width="32" height="32" data-icon="gear" data-id="gear-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M38.21 21.12L42.84 21.54L42.84 26.46L38.21 26.88L36.09 32.01L39.06 35.58L35.58 39.06L32.01 36.09L26.88 38.21L26.46 42.84L21.54 42.84L21.12 38.21L15.99 36.09L12.42 39.06L8.94 35.58L11.91 32.01L9.79 26.88L5.16 26.46L5.16 21.54L9.79 21.12L11.91 15.99L8.94 12.42L12.42 8.94L15.99 11.91L21.12 9.79L21.54 5.16L26.46 5.16L26.88 9.79L32.01 11.91L35.58 8.94L39.06 12.42L36.09 15.99z"/><circle cx="24" cy="24" r="6"/>
+</svg></div><figcaption><b>gear</b><br>settings, configuration, process, operations, engineering, mechanism, automation, maintenance</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="plug" data-id="icon-plug" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M18 4v9M30 4v9"/>
+<path d="M12 13h24v8a12 12 0 0 1-24 0z"/>
+<path d="M24 33v11"/>
+</svg><svg width="32" height="32" data-icon="plug" data-id="plug-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M18 4v9M30 4v9"/>
+<path d="M12 13h24v8a12 12 0 0 1-24 0z"/>
+<path d="M24 33v11"/>
+</svg></div><figcaption><b>plug</b><br>integration, connect, plug-in, power, api, adapter, energy, connector</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="chip" data-id="icon-chip" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="12" y="12" width="24" height="24" rx="3"/>
+<rect x="19" y="19" width="10" height="10" rx="1"/>
+<path d="M18 5v7M24 5v7M30 5v7M18 36v7M24 36v7M30 36v7M5 18h7M5 24h7M5 30h7M36 18h7M36 24h7M36 30h7"/>
+</svg><svg width="32" height="32" data-icon="chip" data-id="chip-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="12" y="12" width="24" height="24" rx="3"/>
+<rect x="19" y="19" width="10" height="10" rx="1"/>
+<path d="M18 5v7M24 5v7M30 5v7M18 36v7M24 36v7M30 36v7M5 18h7M5 24h7M5 30h7M36 18h7M36 24h7M36 30h7"/>
+</svg></div><figcaption><b>chip</b><br>processor, hardware, ai, compute, chip, semiconductor, technology, model</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="wifi" data-id="icon-wifi" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M5.6 19.6a26 26 0 0 1 36.8 0"/>
+<path d="M12 26a17 17 0 0 1 24 0"/>
+<path d="M18.3 32.3a8 8 0 0 1 11.4 0"/>
+<path d="M24 40v.5"/>
+</svg><svg width="32" height="32" data-icon="wifi" data-id="wifi-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M5.6 19.6a26 26 0 0 1 36.8 0"/>
+<path d="M12 26a17 17 0 0 1 24 0"/>
+<path d="M18.3 32.3a8 8 0 0 1 11.4 0"/>
+<path d="M24 40v.5"/>
+</svg></div><figcaption><b>wifi</b><br>wireless, connectivity, internet, signal, network access, online, broadcast</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="globe" data-id="icon-globe" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="24" cy="24" r="18"/>
+<path d="M6 24h36"/>
+<ellipse cx="24" cy="24" rx="8" ry="18"/>
+</svg><svg width="32" height="32" data-icon="globe" data-id="globe-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="24" cy="24" r="18"/>
+<path d="M6 24h36"/>
+<ellipse cx="24" cy="24" rx="8" ry="18"/>
+</svg></div><figcaption><b>globe</b><br>global, world, international, website, internet, worldwide, region, language</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="link" data-id="icon-link" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M19 29l10-10"/>
+<path d="M22 14l4-4a8 8 0 0 1 11.3 11.3l-4 4"/>
+<path d="M26 34l-4 4a8 8 0 0 1-11.3-11.3l4-4"/>
+</svg><svg width="32" height="32" data-icon="link" data-id="link-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M19 29l10-10"/>
+<path d="M22 14l4-4a8 8 0 0 1 11.3 11.3l-4 4"/>
+<path d="M26 34l-4 4a8 8 0 0 1-11.3-11.3l4-4"/>
+</svg></div><figcaption><b>link</b><br>link, connection, dependency, url, chain, relationship, attach, integration</figcaption></figure></main><h2>Work</h2><main><figure><div class="ic"><svg width="56" height="56" data-icon="document" data-id="icon-document" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M11 5h18l8 8v30H11z"/>
+<path d="M29 5v8h8"/>
+<path d="M17 22h14M17 29h14M17 36h8"/>
+</svg><svg width="32" height="32" data-icon="document" data-id="document-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M11 5h18l8 8v30H11z"/>
+<path d="M29 5v8h8"/>
+<path d="M17 22h14M17 29h14M17 36h8"/>
+</svg></div><figcaption><b>document</b><br>document, report, file, policy, contract, paper, record, proposal, page</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="folder" data-id="icon-folder" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M5 12a3 3 0 0 1 3-3h10l4 5h18a3 3 0 0 1 3 3v21a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3z"/>
+</svg><svg width="32" height="32" data-icon="folder" data-id="folder-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M5 12a3 3 0 0 1 3-3h10l4 5h18a3 3 0 0 1 3 3v21a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3z"/>
+</svg></div><figcaption><b>folder</b><br>folder, files, archive, project, directory, category, collection, case</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="clipboard" data-id="icon-clipboard" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="9" y="8" width="30" height="36" rx="3"/>
+<rect x="17" y="4" width="14" height="8" rx="2"/>
+<path d="M16 23l3 3 5-5M28 24h5M16 34l3 3 5-5M28 35h5"/>
+</svg><svg width="32" height="32" data-icon="clipboard" data-id="clipboard-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="9" y="8" width="30" height="36" rx="3"/>
+<rect x="17" y="4" width="14" height="8" rx="2"/>
+<path d="M16 23l3 3 5-5M28 24h5M16 34l3 3 5-5M28 35h5"/>
+</svg></div><figcaption><b>clipboard</b><br>checklist, tasks, plan, requirements, audit, to-do, inspection, review list</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="briefcase" data-id="icon-briefcase" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="5" y="14" width="38" height="27" rx="3"/>
+<path d="M17 14v-4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4"/>
+<path d="M5 26h16M27 26h16"/>
+<rect x="21" y="23" width="6" height="6" rx="1"/>
+</svg><svg width="32" height="32" data-icon="briefcase" data-id="briefcase-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="5" y="14" width="38" height="27" rx="3"/>
+<path d="M17 14v-4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4"/>
+<path d="M5 26h16M27 26h16"/>
+<rect x="21" y="23" width="6" height="6" rx="1"/>
+</svg></div><figcaption><b>briefcase</b><br>business, work, job, career, portfolio, professional, services, consulting</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="building" data-id="icon-building" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M9 44V6h20v38M29 18h10v26M5 44h38"/>
+<path d="M15 13h2M22 13h2M15 21h2M22 21h2M15 29h2M22 29h2M33 26h2M33 34h2"/>
+<path d="M16 44v-7h6v7"/>
+</svg><svg width="32" height="32" data-icon="building" data-id="building-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M9 44V6h20v38M29 18h10v26M5 44h38"/>
+<path d="M15 13h2M22 13h2M15 21h2M22 21h2M15 29h2M22 29h2M33 26h2M33 34h2"/>
+<path d="M16 44v-7h6v7"/>
+</svg></div><figcaption><b>building</b><br>office, company, headquarters, organization, enterprise, corporate, site, city</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="factory" data-id="icon-factory" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M4 44V22l10 6v-6l10 6v-6l10 6V8h8v36z"/>
+<path d="M11 37h4M21 37h4"/>
+</svg><svg width="32" height="32" data-icon="factory" data-id="factory-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M4 44V22l10 6v-6l10 6v-6l10 6V8h8v36z"/>
+<path d="M11 37h4M21 37h4"/>
+</svg></div><figcaption><b>factory</b><br>factory, manufacturing, production, industry, plant, operations, supply</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="truck" data-id="icon-truck" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M3 10h25v22H3z"/>
+<path d="M28 17h9l7 8v7H28"/>
+<circle cx="12" cy="37" r="4"/>
+<circle cx="35" cy="37" r="4"/>
+</svg><svg width="32" height="32" data-icon="truck" data-id="truck-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M3 10h25v22H3z"/>
+<path d="M28 17h9l7 8v7H28"/>
+<circle cx="12" cy="37" r="4"/>
+<circle cx="35" cy="37" r="4"/>
+</svg></div><figcaption><b>truck</b><br>delivery, shipping, logistics, transport, supply chain, distribution, fleet</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="package" data-id="icon-package" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M24 4l18 9v22l-18 9-18-9V13z"/>
+<path d="M6 13l18 9 18-9"/>
+<path d="M24 22v22"/>
+<path d="M15 8.5l18 9"/>
+</svg><svg width="32" height="32" data-icon="package" data-id="package-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M24 4l18 9v22l-18 9-18-9V13z"/>
+<path d="M6 13l18 9 18-9"/>
+<path d="M24 22v22"/>
+<path d="M15 8.5l18 9"/>
+</svg></div><figcaption><b>package</b><br>package, product, box, shipment, release, bundle, inventory, deliverable</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="cart" data-id="icon-cart" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M3 7h6l5 24h24l5-17H11"/>
+<circle cx="17" cy="39" r="3"/>
+<circle cx="35" cy="39" r="3"/>
+</svg><svg width="32" height="32" data-icon="cart" data-id="cart-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M3 7h6l5 24h24l5-17H11"/>
+<circle cx="17" cy="39" r="3"/>
+<circle cx="35" cy="39" r="3"/>
+</svg></div><figcaption><b>cart</b><br>shopping, purchase, order, ecommerce, buy, retail, checkout, basket</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="store" data-id="icon-store" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M3 16l3-10h36l3 10"/>
+<path d="M3 16a5.25 5.25 0 0 0 10.5 0 5.25 5.25 0 0 0 10.5 0 5.25 5.25 0 0 0 10.5 0 5.25 5.25 0 0 0 10.5 0"/>
+<path d="M7 24v20h34V24"/>
+<path d="M19 44V33h10v11"/>
+</svg><svg width="32" height="32" data-icon="store" data-id="store-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M3 16l3-10h36l3 10"/>
+<path d="M3 16a5.25 5.25 0 0 0 10.5 0 5.25 5.25 0 0 0 10.5 0 5.25 5.25 0 0 0 10.5 0 5.25 5.25 0 0 0 10.5 0"/>
+<path d="M7 24v20h34V24"/>
+<path d="M19 44V33h10v11"/>
+</svg></div><figcaption><b>store</b><br>store, shop, retail, branch, storefront, marketplace, location, outlet</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="mail" data-id="icon-mail" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="4" y="10" width="40" height="28" rx="3"/>
+<path d="M6 13l18 13 18-13"/>
+</svg><svg width="32" height="32" data-icon="mail" data-id="mail-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="4" y="10" width="40" height="28" rx="3"/>
+<path d="M6 13l18 13 18-13"/>
+</svg></div><figcaption><b>mail</b><br>email, mail, message, letter, newsletter, contact, inbox, send</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="inbox" data-id="icon-inbox" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M4 26l6-18h28l6 18v13a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3z"/>
+<path d="M4 26h11l3 6h12l3-6h11"/>
+</svg><svg width="32" height="32" data-icon="inbox" data-id="inbox-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M4 26l6-18h28l6 18v13a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3z"/>
+<path d="M4 26h11l3 6h12l3-6h11"/>
+</svg></div><figcaption><b>inbox</b><br>inbox, intake, requests, queue, incoming, tickets, backlog, triage</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="edit" data-id="icon-edit" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M32 8l8 8L18 38l-11 3 3-11z"/>
+<path d="M27 13l8 8"/>
+<path d="M10 30l8 8"/>
+</svg><svg width="32" height="32" data-icon="edit" data-id="edit-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M32 8l8 8L18 38l-11 3 3-11z"/>
+<path d="M27 13l8 8"/>
+<path d="M10 30l8 8"/>
+</svg></div><figcaption><b>edit</b><br>edit, pencil, write, typing, fix, revise, correction, draft, change, annotate</figcaption></figure></main><h2>Ideas</h2><main><figure><div class="ic"><svg width="56" height="56" data-icon="signpost" data-id="icon-signpost" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M24 4v40"/>
+<path d="M11 9h20l5 5-5 5H11z"/>
+<path d="M37 23H17l-5 5 5 5h20z"/>
+<path d="M17 44h14"/>
+</svg><svg width="32" height="32" data-icon="signpost" data-id="signpost-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M24 4v40"/>
+<path d="M11 9h20l5 5-5 5H11z"/>
+<path d="M37 23H17l-5 5 5 5h20z"/>
+<path d="M17 44h14"/>
+</svg></div><figcaption><b>signpost</b><br>decision, direction, choice, options, crossroads, strategy, roadmap, guidance</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="lightbulb" data-id="icon-lightbulb" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M17 32c0-4-6-7-6-15a13 13 0 0 1 26 0c0 8-6 11-6 15z"/>
+<path d="M18 38h12M20 43h8"/>
+</svg><svg width="32" height="32" data-icon="lightbulb" data-id="lightbulb-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M17 32c0-4-6-7-6-15a13 13 0 0 1 26 0c0 8-6 11-6 15z"/>
+<path d="M18 38h12M20 43h8"/>
+</svg></div><figcaption><b>lightbulb</b><br>idea, insight, innovation, solution, creativity, tip, learning, discovery</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="rocket" data-id="icon-rocket" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M24 4c7 6 10 14 10 22l-3 8H17l-3-8c0-8 3-16 10-22z"/>
+<circle cx="24" cy="17" r="4"/>
+<path d="M14 26l-6 6v7l8-5M34 26l6 6v7l-8-5"/>
+<path d="M21 38l3 6 3-6"/>
+</svg><svg width="32" height="32" data-icon="rocket" data-id="rocket-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M24 4c7 6 10 14 10 22l-3 8H17l-3-8c0-8 3-16 10-22z"/>
+<circle cx="24" cy="17" r="4"/>
+<path d="M14 26l-6 6v7l8-5M34 26l6 6v7l-8-5"/>
+<path d="M21 38l3 6 3-6"/>
+</svg></div><figcaption><b>rocket</b><br>launch, start, growth, startup, release, accelerate, go live, ambition</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="search" data-id="icon-search" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="20" cy="20" r="14"/>
+<path d="M30 30l13 13"/>
+</svg><svg width="32" height="32" data-icon="search" data-id="search-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="20" cy="20" r="14"/>
+<path d="M30 30l13 13"/>
+</svg></div><figcaption><b>search</b><br>search, research, find, investigate, discovery, analysis, audit, look up</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="sliders" data-id="icon-sliders" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M6 12h24M38 12h4M6 24h8M22 24h20M6 36h20M34 36h8"/>
+<circle cx="34" cy="12" r="4"/>
+<circle cx="18" cy="24" r="4"/>
+<circle cx="30" cy="36" r="4"/>
+</svg><svg width="32" height="32" data-icon="sliders" data-id="sliders-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M6 12h24M38 12h4M6 24h8M22 24h20M6 36h20M34 36h8"/>
+<circle cx="34" cy="12" r="4"/>
+<circle cx="18" cy="24" r="4"/>
+<circle cx="30" cy="36" r="4"/>
+</svg></div><figcaption><b>sliders</b><br>settings, options, adjust, tune, filter, controls, preferences, customize</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="cycle" data-id="icon-cycle" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M40 20A17 17 0 0 0 9 15"/>
+<path d="M8 6v9h9"/>
+<path d="M8 28a17 17 0 0 0 31 5"/>
+<path d="M40 42v-9h-9"/>
+</svg><svg width="32" height="32" data-icon="cycle" data-id="cycle-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M40 20A17 17 0 0 0 9 15"/>
+<path d="M8 6v9h9"/>
+<path d="M8 28a17 17 0 0 0 31 5"/>
+<path d="M40 42v-9h-9"/>
+</svg></div><figcaption><b>cycle</b><br>cycle, refresh, iterate, recurring, renewal, continuous improvement, loop, sync</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="split" data-id="icon-split" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M5 24h15l8-12h13M20 24l8 12h13"/>
+<path d="M36 7l5 5-5 5M36 31l5 5-5 5"/>
+</svg><svg width="32" height="32" data-icon="split" data-id="split-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M5 24h15l8-12h13M20 24l8 12h13"/>
+<path d="M36 7l5 5-5 5M36 31l5 5-5 5"/>
+</svg></div><figcaption><b>split</b><br>split, branch, divide, options, fork, diverge, alternatives, segmentation</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="merge" data-id="icon-merge" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M5 12h13l8 12h17M5 36h13l8-12"/>
+<path d="M38 19l5 5-5 5"/>
+</svg><svg width="32" height="32" data-icon="merge" data-id="merge-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M5 12h13l8 12h17M5 36h13l8-12"/>
+<path d="M38 19l5 5-5 5"/>
+</svg></div><figcaption><b>merge</b><br>merge, combine, consolidate, converge, join, integration, unify, acquisition</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="layers" data-id="icon-layers" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M24 6l20 10-20 10L4 16z"/>
+<path d="M4 24l20 10 20-10"/>
+<path d="M4 32l20 10 20-10"/>
+</svg><svg width="32" height="32" data-icon="layers" data-id="layers-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M24 6l20 10-20 10L4 16z"/>
+<path d="M4 24l20 10 20-10"/>
+<path d="M4 32l20 10 20-10"/>
+</svg></div><figcaption><b>layers</b><br>layers, stack, levels, architecture, tiers, platform, depth, components</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="puzzle" data-id="icon-puzzle" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M7 14h10a4 4 0 1 1 8 0h10v9a4 4 0 1 1 0 8v10H25a4 4 0 1 0-8 0H7z"/>
+</svg><svg width="32" height="32" data-icon="puzzle" data-id="puzzle-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M7 14h10a4 4 0 1 1 8 0h10v9a4 4 0 1 1 0 8v10H25a4 4 0 1 0-8 0H7z"/>
+</svg></div><figcaption><b>puzzle</b><br>fit, integration, missing piece, solution, compatibility, component, module, problem solving</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="trophy" data-id="icon-trophy" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M14 6h20v12a10 10 0 0 1-20 0z"/>
+<path d="M14 10H8a6 6 0 0 0 7.2 12M34 10h6a6 6 0 0 1-7.2 12"/>
+<path d="M24 28v8"/>
+<rect x="17" y="36" width="14" height="7" rx="1"/>
+</svg><svg width="32" height="32" data-icon="trophy" data-id="trophy-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M14 6h20v12a10 10 0 0 1-20 0z"/>
+<path d="M14 10H8a6 6 0 0 0 7.2 12M34 10h6a6 6 0 0 1-7.2 12"/>
+<path d="M24 28v8"/>
+<rect x="17" y="36" width="14" height="7" rx="1"/>
+</svg></div><figcaption><b>trophy</b><br>winner, award, achievement, success, best, competition, recognition, champion</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="megaphone" data-id="icon-megaphone" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M5 19v10h7l19 10V9L12 19z"/>
+<path d="M12 29l3 12h5l-2-10"/>
+<path d="M37 18a8 8 0 0 1 0 12"/>
+</svg><svg width="32" height="32" data-icon="megaphone" data-id="megaphone-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M5 19v10h7l19 10V9L12 19z"/>
+<path d="M12 29l3 12h5l-2-10"/>
+<path d="M37 18a8 8 0 0 1 0 12"/>
+</svg></div><figcaption><b>megaphone</b><br>announcement, marketing, campaign, communication, launch news, promotion, broadcast</figcaption></figure><figure><div class="ic"><svg width="56" height="56" data-icon="bell" data-id="icon-bell" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M12 34V22a12 12 0 0 1 24 0v12l4 4H8z"/>
+<path d="M20 42a4 4 0 0 0 8 0"/>
+<path d="M24 6v4"/>
+</svg><svg width="32" height="32" data-icon="bell" data-id="bell-32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M12 34V22a12 12 0 0 1 24 0v12l4 4H8z"/>
+<path d="M20 42a4 4 0 0 0 8 0"/>
+<path d="M24 6v4"/>
+</svg></div><figcaption><b>bell</b><br>notification, alert, reminder, alarm, update, ping, subscribe</figcaption></figure></main><h2>Diagram parts</h2><main class="parts"><figure><div class="stage"><svg class="abs" data-id="g-arrow" style="left:8px;top:48px;color:var(--brand-muted);overflow:visible" width="304" height="24" viewBox="8 48 304 24"><defs><marker id="head-g-arrow" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" viewBox="0 0 8 8" refX="8" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8 z" fill="currentColor"/></marker></defs><line data-id="g-arrow-line" x1="20" y1="60" x2="300" y2="60" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="butt" stroke-linejoin="round" marker-end="url(#head-g-arrow)"/></svg></div><figcaption><b>arrow</b><br>Straight arrow; glue it to two boxes with from_id / to_id</figcaption></figure><figure><div class="stage"><svg class="abs" data-id="g-elbow" style="left:8px;top:18px;color:var(--brand-muted);overflow:visible" width="304" height="94" viewBox="8 18 304 94"><defs><marker id="head-g-elbow" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" viewBox="0 0 8 8" refX="8" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8 z" fill="currentColor"/></marker></defs><path data-id="g-elbow-line" d="M20 30 L160 30 L160 100 L300 100" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="butt" stroke-linejoin="round" marker-end="url(#head-g-elbow)"/></svg></div><figcaption><b>elbow</b><br>Right-angled connector through a list of points</figcaption></figure><figure><div class="stage"><svg class="abs" data-id="g-curve" style="left:8px;top:28px;color:var(--brand-muted);overflow:visible" width="304" height="124" viewBox="8 28 304 124"><defs><marker id="head-g-curve" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" viewBox="0 0 8 8" refX="8" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8 z" fill="currentColor"/></marker></defs><path data-id="g-curve-line" d="M20 100 Q175 140 300 40" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="butt" stroke-linejoin="round" marker-end="url(#head-g-curve)"/></svg></div><figcaption><b>curve</b><br>Curved arrow; bend sets how far the middle swings</figcaption></figure><figure><div class="stage"><svg class="abs" data-id="g-brace-l" style="left:28px;top:4px;color:var(--brand-muted);overflow:visible" width="44" height="134" viewBox="28 4 44 134"><path data-id="g-brace-l-line" d="M60 16 Q50 16 50 26 L50 61 Q50 71 40 71 Q50 71 50 81 L50 116 Q50 126 60 126" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="abs" data-id="g-brace-r" style="left:248px;top:4px;color:var(--brand-muted);overflow:visible" width="44" height="134" viewBox="248 4 44 134"><path data-id="g-brace-r-line" d="M260 16 Q270 16 270 26 L270 61 Q270 71 280 71 Q270 71 270 81 L270 116 Q270 126 260 126" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><figcaption><b>brace</b><br>Curly brace grouping items (left, right, top, bottom)</figcaption></figure><figure><div class="stage"><svg class="abs" data-id="g-bracket-l" style="left:28px;top:4px;color:var(--brand-muted);overflow:visible" width="36" height="134" viewBox="28 4 36 134"><path data-id="g-bracket-l-line" d="M52 16 L40 16 L40 126 L52 126" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="abs" data-id="g-bracket-r" style="left:248px;top:4px;color:var(--brand-muted);overflow:visible" width="36" height="134" viewBox="248 4 36 134"><path data-id="g-bracket-r-line" d="M260 16 L272 16 L272 126 L260 126" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><figcaption><b>bracket</b><br>Square bracket (left, right, top, bottom)</figcaption></figure><figure><div class="stage"><div class="abs" data-id="step-1" style="left:30px;top:40px;width:56px;height:56px;border-radius:50%;background:var(--brand-ink);color:var(--brand-ground);display:flex;align-items:center;justify-content:center;font-family:var(--brand-font-heading);font-weight:var(--brand-weight-heading);font-size:26px;line-height:30px">1</div><div class="abs" data-id="step-2" style="left:120px;top:40px;width:56px;height:56px;border-radius:50%;border:2px solid var(--brand-ink);color:var(--brand-ink);display:flex;align-items:center;justify-content:center;font-family:var(--brand-font-heading);font-weight:var(--brand-weight-heading);font-size:26px;line-height:30px">2</div><div class="abs" data-id="step-3" style="left:210px;top:40px;width:56px;height:56px;border-radius:50%;background:var(--brand-ink);color:var(--brand-ground);display:flex;align-items:center;justify-content:center;font-family:var(--brand-font-heading);font-weight:var(--brand-weight-heading);font-size:26px;line-height:30px">3</div></div><figcaption><b>step</b><br>Numbered step, filled or outlined</figcaption></figure><figure><div class="stage"><div data-group data-id="g-callout" class="abs" style="left:20px;top:16px;width:280px;height:80px">
+  <svg class="abs" data-id="g-callout-pointer" style="left:0;top:0;overflow:visible" width="280" height="80"><polygon points="54,79 86,79 70,96" fill="var(--brand-raised)"/></svg>
+  <div class="abs" data-id="g-callout-box" style="left:0;top:0;width:280px;height:80px;background:var(--brand-raised);border-radius:6px;padding:16px 20px;color:var(--brand-ink);font-size:var(--brand-text-size);line-height:var(--brand-text-line)">A short note about one point.</div>
+</div></div><figcaption><b>callout</b><br>Note box with a pointer on any edge</figcaption></figure><figure><div class="stage"><div data-group data-id="g-chev" class="abs" style="left:10px;top:40px;width:300px;height:56px">
+  <svg class="abs" data-id="g-chev-1" style="left:0;top:0;overflow:visible" width="300" height="56"><polygon points="0,0 89.78,0 108.44,28 89.78,56 0,56 0,28" fill="var(--brand-raised)"/></svg>
+  <div class="abs" data-id="g-chev-1-label" style="left:12px;top:0;width:73.78px;height:56px;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--brand-ink);font-family:var(--brand-font-heading);font-weight:var(--brand-weight-heading);font-size:var(--brand-text-size);line-height:var(--brand-text-line)">Plan</div>
+  <svg class="abs" data-id="g-chev-2" style="left:0;top:0;overflow:visible" width="300" height="56"><polygon points="95.78,0 185.56,0 204.22,28 185.56,56 95.78,56 114.44,28" fill="var(--brand-raised)"/></svg>
+  <div class="abs" data-id="g-chev-2-label" style="left:126.44px;top:0;width:55.11px;height:56px;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--brand-ink);font-family:var(--brand-font-heading);font-weight:var(--brand-weight-heading);font-size:var(--brand-text-size);line-height:var(--brand-text-line)">Build</div>
+  <svg class="abs" data-id="g-chev-3" style="left:0;top:0;overflow:visible" width="300" height="56"><polygon points="191.56,0 300,0 300,28 300,56 191.56,56 210.22,28" fill="var(--brand-raised)"/></svg>
+  <div class="abs" data-id="g-chev-3-label" style="left:222.22px;top:0;width:73.78px;height:56px;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--brand-ink);font-family:var(--brand-font-heading);font-weight:var(--brand-weight-heading);font-size:var(--brand-text-size);line-height:var(--brand-text-line)">Ship</div>
+</div></div><figcaption><b>chevrons</b><br>A row of process steps</figcaption></figure></main></body></html>
